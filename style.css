@@ -1,41 +1,9 @@
 body {
     color: #FFFFFF;
-        border: 1px solid whitesmoke;
-	        padding: 1em;
-	        box-shadow: 5px 5px grey;
     background-color: #000000;
     max-width: 1000px;
     font-family: sans-serif;
-     margin: 8px auto;
-	   max-width: 700px;
 }
 a {
   color: hotpink
-}
-.button {
-    background-color: midnightblue;
-    display: inline-block;
-    padding: .5em 1em;
-    text-decoration: none;
-    box-shadow: 2px 2px black;
-}
-
-.button:hover {
-    background-color: black;
-}
-
-pre {
-    white-space: pre-wrap;
-    font-size: 14px;
-    padding: 1em;
-		background-color: #080940;
-}
-dd {
-		margin: 0;
-}
-dd + dt {
-		margin-top: .5em;
-}
-img {
-		max-width: 100%;
 }

@@ -7,6 +7,7 @@ a {
   color: hotpink
 }
 hr {
-    max-width: 500px;
+    max-width: 600px;
+    margin-right: 99999px;
     margin: auto;
 }

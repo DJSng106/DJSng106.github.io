@@ -1,0 +1,36 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: "Monaco", monospace;
+}
+h1 {
+  color: white;
+  font-family: "Monaco", monospace;
+}
+p {
+  color: white;
+  font-family: "Monaco", monospace;
+}
+marquee {
+  color: white;
+  font-family: "Monaco", monospace;
+}
+a:link {
+  color: blue;
+  background-color: transparent;
+}
+
+a:visited {
+  color: lightblue;
+  background-color: transparent;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+}
+
+a:active {
+  color: white;
+  background-color: transparent;
+}

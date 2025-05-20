@@ -14,9 +14,9 @@
 
 //==[ 1. BASIC INFO ]==
 
-let blogName = "A Journey So Cold";
-let authorName = "Lydia Vesk";
-let authorLink = "https://mynnshaw.github.io"; // Enter your website, social media, etc. Some way for people to tell you they like your blog! (Leaving it empty is okay too)
+let blogName = "Jericho Tavern";
+let authorName = "DJSng";
+let authorLink = "https://spacehey.com/djsng"; // Enter your website, social media, etc. Some way for people to tell you they like your blog! (Leaving it empty is okay too)
 
 //-----------------------------
 

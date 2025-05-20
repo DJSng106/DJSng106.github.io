@@ -29,9 +29,17 @@ let authorLink = "https://spacehey.com/djsng"; // Enter your website, social med
   alter the scripts if you want to use a different naming convention*/
 /*UPDATE: as of version 1.3, you may omit the date if you would like. But if you
   use a date it must still follow that format.*/
-let postsArray = [
+let postsArray = [ 
 //[ "posts/2020-11-10-Special-Characters-Example.html", encodeURI( 'Spéci@l "Character\'s" Examp|e' ) ],
 //[ "posts/2020-11-10-My-Third-Post-Example.html" ],
+[ "posts/2025-04-26-Fuck-Companies-1.html", encodeURI( 'Dear Corporations - A taste of a Rant On Competitors' ) ],
+[ "posts/2024-12-31-Last-Blog-Of-2024.html", encodeURI( 'Last blog of 2024?' ) ],
+[ "posts/2024-12-20-Mashups-Harder-Than-the-Originals.html", encodeURI( 'When the Mashup hits harder than the original [SilvaGunner]' ) ],
+[ "posts/2024-11-20-Searching-For-NewGen-2.html", encodeURI( 'Missing the friends you used to have (the search pt.2)' ) ],
+[ "posts/2024-11-20-Searching-For-NewGen.html", encodeURI( '[RP] The search for my OG roblox account' ) ],
+[ "posts/2024-11-12-They-were-not-joking-around-about-who-you-see-in-your-dreams.html" ],
+[ "posts/2024-11-10-Liking-Obscure-Bands.html", encodeURI( 'Ever like a band but find it hard to find fans who like that band?' ) ],
+[ "posts/2024-11-07-The-Mysterious-Song-on-the-Internet-being-solved.html" ],
 [ "posts/2024-10-25-The-Haunt-Rant.html", encodeURI( 'The Haunt: More Tired Than Scared' ) ],
 [ "posts/2024-10-10-foobar2000-update.html", encodeURI( 'An Update On My foobar2000 UI!' ) ],
 [ "posts/2024-10-06-A-Windows-Rant.html", encodeURI( 'Incompetence in Compensation: A Windows Rant' ) ],

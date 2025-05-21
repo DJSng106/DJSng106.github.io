@@ -32,6 +32,7 @@ let authorLink = "https://spacehey.com/djsng"; // Enter your website, social med
 let postsArray = [ 
 //[ "posts/2020-11-10-Special-Characters-Example.html", encodeURI( 'Spéci@l "Character\'s" Examp|e' ) ],
 //[ "posts/2020-11-10-My-Third-Post-Example.html" ],
+[ "posts/2025-05-21-To-Music-Presence.html", encodeURI( 'The Move to Music Presence: Fighting with Discord Rich Presence' ) ],
 [ "posts/2025-04-26-Fuck-Companies-1.html", encodeURI( 'Dear Corporations - A taste of a Rant On Competitors' ) ],
 [ "posts/2025-04-06-Tech-World-Mess.html", encodeURI( 'the tech world is a mess' ) ],
 [ "posts/2025-04-05-On-Homestuck-Day.html", encodeURI( 'My birthday is on homestuck day?' ) ],

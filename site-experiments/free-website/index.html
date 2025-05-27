@@ -18,23 +18,8 @@
         <link rel="preconnect" href="https://rsms.me/">
         <link rel="stylesheet" href="index_files/inter.css">
         <!--there are two ways to get a font on a website: these links in the head or using @import in the css. i always use links. i think @import is mostly for like, emails?-->
-<script> /* uh this is what we need to do to get this stupoid shit to work, so let's go */
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-        var site_data = JSON.parse(this.responseText);
-  
-        var date_str = site_data.info.last_updated;
-  var date_obj = new Date(site_data.info.last_updated);
-  document.getElementById("lastupdate").innerHTML = (date_obj.getMonth()+1) + "-" + date_obj.getDate() + "-" + date_obj.getFullYear();
-  
-      }
-    };
-    xhttp.open("GET", "https://weirdscifi.ratiosemper.com/neocities.php?sitename=kam106", true);
-    xhttp.send();
-  </script>
-
-  <script>
+<!-- i accidently included unused last updated code here... whoops -->
+  <script> /* this shit handles the last.fm stuff. let's go. */
       // this script is under the MIT license (https://max.nekoweb.org/resources/license.txt)
       // this script controls playing song
                       

@@ -342,11 +342,40 @@
 
 
             /* START OF JANK CHANGES BY DJ */
+
+            /* i took a bit from status cafe's box to make a makeshift border for the last.fm widget */
+            #listenbox {
+                padding: .5em;
+                border: 1px solid limegreen;
+                width: 30%;
+            }
+
+            /* status cafe requires these to format the box. */
+            #statuscafe {
+                padding: .5em;
+                background-color: black;
+                border: 1px solid limegreen;
+            }
+            #statuscafe-username {
+                margin-bottom: .5em;
+            }
+            #statuscafe-content {
+                margin: 0 1em 0.5em 1em;
+            }
         
             /* the line below ensures that the last.fm widget loads the cover art a fixed size, instead of trying to upscale to the entire page and break all my fuckin jank. wow, i did something right */
             .cover {
                 height: 150px;
                 width: 150px;
+            }
+
+            /* attempt to contain the status cafe text in a pretty box */
+            block {
+                width: 18px;
+                height: 72px;
+                padding: 10px;
+                border: 5px solid black;
+                margin: 0;
             }
 
         </style>
@@ -408,10 +437,21 @@ and weirder websites that you can explore and discover at your leisure.</p>
                 <p>Right-click anywhere on this page and hit "Save As" to get started.</p>
                 <h3>Format testing</h3>
                 <p>SORRY TO INTERRUPT TEMPLATE TESTER I NEED TO INSERT MY WIDGETS AND SEE HOW THIS OLD SHIT WORKS</p>
-                <p><div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=kam106" defer></script> <!-- Status Cafe --></p><br>
-                <p><div id="listening"><noscript>You need Javascript to see this.</noscript></div></p> <!-- now playing -->
+                <p><block><div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=kam106" defer></script></block> <!-- Status Cafe -->
+                  </div></p><br>
+                <p><div id="listenbox"><div id="listening"><noscript>You need Javascript to see this.</noscript></div></div></p> <!-- now playing -->
                 <!-- uhm i have a fucking problem ^^ why is it so fucking massive??? guess we need to contain this somehow -->
             </section>
+
+
+
+<!-- extra padding because i'm blind -->
+
+
+
+
+
+
             <!--HOW TO USE-->
             <section id="use">
                 <h2>How to Use</h2>

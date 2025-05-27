@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<!--Free Website version 1.5.1, January 2025-->
+<!--open-source and free for all uses-->
+<html lang="en"><head>
+        <!--this stuff is standard but i do not know what it does really-->
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <!--this is the title of the site, obviously-->
+        <title>Free Website</title>
+
+        <!--stuff that's important if you want an embedded preview of this site on discord, etc-->
+        <meta property="og:title" content="Free Website">
+        <meta property="og:description" content="A free website for you to make your own.">
+        <meta property="og:image" content="example_url">
+        <!--one thing that is annoying about meta tags is that every site (twitter, bluesky, etc) caches this stuff the first time you post a link and some sites only check again every few weeks or even never. so you'd better pick a good image the first time-->
+
+        <!--font links-->
+        <link rel="preconnect" href="https://rsms.me/">
+        <link rel="stylesheet" href="index_files/inter.css">
+        <!--there are two ways to get a font on a website: these links in the head or using @import in the css. i always use links. i think @import is mostly for like, emails?-->
+
+        <style>
+            /* basic rules for whole site */
+            * { 
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                /*often you need to "reset" some stuff at the top of your stylesheet because many elements have default properties that are annoying to work around. see "bonus" */
+
+                /* color variables (these don't have to be hex codes. you can specify a color a bunch of ways or even use a background image) */
+                --textcolor: #000000;
+                --pagebg: #ffffff;
+                --sectionbg: #ffffff;
+                --links: #666666;
+                --mono: #363636;
+                --monobg: #eeeeee;
+            }
+            /* variables make it easier to recolor the whole site, plus some really simple scripting can add a button for dark mode. or, try activating this next chunk for an automatic dark mode based on the system theme */
+
+            /*
+            @media (prefers-color-scheme: dark) {
+            *{
+            --textcolor: #ffffff;
+            --bgcolor: #26262D;
+            --links: #B2B2B2;
+            --mono: #ccc;
+            --monobg: #3f3f3f;
+            }
+            p{
+            letter-spacing: .025em;
+            font-weight: 350;
+            }
+            }
+            */
+
+            html{
+                background-color: var(--pagebg);
+            }
+
+            body {
+                font-size: 18px;
+                /* defining a font size here determines the size of an em (see "bonus") */
+                font-family: "Inter", sans-serif;
+                /* you should always add a "fallback" font category when specifying a font. this way if the font can't load the page still looks sort of how you intended */
+                line-height: 1.4;
+                color: var(--textcolor);
+                /* "color" actually refers to specifically the text color within an element. yeah i know */
+                position: relative;
+                /* you normally wouldn't bother setting this but for the sections to be "absolute" their parent has to be "relative" */
+                margin: 0;
+                margin-top: -1em;
+                /* a negative margin is also weird to do but I was getting a small strip of empty space at the top of the site and could not figure out why so i just accounted for it. it's okay to make websites this way! nobody looks at the code! */
+                max-width: 45em;
+                /* this sets the width of the body where all the content lives, but with paragraphs constrained to their own max width it mostly just moves the navbar around */
+            }
+
+            header {
+                padding: 3em 2em 1em 2em;
+                /* when you do padding or margin in one line like this it goes top-right-bottom-left */
+                display: flex;
+                flex-wrap: wrap;
+                position: absolute;
+                /*"absolute" elements don't get pushed around by other elements on the screen*/
+                top: 0;
+                width: 100%;
+                z-index: 2;
+                /* z-index makes an element render on top of other things. by default elements further down the page render in front of everything before them */
+            }
+
+            h1 {
+                font-size: 1em;
+                font-weight: 600;
+                flex: 1;
+                /*this pushes the nav links to the right. flex is a whole system i'm not gonna get into here */
+                white-space: nowrap;
+            }
+
+            nav a:not(:last-of-type) {
+                margin-right: .5em;
+                /* this puts space between the nav links but not after the last one. css has some pretty in-depth logic rules like this */
+            }
+
+            /* sections */
+            section {
+                padding: 6em 2em 3em;
+                /* the reason for padding instead of margin here is because anchor links automatically scroll to the top of the target */
+
+                /* the next six lines are really important. but maybe see what happens if you change them anyway */
+                display: none;
+                background: var(--sectionbg);
+                position: absolute;
+                top: 0;
+                width: 100%;
+                min-height: 110vh;
+                /* "vh" and "vw" are useful units that equal one percent of the "viewport" width or height. so 100vh is 100% as tall as the screen */
+            }
+
+            section:target {
+                display: block;
+                /* :target is what makes the pages render one at a time. "block" is the default display mode */
+            }
+
+            section#home {
+                display: block;
+                /* this makes the homepage appear by default. generally, the most specific rule (like a style applied to one ID) overrides any more general rules (like one applied to a whole type of element) */
+            }
+
+            /*
+            body:not(body:has(section:target)) section#home{
+            display: block;
+            }
+            */
+
+            /* this is a complicated conditional rule that makes the homepage display by default but go away when anything else is selected. turn this on and delete that last rule if you're having an issue with the homepage peeking out under your other pages, but be aware it may not work in all browsers. thanks to william davies for sending this in! */
+
+            /* footer */
+            section:after{
+                content:"Version 1.6. Made by human labor.";
+                position: relative;
+                color: var(--links);
+                font-size: 85%;
+                padding: .25em 0;
+                border-top: 1px solid var(--links);
+            }
+            /* :after is kind of an advanced technique and is a bizarre way to handle a footer, but given that each section is a different height and they need to be positioned absolutely this is the best way i could think of */
+
+            section p:last-child{
+                margin-bottom: 3em;
+            }
+
+            /* text styles */
+            p {
+                /* "p" is for paragraphs */
+                font-size: 1em;
+                max-width: 55ch;
+                /*this limits the line length of paragraphs to 55 characters long. i actually just learned this is possible while making this template */
+                margin-bottom: 1em;
+            }
+
+            a {
+                /* "a" is for links which is wack imo */
+                text-decoration: underline;
+                text-decoration-color: transparent;
+                transition: 0.2s;
+                color: var(--links);
+            }
+
+            a:hover {
+                text-decoration-color: var(--links);
+                transition: 0.2s;
+                /* here i'm using "transition," an easy way to animate things, along with making the default underline color transparent because you can't animate whether an underline is there but you can animate what color it is. ":hover" makes something look different when you hover on it, which you probably guessed */
+            }
+
+            p a{
+                text-decoration-color: var(--links);
+            }
+            /* "p [space] a" applies to all links (a) inside paragraphs (p). this trick works with any pair of elements */
+
+            a.inert:hover{
+                text-decoration-color: transparent;
+            }
+            /* this "inert" class for links is just for the slashes in the nav menu. which could have been p's but i'd have to make those part of the flex container and i am lazy */
+
+            h2 {
+                font-size: 2em;
+                font-weight: 700;
+                margin-bottom: .5em;
+                letter-spacing: -0.03em;
+                /* css will let you get very particular with your typography. which is not necessary at all but i appreciate, as a dork */
+            }
+
+            h3 {
+                font-size: 1.3em;
+                margin-top: 1.5em;
+                margin-bottom: .5em;
+                letter-spacing: -0.02 em;
+            }
+            /* there are 5 or 6 different h's (headings) and they can all be styled differently. it's a good idea to use them in descending order of importance */
+
+            span.mono {
+                font-family: monospace;
+                font-size: 0.9em;
+                color: var(--mono);
+                white-space: nowrap;
+                background-color: var(--monobg);
+                padding: 1px;
+                border-radius: 4px;
+            }
+            /* a "span" lets you sort of highlight some text and make it look different without breaking the flow of text. the period tells the computer what class of span to apply this rule to */
+
+            div.inline {
+                width: 35em;
+                max-width: 90vw;
+                margin-bottom: 2em;
+                margin-top: 2em;
+            }
+            /* this gives embedded stuff about the same width + spacing as paragraphs when it's inside a div with the "inline" class. a div is just an all-purpose box for building and organizing with. you can go right to the class-specifying period without an element type and it'll just style any type of thing with that class */
+
+            .inline p{
+                font-size: 0.8em;
+                color: var(--links);
+                font-style: italic;
+            }
+            /* this makes text inside an "inline" div read as a caption */
+
+            img{
+                width: 100%;
+                height: auto;
+            }
+            /* images like to kind of go wild if you don't tell them what size to be. the default is 1:1 pixel size i think? which is almost always too big */
+
+            /* phone styling */
+            @media only screen and (max-width: 680px) {
+                body {
+                    font-size: 16px;
+                    line-height: 1.6;
+                }
+                header {
+                    padding: 1em 1em 1em 1em;
+                    position: fixed;
+                    background: var(--sectionbg);
+                    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.61);
+                }
+                header h1{
+                    display: none;
+                }
+                section{
+                    padding: 6em 1em 1em 1em;
+                }
+                nav{
+                    white-space: nowrap;
+                }
+                nav a:not(:last-of-type) {
+                    margin-right: 0em;
+                }
+            }
+            /* media rules basically let you write a whole extra set of CSS styles that kick in based on something about the user's device (screen size, orientation, etc). they are good to know about for accessibility's sake. */
+        </style>
+    </head>
+    <body cz-shortcut-listen="true">
+
+        <header>
+            <h1>
+                <a href="#">Free Website</a>
+            </h1>
+            <nav>
+                <!--these links are anchors (note the hashtags). they target a specific section with a matching ID.-->
+                <a href="#home">Home</a>
+                <a class="inert">/</a>
+                <a href="#use">How to Use</a>
+                <a class="inert">/</a>
+                <a href="#publish">How to Publish</a>
+                <a class="inert">/</a>                
+                <a href="https://www.jackis.online/freewebsiteinuse">In Use</a>
+                <a class="inert">/</a>
+                <a href="#bonus">Bonus</a>
+            </nav>
+        </header>
+
+        <main>
+            <!--HOME-->
+            <section id="home" style="pointer-events: auto;">
+                <!--see id="home"? you get it i'm sure-->
+                <h2>Home</h2>
+                <p>This is a raw, plain, uncooked website for you to mess with and make your own. It started as a version of <a target="_blank" href="https://github.com/cadars/john-doe/">this template</a>
+ but I've overhauled and pretty thoroughly stripped it down; both in 
+order to make the filesize smaller (barely over 20 kilobytes!) and to 
+make it a little less intimidating if you have zero HTML knowledge. It's
+ open-source, public domain, and totally free to modify and 
+redistribute.</p>
+                <div class="inline">
+                    <img loading="lazy" src="index_files/SyMr6R5.gif" alt="A GIF of Tim Heidecker saying 'It's free real estate.' I have edited the text flying out of his mouth to read 'It's Free Web Site' instead.">
+                </div>
+                <h3>How's it Work?</h3>
+                <p>Instead of one HTML file per page, this site is a 
+single document that uses  anchor links to show or hide different 
+sections. It's made entirely out of plain old hypertext — no Javascript,
+ no databases, no problems. That makes it load all at once, which can be
+ helpful for users on bad or temporary connections. It also makes it 
+much easier to edit and publish. The <span class="mono">:target</span> selector is <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/:target">an old standard</a> that works on all browsers &amp; devices. You can even refresh, use the back button, etcetera.</p>
+                <p>I've also marked up the code to try and make it 
+easier to understand by taking apart. It's not a complete guide to web 
+design by any means, but I think it'll be a fun introduction if (like 
+me) you enjoy learning by screwing around.</p>
+                <h3>What For?</h3>
+                <p>Whatever you want! Start a blog, or a <a href="https://nownownow.com/">"now" page</a>,
+ or share your art, or write down some thoughts. Link to some stuff you 
+like or pages your friends made. Imagine an internet where the things 
+you make and say can live somewhere that belongs to you instead of a 
+billion-dollar app. Imagine an internet populated by more and smaller 
+and weirder websites that you can explore and discover at your leisure.</p>
+                <p>Right-click anywhere on this page and hit "Save As" to get started.</p>
+            </section>
+            <!--HOW TO USE-->
+            <section id="use">
+                <h2>How to Use</h2>
+                <p>Crack open this HTML file in a code editor (I happen to like <a target="_blank" href="https://brackets.io/">Brackets</a>, but you can use plain old Notepad if you want.)</p>
+                <h3>Under the Hood</h3>
+                <p>At the top is some technical stuff, then some embedding stuff like <span class="mono">meta-og-title</span>
+ and etcetera. These are pieces that will show up in the embed card when
+ you link to this site on Bluesky or Discord or somewhere. You can 
+include an image too, but you don't need to use any of this chunk if you
+ don't want. (<a target="_blank" href="https://ogp.me/">More info on meta tags</a>)</p>
+                <p>Then you'll see the <span class="mono">&lt;style&gt;</span>
+ section. This is where the CSS lives and gives the website its visual 
+style. CSS is capable of a lot of crazy tricks (especially if you want 
+to avoid learning Javascript), but it's also pretty easy to figure out. I
+ love and highly recommend the <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/CSS">Mozilla CSS guide</a> for learning what you can do.</p>
+                <p>The HTML content is cut up into <span class="mono">&lt;section&gt;</span>s, each of which has an ID. This is how this website manages multiple pages, by using the <span class="mono">:target</span>
+ selector and "anchor links," which are links to a specific element on a
+ page instead of a different page. Otherwise the HTML in here is pretty 
+basic—just headers and paragraphs and links—so it should be pretty 
+simple to figure out, especially if you've ever inspected element on 
+Wikipedia to get a fake screenshot for a gag.</p>
+                <p>You can embed images and stuff with <span class="mono">img</span>
+ tags and a URL, either to an image in the same folder as this HTML file
+ or to an external host like imgur. It's good manners to use <span class="mono">loading=lazy</span> on images, especially if they're not on the homepage so they're not visible right away.</p>
+                <div class="inline">
+                    <img loading="lazy" src="index_files/JFe3Ii3.jpeg" alt="A photo of the ocean on a clear day.">
+                    <p><a target="_blank" href="https://commons.wikimedia.org/wiki/Category:Landscape_photography#/media/File:Cape_Perpetua_at_Oregon_Coast_6.jpg">Photo: Jeff Hollett / Wikimedia / CC BY-SA 4.0</a></p>
+                    <!--I definitely could make images + captions contained this way without the extra div (to save a little typing if I was making a page with a ton of them) but this is fine + gives you more options for styling them as a unit.-->
+                </div>
+                <h3>Stealing Rocks</h3>
+                <p>HTML, like all programming, is a process of pasting 
+other people's code you find on forums into your own project until it 
+does what you want. A lot of places (Youtube, etc.) will even give you 
+embeddable HTML you can plop right into your own site. Check this out:</p>
+                <div class="inline">
+                    <iframe style="border: 0; width: 100%; height: 300px;" src="https://bandcamp.com/EmbeddedPlayer/album=1518073511/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" seamless="" f0l24w3yr="">&lt;a href="https://disasteradio.bandcamp.com/album/buy-now-deluxe-edition"&gt;BUY NOW (Deluxe Edition) by Eyeliner&lt;/a&gt;</iframe>
+                    <!--you can't do much to an iframe (embedded piece of a different site) for security reasons but you can apply a class to make it a certain size, etc.-->
+                </div>
+                <p>Anyway. I'm not going to write a whole "Learning 
+Basic HTML" guide in here. Just mess around with it and see what breaks.
+ HTML elements are nested boxes and they have IDs or classes (or are 
+just standard types of thing) that get referred to in the CSS and 
+painted according to those rules. If you're smart you can use 
+combinations of classes to make writing and typesetting content easy for
+ yourself. Or if you're like me you can slap together some big mess that
+ gives you a headache to edit every time.</p>
+            </section>
+            <section id="publish">
+                <h2>How to Publish</h2>
+                <h3>Uploading</h3>
+                <p>Getting your site public is easier and cheaper than ever. A really popular option these days is <a target="_blank" href="https://neocities.org/">Neocities</a>,
+ which is pretty easy to use and well-documented. They offer a paid plan
+ with extra storage and some other neat features, but you can make 
+something totally fleshed-out with the couple gigabytes you get for 
+free. Neocities also has an in-browser HTML editor and file manager, 
+which is so sick when you upload a page and realize there's a typo in 
+it.</p>
+                <p>If you want to set out on your own, I use <a target="_blank" href="https://www.netlify.com/">Netlify</a>
+ for all my sites. Netlify is a little intimidating because it's meant 
+for businesses, so it'll show you a bunch of popups about A/B testing 
+and node functions and other nerd stuff. But that also means it's free 
+to use as a regular person, so I just ignore all those and drag &amp; 
+drop my little folders.</p>
+                <p>Netlify also lets you upload a text file of automatic
+ redirects, which I think is pretty slick compared to using Linktree or 
+whatever—you can go to <a target="_blank" href="https://jackis.online/videos">jackis.online/videos</a> to get straight to my Youtube, for example.
+                </p><p>Anyway, using either of these services is pretty 
+straightforward, especially for a one-file site like this one. Just 
+rename it to <span class="mono">index.html</span>, upload it, and you're rolling.</p>
+                <h3>Getting a Domain</h3>
+                <p>Getting a custom domain name is optional, but I think it's cool. It does cost some money, depending where you buy it (I use <a target="_blank" href="https://www.namecheap.com/">Namecheap</a>), but if you buy a <a target="_blank" href="https://purpletoilet.com/">goofy domain nobody else wants</a> you're only gonna be looking at five or ten bucks a year.</p>
+                <p>To hook up a vanity URL to your site, you'll have to 
+do some stuff with DNS records. This process is different for every 
+domain broker and hosting platform, so just look for the instructions on
+ the service you chose. I believe in you.</p>
+            </section>
+            <section id="bonus">
+                <h2>Bonus</h2>
+                <p>I know I just said I'm not writing a whole guide to HTML, but here are a few tricks and tools I've found useful:</p>
+                <h3>Tools</h3>
+                <p><a target="_blank" href="https://meyerweb.com/eric/tools/css/reset/">Eric Meyer's CSS reset</a>
+ is a sheet that will reset all the weird annoying default properties 
+some HTML elements have. Keep in mind that stylesheets are applied in 
+the order they're linked.</p>
+                <p><a target="_blank" href="https://grid.layoutit.com/">LayoutIt</a>
+ is a great tool for making CSS grids and flexboxes and stuff. I love a 
+CSS grid but remembering all the right syntax is a pain. So just use 
+this.</p>
+                <p><a target="_blank" href="https://www.cssmatic.com/">CSSmatic</a> has some nice generators for things like gradients and shadows, which are also annoying to try and make by typing code.</p>
+                <p><a target="_blank" href="https://fonts.google.com/">Google Fonts</a> has a ton of open-source typefaces that are really easy to embed and use on your webpage. Some of them are even good!</p>
+                <p><a target="_blank" href="https://squoosh.app/">Squoosh</a>
+ is a tool for compressing images, which is handy if you're hosting them
+ yourself somewhere like Neocities with a storage cap. Or you could go 
+old-school:</p>
+                <p><a target="_blank" href="https://doodad.dev/dither-me-this/">Dither Me This</a> is for dithering images, which compresses them way more and looks cooler than JPEG compression. <a target="_blank" href="https://ditherit.com/">Dither It!</a> is a similar tool that gives you more options.</p>
+                <h3>Tips</h3>
+                <p>It's good manners to include <span class="mono">target="_blank"</span> on links to an external site. This makes the link open in a new tab.</p>
+                <p>CSS has a lot of features meant to make your site more accessible. Use them! Images have an <span class="mono">alt=""</span> tag for description text. <span class="mono">@media</span> queries can check a user's preferences for contrast and input device.</p>
+                <p>Margin goes outside of a box. Padding goes between 
+the box and its contents. Temporarily giving an element a bright 
+background color or border can help you figure out where its edges are.</p>
+                <p>Some special characters (&lt; and &gt;, etc.) need to
+ be typed in HTML as something else or the computer will choke on them. 
+For example, &amp; is encoded as <span class="mono">&amp;amp;</span>. This is dumb but what are you gonna do.</p>
+                <p>An <span class="mono">em</span> is a unit about the 
+size of a capital X in regular body text. It's good to use ems instead 
+of pixels for sizing &amp; moving things so they look right on more 
+screens.</p>
+                <p>The most important tip is to have fun :)</p>
+            </section>
+            <section id="secret">
+                <h2>Hello!</h2>
+                <p>This one-page style of website does allow you to have
+ sections that don't appear in the nav, since you choose what to type up
+ there. But it's still all visible in the source, so it's a bad hiding 
+place.</p>
+            </section>
+        </main>
+    
+    
+</body><!--
+
+This site and its code are 100% public domain and are free, forever, to modify and share. For more info:
+https://unlicense.org/
+
+If you found it useful and feel like tossing me a dollar, go ahead :)
+https://ko-fi.com/jackapedia
+
+--><style class="stylus">html, body {
+    scrollbar-width: none;
+}</style></html>

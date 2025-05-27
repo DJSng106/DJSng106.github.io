@@ -85,8 +85,6 @@
   }
   setTimeout(startClocks, 100);
 </script>
-
-
         <style>
             /* basic rules for whole site */
             * { 
@@ -354,72 +352,27 @@
                 width: 150px;
             }
 
-            /* attempt to contain the status cafe text in a pretty box */
-            block {
-                width: 18px;
-                height: 72px;
-                padding: 10px;
-                border: 5px solid black;
-                margin: 0;
-            }
-
         </style>
     </head>
     <body cz-shortcut-listen="true">
-
         <header>
             <h1>
                 <a href="#">Free Website</a> <!-- NO SHIT -->
             </h1>
             <nav>
-                <!--these links are anchors (note the hashtags). they target a specific section with a matching ID.-->
+                <!-- this where header links go -->
                 <a href="#home">Home</a>
-                <a class="inert">/</a>
-                <a href="#use">How to Use</a>
-                <a class="inert">/</a>
-                <a href="#publish">How to Publish</a>
-                <a class="inert">/</a>                
+                <a class="inert">/</a>          
                 <a href="https://www.jackis.online/freewebsiteinuse">In Use</a>
-                <a class="inert">/</a>
-                <a href="#bonus">Bonus</a>
             </nav>
         </header>
 
         <main>
-            <!--HOME-->
             <section id="home" style="pointer-events: auto;">
-                <!--see id="home"?
-                ^ yes, i see it. i know, that's how we make a section, you do not need to explain any further
-                i'm a dumbass but i got that off the bat :) -->
+
                 <h2>Home</h2>
-                <p>This is a raw, plain, uncooked website for you to mess with and make your own. It started as a version of <a target="_blank" href="https://github.com/cadars/john-doe/">this template</a>
- but I've overhauled and pretty thoroughly stripped it down; both in 
-order to make the filesize smaller (barely over 20 kilobytes!) and to 
-make it a little less intimidating if you have zero HTML knowledge. It's
- open-source, public domain, and totally free to modify and 
-redistribute.</p>
-                <div class="inline">
-                    <img loading="lazy" src="index_files/SyMr6R5.gif" alt="A GIF of Tim Heidecker saying 'It's free real estate.' I have edited the text flying out of his mouth to read 'It's Free Web Site' instead.">
-                </div>
-                <h3>How's it Work?</h3>
-                <p>Instead of one HTML file per page, this site is a 
-single document that uses  anchor links to show or hide different 
-sections. It's made entirely out of plain old hypertext — no Javascript,
- no databases, no problems. That makes it load all at once, which can be
- helpful for users on bad or temporary connections. It also makes it 
-much easier to edit and publish. The <span class="mono">:target</span> selector is <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/:target">an old standard</a> that works on all browsers &amp; devices. You can even refresh, use the back button, etcetera.</p>
-                <p>I've also marked up the code to try and make it 
-easier to understand by taking apart. It's not a complete guide to web 
-design by any means, but I think it'll be a fun introduction if (like 
-me) you enjoy learning by screwing around.</p>
-                <h3>What For?</h3>
-                <p>Whatever you want! Start a blog, or a <a href="https://nownownow.com/">"now" page</a>,
- or share your art, or write down some thoughts. Link to some stuff you 
-like or pages your friends made. Imagine an internet where the things 
-you make and say can live somewhere that belongs to you instead of a 
-billion-dollar app. Imagine an internet populated by more and smaller 
-and weirder websites that you can explore and discover at your leisure.</p>
-                <p>Right-click anywhere on this page and hit "Save As" to get started.</p>
+
+                
                 <h3>Format testing</h3>
                 <p>SORRY TO INTERRUPT TEMPLATE TESTER I NEED TO INSERT MY WIDGETS AND SEE HOW THIS OLD SHIT WORKS</p>
                 <p><block><div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=kam106" defer></script></block> <!-- Status Cafe -->
@@ -428,142 +381,16 @@ and weirder websites that you can explore and discover at your leisure.</p>
                 <!-- uhm i have a fucking problem ^^ why is it so fucking massive??? guess we need to contain this somehow -->
             </section>
 
-
-
-<!-- extra padding because i'm blind -->
-
-
-
-
-
-
-            <!--HOW TO USE-->
-            <section id="use">
-                <h2>How to Use</h2>
-                <p>Crack open this HTML file in a code editor (I happen to like <a target="_blank" href="https://brackets.io/">Brackets</a>, but you can use plain old Notepad if you want.)</p>
-                <h3>Under the Hood</h3>
-                <p>At the top is some technical stuff, then some embedding stuff like <span class="mono">meta-og-title</span>
- and etcetera. These are pieces that will show up in the embed card when
- you link to this site on Bluesky or Discord or somewhere. You can 
-include an image too, but you don't need to use any of this chunk if you
- don't want. (<a target="_blank" href="https://ogp.me/">More info on meta tags</a>)</p>
-                <p>Then you'll see the <span class="mono">&lt;style&gt;</span>
- section. This is where the CSS lives and gives the website its visual 
-style. CSS is capable of a lot of crazy tricks (especially if you want 
-to avoid learning Javascript), but it's also pretty easy to figure out. I
- love and highly recommend the <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/CSS">Mozilla CSS guide</a> for learning what you can do.</p>
-                <p>The HTML content is cut up into <span class="mono">&lt;section&gt;</span>s, each of which has an ID. This is how this website manages multiple pages, by using the <span class="mono">:target</span>
- selector and "anchor links," which are links to a specific element on a
- page instead of a different page. Otherwise the HTML in here is pretty 
-basic—just headers and paragraphs and links—so it should be pretty 
-simple to figure out, especially if you've ever inspected element on 
-Wikipedia to get a fake screenshot for a gag.</p>
-                <p>You can embed images and stuff with <span class="mono">img</span>
- tags and a URL, either to an image in the same folder as this HTML file
- or to an external host like imgur. It's good manners to use <span class="mono">loading=lazy</span> on images, especially if they're not on the homepage so they're not visible right away.</p>
-                <div class="inline">
-                    <img loading="lazy" src="index_files/JFe3Ii3.jpeg" alt="A photo of the ocean on a clear day.">
-                    <p><a target="_blank" href="https://commons.wikimedia.org/wiki/Category:Landscape_photography#/media/File:Cape_Perpetua_at_Oregon_Coast_6.jpg">Photo: Jeff Hollett / Wikimedia / CC BY-SA 4.0</a></p>
-                    <!--I definitely could make images + captions contained this way without the extra div (to save a little typing if I was making a page with a ton of them) but this is fine + gives you more options for styling them as a unit.-->
-                </div>
-                <h3>Stealing Rocks</h3>
-                <p>HTML, like all programming, is a process of pasting 
-other people's code you find on forums into your own project until it 
-does what you want. A lot of places (Youtube, etc.) will even give you 
-embeddable HTML you can plop right into your own site. Check this out:</p>
-                <div class="inline">
-                    <iframe style="border: 0; width: 100%; height: 300px;" src="https://bandcamp.com/EmbeddedPlayer/album=1518073511/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" seamless="" f0l24w3yr="">&lt;a href="https://disasteradio.bandcamp.com/album/buy-now-deluxe-edition"&gt;BUY NOW (Deluxe Edition) by Eyeliner&lt;/a&gt;</iframe>
-                    <!--you can't do much to an iframe (embedded piece of a different site) for security reasons but you can apply a class to make it a certain size, etc.-->
-                </div>
-                <p>Anyway. I'm not going to write a whole "Learning 
-Basic HTML" guide in here. Just mess around with it and see what breaks.
- HTML elements are nested boxes and they have IDs or classes (or are 
-just standard types of thing) that get referred to in the CSS and 
-painted according to those rules. If you're smart you can use 
-combinations of classes to make writing and typesetting content easy for
- yourself. Or if you're like me you can slap together some big mess that
- gives you a headache to edit every time.</p>
-            </section>
-            <section id="publish">
-                <h2>How to Publish</h2>
-                <h3>Uploading</h3>
-                <p>Getting your site public is easier and cheaper than ever. A really popular option these days is <a target="_blank" href="https://neocities.org/">Neocities</a>,
- which is pretty easy to use and well-documented. They offer a paid plan
- with extra storage and some other neat features, but you can make 
-something totally fleshed-out with the couple gigabytes you get for 
-free. Neocities also has an in-browser HTML editor and file manager, 
-which is so sick when you upload a page and realize there's a typo in 
-it.</p>
-                <p>If you want to set out on your own, I use <a target="_blank" href="https://www.netlify.com/">Netlify</a>
- for all my sites. Netlify is a little intimidating because it's meant 
-for businesses, so it'll show you a bunch of popups about A/B testing 
-and node functions and other nerd stuff. But that also means it's free 
-to use as a regular person, so I just ignore all those and drag &amp; 
-drop my little folders.</p>
-                <p>Netlify also lets you upload a text file of automatic
- redirects, which I think is pretty slick compared to using Linktree or 
-whatever—you can go to <a target="_blank" href="https://jackis.online/videos">jackis.online/videos</a> to get straight to my Youtube, for example.
-                </p><p>Anyway, using either of these services is pretty 
-straightforward, especially for a one-file site like this one. Just 
-rename it to <span class="mono">index.html</span>, upload it, and you're rolling.</p>
-                <h3>Getting a Domain</h3>
-                <p>Getting a custom domain name is optional, but I think it's cool. It does cost some money, depending where you buy it (I use <a target="_blank" href="https://www.namecheap.com/">Namecheap</a>), but if you buy a <a target="_blank" href="https://purpletoilet.com/">goofy domain nobody else wants</a> you're only gonna be looking at five or ten bucks a year.</p>
-                <p>To hook up a vanity URL to your site, you'll have to 
-do some stuff with DNS records. This process is different for every 
-domain broker and hosting platform, so just look for the instructions on
- the service you chose. I believe in you.</p>
-            </section>
-            <section id="bonus">
-                <h2>Bonus</h2>
-                <p>I know I just said I'm not writing a whole guide to HTML, but here are a few tricks and tools I've found useful:</p>
-                <h3>Tools</h3>
-                <p><a target="_blank" href="https://meyerweb.com/eric/tools/css/reset/">Eric Meyer's CSS reset</a>
- is a sheet that will reset all the weird annoying default properties 
-some HTML elements have. Keep in mind that stylesheets are applied in 
-the order they're linked.</p>
-                <p><a target="_blank" href="https://grid.layoutit.com/">LayoutIt</a>
- is a great tool for making CSS grids and flexboxes and stuff. I love a 
-CSS grid but remembering all the right syntax is a pain. So just use 
-this.</p>
-                <p><a target="_blank" href="https://www.cssmatic.com/">CSSmatic</a> has some nice generators for things like gradients and shadows, which are also annoying to try and make by typing code.</p>
-                <p><a target="_blank" href="https://fonts.google.com/">Google Fonts</a> has a ton of open-source typefaces that are really easy to embed and use on your webpage. Some of them are even good!</p>
-                <p><a target="_blank" href="https://squoosh.app/">Squoosh</a>
- is a tool for compressing images, which is handy if you're hosting them
- yourself somewhere like Neocities with a storage cap. Or you could go 
-old-school:</p>
-                <p><a target="_blank" href="https://doodad.dev/dither-me-this/">Dither Me This</a> is for dithering images, which compresses them way more and looks cooler than JPEG compression. <a target="_blank" href="https://ditherit.com/">Dither It!</a> is a similar tool that gives you more options.</p>
-                <h3>Tips</h3>
-                <p>It's good manners to include <span class="mono">target="_blank"</span> on links to an external site. This makes the link open in a new tab.</p>
-                <p>CSS has a lot of features meant to make your site more accessible. Use them! Images have an <span class="mono">alt=""</span> tag for description text. <span class="mono">@media</span> queries can check a user's preferences for contrast and input device.</p>
-                <p>Margin goes outside of a box. Padding goes between 
-the box and its contents. Temporarily giving an element a bright 
-background color or border can help you figure out where its edges are.</p>
-                <p>Some special characters (&lt; and &gt;, etc.) need to
- be typed in HTML as something else or the computer will choke on them. 
-For example, &amp; is encoded as <span class="mono">&amp;amp;</span>. This is dumb but what are you gonna do.</p>
-                <p>An <span class="mono">em</span> is a unit about the 
-size of a capital X in regular body text. It's good to use ems instead 
-of pixels for sizing &amp; moving things so they look right on more 
-screens.</p>
-                <p>The most important tip is to have fun :)</p>
-            </section>
-            <section id="secret">
-                <h2>Hello!</h2>
-                <p>This one-page style of website does allow you to have
- sections that don't appear in the nav, since you choose what to type up
- there. But it's still all visible in the source, so it's a bad hiding 
-place.</p>
+            <!-- TEMPLATE -->
+            <section id="temp">
+                <h1>Test</h1>
+                <p>test</p>
             </section>
         </main>
-    
-    
-</body><!--
+</body>
 
-This site and its code are 100% public domain and are free, forever, to modify and share. For more info:
+<!-- This site and its code are 100% public domain and are free, forever, to modify and share. For more info:
 https://unlicense.org/
-
-I'll remember to donate to you later! Leaving your link here for transparency :)
-Dj
 
 https://ko-fi.com/jackapedia -->
 

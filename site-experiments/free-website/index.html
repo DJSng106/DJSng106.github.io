@@ -46,7 +46,8 @@
   // ARTIST: json.track.artist['#text']
   
   document.getElementById("listening").innerHTML = `
-  <center>
+  <!-- hi, dj here. i modified some of the below to work best with this page -->
+  <!-- center -->
   <div class="cover">
       <img src="${json.track.image[1]['#text']}">
   </div>
@@ -56,7 +57,7 @@
       <div class="track" id="trackName">${json.track.name}</div>
       <div class="artist" id="artistName"><em>by</em> ${json.track.artist['#text']}</div>
   </div>
-  </center>
+  <!-- /center -->
       `
   };
 

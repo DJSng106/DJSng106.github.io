@@ -1,5 +1,6 @@
+<!-- Based on Free Website version v1.5.1, Jan 2025
+ Changes made by Dj for my own purposes -->
 <!DOCTYPE html>
-<!-- Based on Free Website version 1.5.1, January 2025-->
 <html lang="en"><head>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
         <meta charset="utf-8">
@@ -9,63 +10,45 @@
         <!--stuff that's important if you want an embedded preview of this site on discord, etc-->
         <meta property="og:title" content="Free Website">
         <meta property="og:description" content="A free website for you to make your own.">
-        <meta property="og:image" content="https://i.pinimg.com/736x/40/d0/cb/40d0cbe2ee49a9f4110c02ba3f661ff0.jpg"> <!-- i'm too fucking LAZY to put it in the github repo so... 
-        
-        VV thank you for your advice, i'll make sure to do the complete opposite of it -->
+        <meta property="og:image" content="https://i.pinimg.com/736x/40/d0/cb/40d0cbe2ee49a9f4110c02ba3f661ff0.jpg"> <!-- i'm too fucking LAZY to put it in the github repo so... -->
         <!--one thing that is annoying about meta tags is that every site (twitter, bluesky, etc) caches this stuff the first time you post a link and some sites only check again every few weeks or even never. so you'd better pick a good image the first time-->
 
         <!--font links-->
         <link rel="preconnect" href="https://rsms.me/">
         <link rel="stylesheet" href="index_files/inter.css">
         <!--there are two ways to get a font on a website: these links in the head or using @import in the css. i always use links. i think @import is mostly for like, emails?-->
-<!-- i accidently included unused last updated code here... whoops -->
+
   <script> /* this shit handles the last.fm stuff. let's go. */
       // this script is under the MIT license (https://max.nekoweb.org/resources/license.txt)
-      // this script controls playing song
                       
   const USERNAME = "RainbowxChaser"; // Put your LastFM username here
   const BASE_URL = `https://lastfm-last-played.biancarosa.com.br/${USERNAME}/latest-song`;
-  
   const getTrack = async () => {
   const request = await fetch(BASE_URL);
   const json = await request.json();
   let status
-  
   let isPlaying = json.track['@attr']?.nowplaying || false;
-  
   if(!isPlaying) {
-      // Trigger if a song isn't playing
       return;
   } else {
       // Trigger if a song is playing
   }
-  
-  // Values:
-  // COVER IMAGE: json.track.image[1]['#text']
-  // TITLE: json.track.name
-  // ARTIST: json.track.artist['#text']
-  
+
   document.getElementById("listening").innerHTML = `
-  <!-- hi, dj here. i modified some of the below to work best with this page -->
-  <!-- center -->
   <div class="cover">
       <img src="${json.track.image[1]['#text']}">
   </div>
-  <!-- haha i modified some of this because it was formatting like jank on my website -->
   <div id="trackInfo">
     <br>
       <div class="track" id="trackName">${json.track.name}</div>
       <div class="artist" id="artistName"><em>by</em> ${json.track.artist['#text']}</div>
   </div>
-  <!-- /center -->
       `
   };
-
   getTrack();
   setInterval(() => { getTrack(); }, 10000);
       </script>
-      <script>
-           
+      <script>     
   function dateToText(date) {
       var hours = date.getHours()
       var minutes = date.getMinutes();
@@ -102,6 +85,8 @@
   }
   setTimeout(startClocks, 100);
 </script>
+
+
         <style>
             /* basic rules for whole site */
             * { 

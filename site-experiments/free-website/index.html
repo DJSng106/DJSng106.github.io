@@ -100,7 +100,6 @@
   }
   setTimeout(startClocks, 100);
 </script>
-
         <style>
             /* basic rules for whole site */
             * { 
@@ -119,7 +118,7 @@
             }
             /* variables make it easier to recolor the whole site, plus some really simple scripting can add a button for dark mode. or, try activating this next chunk for an automatic dark mode based on the system theme */
 
-            /*
+            
             @media (prefers-color-scheme: dark) {
             *{
             --textcolor: #ffffff;
@@ -133,7 +132,7 @@
             font-weight: 350;
             }
             }
-            */
+            
 
             html{
                 background-color: var(--pagebg);
@@ -152,6 +151,7 @@
                 margin: 0;
                 margin-top: -1em;
                 /* a negative margin is also weird to do but I was getting a small strip of empty space at the top of the site and could not figure out why so i just accounted for it. it's okay to make websites this way! nobody looks at the code! */
+                /* ^ large incorrect buzzer */
                 max-width: 45em;
                 /* this sets the width of the body where all the content lives, but with paragraphs constrained to their own max width it mostly just moves the navbar around */
             }
@@ -396,8 +396,8 @@ and weirder websites that you can explore and discover at your leisure.</p>
                 <p>Right-click anywhere on this page and hit "Save As" to get started.</p>
                 <h3>Format testing</h3>
                 <p>SORRY TO INTERRUPT TEMPLATE TESTER I NEED TO INSERT MY WIDGETS AND SEE HOW THIS OLD SHIT WORKS</p>
-                <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=kam106" defer></script> <!-- Status Cafe --><br>
-                <div id="listening"><noscript>You need Javascript to see this.</noscript></div> <!-- now playing -->
+                <p><div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=kam106" defer></script> <!-- Status Cafe --></p><br>
+                <p><div id="listening"><noscript>You need Javascript to see this.</noscript></div></p> <!-- now playing -->
                 <!-- uhm i have a fucking problem ^^ why is it so fucking massive??? guess we need to contain this somehow -->
             </section>
             <!--HOW TO USE-->

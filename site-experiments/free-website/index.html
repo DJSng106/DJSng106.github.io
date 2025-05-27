@@ -18,12 +18,7 @@
         <link rel="preconnect" href="https://rsms.me/">
         <link rel="stylesheet" href="index_files/inter.css">
         <!--there are two ways to get a font on a website: these links in the head or using @import in the css. i always use links. i think @import is mostly for like, emails?-->
-
-        <!-- This shit makes the now playing widget fucking WORK! -->
-<style class="stylus">html, body {
-    scrollbar-width: none;
-}</style></html>
-<script>
+<script> /* uh this is what we need to do to get this stupoid shit to work, so let's go */
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
@@ -416,9 +411,9 @@ and weirder websites that you can explore and discover at your leisure.</p>
                 <p>Right-click anywhere on this page and hit "Save As" to get started.</p>
                 <h3>Format testing</h3>
                 <p>SORRY TO INTERRUPT TEMPLATE TESTER I NEED TO INSERT MY WIDGETS AND SEE HOW THIS OLD SHIT WORKS</p>
-                <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=kam106" defer></script> <!-- Status Cafe -->
-                <br>
+                <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=kam106" defer></script> <!-- Status Cafe --><br>
                 <div id="listening"><noscript>You need Javascript to see this.</noscript></div> <!-- now playing -->
+                <!-- uhm i have a fucking problem ^^ why is it so fucking massive??? guess we need to contain this somehow -->
             </section>
             <!--HOW TO USE-->
             <section id="use">

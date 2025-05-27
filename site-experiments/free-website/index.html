@@ -109,29 +109,25 @@
                 /*often you need to "reset" some stuff at the top of your stylesheet because many elements have default properties that are annoying to work around. see "bonus" */
 
                 /* color variables (these don't have to be hex codes. you can specify a color a bunch of ways or even use a background image) */
+                --textcolor: #FFFFFF;
+                --pagebg: #ffffff;
+                --sectionbg: #000000;
+                --links: #666666;
+                --mono: #363636;
+                --monobg: #eeeeee;
+                /* old values
                 --textcolor: #000000;
                 --pagebg: #ffffff;
                 --sectionbg: #ffffff;
                 --links: #666666;
                 --mono: #363636;
                 --monobg: #eeeeee;
+                */
             }
-            /* variables make it easier to recolor the whole site, plus some really simple scripting can add a button for dark mode. or, try activating this next chunk for an automatic dark mode based on the system theme */
+            /* variables make it easier to recolor the whole site, plus some really simple scripting can add a button for dark mode. */
 
             
-            @media (prefers-color-scheme: dark) {
-            *{
-            --textcolor: #ffffff;
-            --bgcolor: #26262D !important;
-            --links: #B2B2B2;
-            --mono: #ccc;
-            --monobg: #3f3f3f;
-            }
-            p{
-            letter-spacing: .025em;
-            font-weight: 350;
-            }
-            }
+            /* SORRY your code doesn't work well with my browser :( */
             
 
             html{

@@ -31,7 +31,9 @@ let authorLink = "https://spacehey.com/djsng"; // Enter your website, social med
   use a date it must still follow that format.*/
 let postsArray = [ 
 //[ "posts/2020-11-10-Special-Characters-Example.html", encodeURI( 'Spéci@l "Character\'s" Examp|e' ) ],
-//[ "posts/2020-11-10-My-Third-Post-Example.html" ],
+//[ "posts/2020-11-10-My-Third-Post-Example.html" ], 2025-06-05-Leaving-ROBLOX.html
+[ "posts/2025-06-05-ROBLOX-Update.html", encodeURI( 'Leaving ROBLOX: 5 Days Later' ) ],
+[ "posts/2025-06-05-Leaving-ROBLOX.html", encodeURI( 'Leaving ROBLOX: Reasons, Problems, What Now?' ) ],
 [ "posts/2025-05-28-Recognizing-Programs-in-Joel-Streams.html", encodeURI( 'Recognizing software in Vinesauce Streams' ) ],
 [ "posts/2025-05-21-To-Music-Presence.html", encodeURI( 'The Move to Music Presence: Fighting with Discord Rich Presence' ) ],
 [ "posts/2025-04-26-Fuck-Companies-1.html", encodeURI( 'Dear Corporations - A taste of a Rant On Competitors' ) ],

@@ -408,7 +408,14 @@ main details summary {
  <center><h3>Status</h3></center>
 <p><center><div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=kam106" defer></script><a href="https://www.imood.com/users/newgnx"><img src="https://moods.imood.com/display/uname-newgnx/trans-1/imood.gif" alt="The current mood of newgnx at www.imood.com" border="0"></a></center></p> <!-- Status Cafe -->
 <center><h3>Now Playing</h3></center>
-<p><center><small>If nothing shows up, I am probably not playing anything.</center><br></small><div id="listenbox"><div id="listening"><noscript>You need Javascript to see this.</noscript></div></div></p>
+<center><div class="header__inner">
+    <p>&#127911; <span id="song">&#8987;</span></p>
+</div>
+<div class="header__inner">
+    <p><small>last played song, powered by <a
+                href="https://github.com/biancarosa/lastfm-last-played"
+                target="_blank">@biancarosa's lastfm-last-played</a></small></p>
+</div></center></p>
 <center><h3>Links</h3></center>
 <nav id="main-menu">
 <ul><center>
@@ -493,34 +500,15 @@ THIS IS WHERE YOUR TEXT ACTUALLY GOES
 </main>
 </body>
 -->
-<script> /* this shit handles the last.fm stuff. let's go. */
-    // this script is under the MIT license (https://max.nekoweb.org/resources/license.txt)
-                    
-const USERNAME = "RainbowxChaser"; // Put your LastFM username here
-const BASE_URL = `https://lastfm-last-played.biancarosa.com.br/${USERNAME}/latest-song`;
-const getTrack = async () => {
-const request = await fetch(BASE_URL);
-const json = await request.json();
-let status
-let isPlaying = json.track['@attr']?.nowplaying || false;
-if(!isPlaying) {
-    return;
-} else {
-    // Trigger if a song is playing
-}
-
-document.getElementById("listening").innerHTML = `
-<center><div class="cover">
-    <img src="${json.track.image[1]['#text']}">
-</div>
-<div id="trackInfo">
-  <br>
-    <div class="track" id="trackName">${json.track.name}</div>
-    <div class="artist" id="artistName"><em>by</em> ${json.track.artist['#text']}</div>
-</div></center>
-    `
-};
-getTrack();
-setInterval(() => { getTrack(); }, 10000);
+<script type="text/javascript"> /* this should handle last.fm */
+    let user = 'RainbowxChaser';
+    let url = 'https://lastfm-last-played.biancarosa.com.br/' + user + '/latest-song';
+    let song = document.querySelector('#song');
+    fetch(url)
+        .then(function (response) {
+            return response.json()
+        }).then(function (json) {
+            song.innerHTML = json['track']['name'] + ' - ' + json['track']['artist']['#text'];
+        });
 </script>
 </html>

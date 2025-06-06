@@ -38,7 +38,6 @@ let postsArray = [
 [ "posts/2025-05-21-To-Music-Presence.html", encodeURI( 'The Move to Music Presence: Fighting with Discord Rich Presence' ) ],
 [ "posts/2025-04-26-Fuck-Companies-1.html", encodeURI( 'Dear Corporations - A taste of a Rant On Competitors' ) ],
 [ "posts/2025-04-06-Tech-World-Mess.html", encodeURI( 'the tech world is a mess' ) ],
-[ "posts/2025-04-05-On-Homestuck-Day.html", encodeURI( 'My birthday is on homestuck day?' ) ],
 [ "posts/2025-03-01-Where-My-Pixel-Warfare-Kids.html", encodeURI( 'Any Pixel Warfare gamers out there??' ) ],
 [ "posts/2025-01-01-Spacehey-Music-People-Yall-Not-Slick.html", encodeURI( 'producers, bands, etc PLEASE take notes' ) ],
 [ "posts/2024-12-31-Last-Blog-Of-2024.html", encodeURI( 'Last blog of 2024?' ) ],

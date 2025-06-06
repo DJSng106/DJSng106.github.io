@@ -53,7 +53,6 @@ let postsArray = [
 [ "posts/2024-10-06-A-Windows-Rant.html", encodeURI( 'Incompetence in Compensation: A Windows Rant' ) ],
 [ "posts/2024-09-12-Browsers-and-Other-Floorp.html", encodeURI( 'Browsers & Other Floorp: My History with Browsing' ) ],
 [ "posts/2024-09-08-Switching-to-Neocities.html", encodeURI( 'Switching to Neocities: The New Life' ) ],
-[ "posts/2024-09-07-Sky-Parody-Blog.html", encodeURI( 'Mystery Recipe to Try!!! From Undertale Yellow (Recipe and Review) (GOT ARRESTED)' ) ],
 [ "posts/2024-09-04-Last-Online.html", encodeURI( 'Last Online: The Ghosts of the Internet' ) ],
 [ "posts/2024-09-04-Things-To-Do-When-Bored-Explained.html", encodeURI( 'Breakdown of "Things to Do When Bored"' ) ],
 [ "posts/2024-09-04-Things-To-Do-When-Bored.html" ],

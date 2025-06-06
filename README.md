@@ -1,6 +1,12 @@
 # DJSng!
-A personal site at DJS4gnx.github.io to replace my original NeoCities domain. Powered by GitHub's amazing GitHub Pages service.  
-Because Rentry isn't really enough.
+A personal site at DJS4gnx.github.io, powered by GitHub's amazing GitHub Pages service.  
+Because Rentry isn't really enough.  
+
+# Official domains
+These are the only official places to visit the site.
+
+GitHub Pages - https://DJS4gnx.github.io  
+NeoCities - https://djsng.neocities.org
 
 # Credits
 [kalechips](https://kalechips.net) - Zonelets theme, index.html layout template  

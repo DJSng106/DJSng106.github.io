@@ -2,19 +2,20 @@
  * this version is simplified for easier color swapping!*/
 :root {
 
-  /* if we have a url for the bg we'd use this: --site-bg: url("images/startile.png"); /*
-  /*or like this for just a solid color:*/
+  /* if we have a url for the bg we'd use this: --site-bg: url("images/startile.png"); */
   --site-bg: black;
   
-  --post-bg: white;
+  --post-bg: #424242; /* backgrounds on posts */
   --hover-color: #FFE1C6;
-  --post-text: #4E223D;
-  --button-bg: #FFD2E0;
-  --border-color: #FB8AAB;
-  --accent-color: #DA587E;
-  --border-shadow: #DA587E80;
+  --post-text: #FFFFFF; /* post text color. */
+  --button-bg: #606160; /* this handles the status backdrop and button color */
+  --border-color: #4f4e4e; /* this handles the sidebar color */
+  --accent-color: #949494; /* this handles the handle color and stuff */
+  --border-shadow: #374039; /* border drop shadow on posts. this is self explanitory. */
   
-  /*these next two colors are for when you highlight text on the page*/
+  /* nami: these next two colors are for when you highlight text on the page
+     dj: yeah this looks fine, it stays
+  */
   --selected-bg: #bde0ff;
   --selected-text: #5244c8;
 }

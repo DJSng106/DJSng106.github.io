@@ -81,7 +81,7 @@
                     <li>my website!</li>
                     
                     <li>listening to:</li>
-                    <li>dan bull - bowling for liberty</li>
+                    <li><div class="header__inner"><span id="song"><small>Loading the last played song from last.fm! If this doesn't change, try refreshing the page!</small></span></div></li>
                     
                     <li>playing:</li>
                     <li>looking into that!</li>
@@ -99,8 +99,8 @@
                         future note: THIS NEEDS TO GO IN THE CSS TOO. OH MY GOD I'M SO DUMBBB
                  -->
                 <label><input type="radio" id="all" name="tag" checked>all</label>
+                <label><input type="radio" id="updates" name="tag">#updates</label>
                 <label><input type="radio" id="rant" name="tag">#rant</label>
-                <label><input type="radio" id="guide" name="tag">#guide</label>
             </details>
         </section>
         
@@ -109,8 +109,11 @@
 
         <article class="post updates">
             <div class="post-header">@djsng <time>6/11/2025, 11:25am</time></div>
-            <p>Well, fuck... I finally got this new little bit set up. Glad to clean up my home page just a little bit :D</p>
+            <p>Well, fuck... I finally got this new little bit set up. Glad to clean up my home page just a little bit! Plus, I get to have a mini Tumblr in my own lawn! :D</p>
             <p>I'm so happy Nami set up her blog as a template!!! I wanted a cleaner implimentation for my status!</p>
+            <section class="tags">
+                <a href="#updates">#updates</a><span>#first post</span> 
+            </section>
         </article>
         
         <!--each post should use the "article" element. set its class to "post", and add any tags that you use with spaces separating them. this is how it knows which posts to filter when you click the buttons above!-->
@@ -172,4 +175,17 @@
     </footer>      
     </div>
   </body>
+
+  <script type="text/javascript"> /* this should handle last.fm */
+    let user = 'RainbowxChaser';
+    let url = 'https://lastfm-last-played.biancarosa.com.br/' + user + '/latest-song';
+    let song = document.querySelector('#song');
+    fetch(url)
+        .then(function (response) {
+            return response.json()
+        }).then(function (json) {
+            song.innerHTML = json['track']['name'] + ' - ' + json['track']['artist']['#text'];
+        });
+</script>
+
 </html>

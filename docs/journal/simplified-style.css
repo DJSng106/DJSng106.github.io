@@ -1,9 +1,10 @@
 /* these are the site colors, replace them with anything you want!
  * this version is simplified for easier color swapping!*/
 :root {
-  --site-bg: url("images/startile.png");
+
+  /* if we have a url for the bg we'd use this: --site-bg: url("images/startile.png"); /*
   /*or like this for just a solid color:*/
-  /*--site-bg: #FFE1C6; */
+  --site-bg: black;
   
   --post-bg: white;
   --hover-color: #FFE1C6;

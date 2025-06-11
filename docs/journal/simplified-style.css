@@ -348,14 +348,19 @@ main {
 /*css for hiding posts*/
 .tagged:has(input:checked) article {display: none;}
 
-/*add new tags to filter here!
+/*  add new tags to filter here!
  * follow the class naming conventions (no spaces, don't start it with a number)
  * remember on the actual page you can write the tag however you want!*/
 .tagged:has(#all:checked) article,
-.tagged:has(#intro:checked) article[class~="intro"],
-.tagged:has(#personal:checked) article[class~="personal"],
-.tagged:has(#secret:checked) article[class~="secret"],
+.tagged:has(#guide:checked) article[class~="guide"],
+.tagged:has(#rant:checked) article[class~="rant"],
 .tagged:has(#art:checked) article[class~="art"] {display: inline-block;}
+
+/* 
+.tagged:has(#secret:checked) article[class~="secret"],
+
+^^ old sections
+*/
 
 /*tag filter button styles (there's a lot)*/
 #tag-filters label {

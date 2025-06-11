@@ -355,6 +355,7 @@ main {
 .tagged:has(#guide:checked) article[class~="guide"],
 .tagged:has(#rant:checked) article[class~="rant"],
 .tagged:has(#updates:checked) article[class~="updates"],
+.tagged:has(#yap:checked) article[class~="yap"],
 .tagged:has(#art:checked) article[class~="art"] {display: inline-block;}
 
 /* 

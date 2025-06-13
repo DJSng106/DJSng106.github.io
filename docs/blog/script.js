@@ -32,6 +32,7 @@ let authorLink = "https://spacehey.com/djsng"; // Enter your website, social med
 let postsArray = [ 
 //[ "posts/2020-11-10-Special-Characters-Example.html", encodeURI( 'Spéci@l "Character\'s" Examp|e' ) ],
 //[ "posts/2020-11-10-My-Third-Post-Example.html" ], 2025-06-05-Leaving-ROBLOX.html
+  [ "posts/2025-06-13-Minecraft-Whitelisted-Server-Searching.html", encodeURI( 'The frustration of Minecraft server hunting: an interactive experience' ) ],
 [ "posts/2025-06-12-ROBLOX-Update.html", encodeURI( 'Leaving ROBLOX: Relapse - A 10 day strike' ) ],
 [ "posts/2025-06-09-Life-Update.html", encodeURI( 'Life Update (6/9/25)' ) ],
 [ "posts/2025-06-05-ROBLOX-Update.html", encodeURI( 'Leaving ROBLOX: 5 Days Later' ) ],

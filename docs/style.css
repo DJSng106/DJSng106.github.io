@@ -2,7 +2,7 @@
 
 /* changelog css */
 .changelog {
-height: 200px;
+height: 120px;
 width: 300px;
 overflow-x: hidden;
 overflow-y: scroll;
@@ -23,9 +23,6 @@ overflow-y: scroll;
 #statuscafe-content {
     margin: 0 1em 0.5em 1em;
 }
-
-
-
 
 
 

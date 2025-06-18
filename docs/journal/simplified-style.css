@@ -347,13 +347,6 @@ main {
 
 .tagged:has(input:checked) article {display: none;} /* this css makes all work */
 
-/* we also need to make yap turned on by default but togglable. but we also need to allow posts with yap **and** another tag.
-chatgpt proposed this mess. i hope it works. the internet isnt helpful */
-
-.tagged:has(#yap:checked) article[class~="yap"]:not([class~="updates"]):not([class~="rant"]):not([class~="vent"]):not([class~="demos"]):not([class~="art"]) {
-  display: none !important;
-}
-
 /* we handled this differently a few ways. i'll archive them here
 
 
@@ -384,11 +377,12 @@ this will hide yap by default: .tagged:not(#yap:checked) article[class~="yap"] {
 .tagged:has(#yap:checked) article[class~="yap"],
 .tagged:has(#art:checked) article[class~="art"] {display: inline-block;}
 
-/* 
-.tagged:has(#secret:checked) article[class~="secret"],
+/* we also need to make yap turned on by default but togglable. but we also need to allow posts with yap **and** another tag.
+chatgpt proposed this mess. i hope it works. the internet isnt helpful */
 
-^^ old sections
-*/
+.tagged:has(#yap:checked) article[class~="yap"]:not([class~="updates"]):not([class~="rant"]):not([class~="vent"]):not([class~="demos"]):not([class~="art"]) {
+  display: none !important;
+}
 
 /*tag filter button styles (there's a lot)*/
 #tag-filters label {

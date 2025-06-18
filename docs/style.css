@@ -2,8 +2,8 @@
 
 /* changelog css */
 .changelog {
-height: 170px;
-width: 350px;
+height: 200px;
+width: 300px;
 overflow-x: hidden;
 overflow-y: scroll;
 }

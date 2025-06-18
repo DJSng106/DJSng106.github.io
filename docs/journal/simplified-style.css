@@ -346,7 +346,6 @@ main {
 }
 
 .tagged:has(input:checked) article {display: none;} /* this css makes post hiding all work */
-.tagged:not(#sensitive:checked) article[class~="sensitive"] {display: none !important;} /* barr sensitive content behind a one click */
 
 /* this handles all the tags. SPACES NOT ALLOWED!
 also no starting with numbers, but maybe don't use numbers anyway */
@@ -370,7 +369,7 @@ chatgpt supposed using [class~="blabla"] over and over, but using nami's (#blabl
   display: none !important;
 }
 
-
+.tagged:not(#sensitive:checked) article[class~="sensitive"] {display: none !important;} /* hide sensitive content when its not enabled */
 
 /*tag filter button styles (there's a lot)*/
 #tag-filters label {

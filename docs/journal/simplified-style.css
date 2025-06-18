@@ -369,8 +369,6 @@ chatgpt supposed using [class~="blabla"] over and over, but using nami's (#blabl
   display: none !important;
 }
 
-.tagged:not(#sensitive:checked) article[class~="sensitive"] {display: none !important;} /* hide sensitive content when its not enabled */
-
 /*tag filter button styles (there's a lot)*/
 #tag-filters label {
   background: var(--button-bg);

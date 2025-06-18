@@ -365,11 +365,13 @@ the code was partially created by chatgpt, because i could not figure out throug
 
 chatgpt supposed using [class~="blabla"] over and over, but using nami's (#blabla:checked) formatting works better. so, it's decided! */
 
+.tagged:has(#sensitive:checked) article[class~="sensitive"] /* barr sensitive content behind a one click */
+
 .tagged:has(#yap:checked) article[class~="yap"]:not(#updates:checked):not(#rant:checked):not(#vent:checked):not(#demos:checked):not(#art:checked) {
   display: none !important;
 }
 
-.tagged:has(#sensitive:checked) article[class~="sensitive"] {display: inline-block;} /* barr sensitive content behind a one click */
+
 
 /*tag filter button styles (there's a lot)*/
 #tag-filters label {

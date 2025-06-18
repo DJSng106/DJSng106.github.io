@@ -357,18 +357,6 @@ also no starting with numbers, but maybe don't use numbers anyway */
 .tagged:has(#yap:checked) article[class~="yap"],
 .tagged:has(#art:checked) article[class~="art"] {display: inline-block;}
 
-/* this button allows the user to hide all yap. what will count as "yap" is currently debatable. yap is enabled by default
-
-i wanted my journal to be a twitter alternative for myself, but some users might ONLY want to see updates and projects, so here you go. i might remove this later
-
-the code was partially created by chatgpt, because i could not figure out through the internet if you could chain togther :not() stuff and whatnot. so thanks, i'll try to rely on you never again
-
-chatgpt supposed using [class~="blabla"] over and over, but using nami's (#blabla:checked) formatting works better. so, it's decided! */
-
-.tagged:has(#yap:checked) article[class~="yap"]:not(#updates:checked):not(#rant:checked):not(#vent:checked):not(#demos:checked):not(#art:checked) {
-  display: none !important;
-}
-
 /*tag filter button styles (there's a lot)*/
 #tag-filters label {
   background: var(--button-bg);

@@ -350,13 +350,17 @@ main {
 /* we also need to make yap turned on by default but togglable. but we also need to allow posts with yap **and** another tag.
 chatgpt proposed this mess. i hope it works. the internet isnt helpful */
 
-.tagged:has(#yap:checked) article[class~="yap"]:not(#updates:checked):not(#rant:checked):not(#vent:checked):not(#demos:checked):not(#art:checked) {
-  display: none;
+.tagged:has(#yap:checked) article[class~="yap"]:not([class~="updates"]):not([class~="rant"]):not([class~="vent"]):not([class~="demos"]):not([class~="art"]) {
+  display: none !important;
 }
 
 /* we handled this differently a few ways. i'll archive them here
 
 
+same thing as one below but with checked. this creates the opposite problem -- other tags with yap are ALWAYS hidden:
+.tagged:has(#yap:checked) article[class~="yap"]:not(#updates:checked):not(#rant:checked):not(#vent:checked):not(#demos:checked):not(#art:checked) {
+  display: none;
+}
 
 this will show yap by default by hide it, but always show posts that have yap AND other tags: .tagged:has(#yap:checked) article[class~="yap"]:not([class~="updates"]):not([class~="rant"]):not([class~="vent"]):not([class~="demos"]):not([class~="art"]) {
   display: none;

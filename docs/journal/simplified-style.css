@@ -346,7 +346,31 @@ main {
 }
 
 .tagged:has(input:checked) article {display: none;} /* this css makes all work */
-.tagged:not(#yap:checked) article[class~="yap"] {display: none;} /* don't display yap by default */
+
+/* we also need to make yap turned on by default but togglable. but we also need to allow posts with yap **and** another tag.
+chatgpt proposed this mess. i hope it works. the internet isnt helpful */
+
+.tagged:has(#yap:checked) article[class~="yap"]:not([class~="updates"]) {
+    display: none;
+}
+.tagged:has(#yap:checked) article[class~="yap"]:not([class~="rant"]) {
+    display: none;
+}
+.tagged:has(#yap:checked) article[class~="yap"]:not([class~="vent"]) {
+    display: none;
+}
+.tagged:has(#yap:checked) article[class~="yap"]:not([class~="demos"]) {
+    display: none;
+}
+.tagged:has(#yap:checked) article[class~="yap"]:not([class~="art"]) {
+    display: none;
+}
+
+
+/* we handled this differently a few ways. i'll archive them here
+
+this will show yap by default: .tagged:has(#yap:checked) article[class~="yap"] {display: none;}
+this will hide yap by default: .tagged:not(#yap:checked) article[class~="yap"] {display: none;} /*
 
 /*  add new tags to filter here!
  * follow the class naming conventions (no spaces, don't start it with a number)

@@ -345,8 +345,8 @@ main {
   text-decoration: underline;
 }
 
-/*css for hiding posts*/
-.tagged:has(input:checked) article {display: none;}
+.tagged:has(input:checked) article {display: none;} /* this css makes all work */
+.tagged:has(#yap:unchecked) article[class~="yap"] {display: none;} /* don't display yap by default */
 
 /*  add new tags to filter here!
  * follow the class naming conventions (no spaces, don't start it with a number)

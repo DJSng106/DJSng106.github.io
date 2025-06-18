@@ -346,7 +346,7 @@ main {
 }
 
 .tagged:has(input:checked) article {display: none;} /* this css makes post hiding all work */
-.tagged:has(#none:checked) article[class~="sensitive"] {display: none;} /* barr sensitive content behind a one click */
+.tagged:has(#none:checked) article[class~="sensitive"] {display: none !important;} /* barr sensitive content behind a one click */
 
 /* this handles all the tags. SPACES NOT ALLOWED!
 also no starting with numbers, but maybe don't use numbers anyway */

@@ -346,6 +346,7 @@ main {
 }
 
 .tagged:has(input:checked) article {display: none;} /* this css makes post hiding all work */
+.tagged:has(#sensitive:checked) article[class~="sensitive"] {display: auto;} /* barr sensitive content behind a one click */
 
 /* this handles all the tags. SPACES NOT ALLOWED!
 also no starting with numbers, but maybe don't use numbers anyway */
@@ -364,8 +365,6 @@ i wanted my journal to be a twitter alternative for myself, but some users might
 the code was partially created by chatgpt, because i could not figure out through the internet if you could chain togther :not() stuff and whatnot. so thanks, i'll try to rely on you never again
 
 chatgpt supposed using [class~="blabla"] over and over, but using nami's (#blabla:checked) formatting works better. so, it's decided! */
-
-.tagged:has(#sensitive:checked) article[class~="sensitive"] /* barr sensitive content behind a one click */
 
 .tagged:has(#yap:checked) article[class~="yap"]:not(#updates:checked):not(#rant:checked):not(#vent:checked):not(#demos:checked):not(#art:checked) {
   display: none !important;

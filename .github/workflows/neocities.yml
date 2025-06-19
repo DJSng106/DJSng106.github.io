@@ -1,4 +1,4 @@
-name: Upload Changes to NeoCities
+name: Host with NeoCities
 
 on:
   push:

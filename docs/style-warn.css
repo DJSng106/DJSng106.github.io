@@ -18,14 +18,11 @@
 }
 
 
-
 body {
-  font: 'Inter';
-  font-size: 16px; /* make ems mean something. i think */
-  max-width: 64em; /* padding. idk */
-  margin: 0 auto; /* this does all the centering magic to make it look like free website */
-}
-
+  max-width: 64em; /* this forces the text to a certain width. basically all the magic */
+  margin: 0 auto; /* centers the stuff */
+  padding: 15px; /* pad the text so it's not taking everything up */
+} 
 
 /* below here is all kalechips */
 
@@ -46,7 +43,7 @@ body {
 } */
 
 /* Alternate colors */
-/* Forced dark mode colors */
+/* I forced dark mode colors by default because I prefer it that way */
   :root {
     --color:#DCD7C9;
     --background:#2C3639;

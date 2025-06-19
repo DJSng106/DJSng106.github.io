@@ -1,5 +1,5 @@
 # DJSng!
-~~A personal site at DJS4gnx.github.io, powered by GitHub's amazing GitHub Pages service.~~ A replacement for my original markdown-based rentry.org about me page, with provided hosting by Neocities and GitHub.  
+A replacement for my original markdown-based rentry.org about me page, with provided hosting by Neocities and GitHub. Powered by Deploy2Neocities and GitHub Pages  
 
 # Official domains
 These are the only official places to visit the site.

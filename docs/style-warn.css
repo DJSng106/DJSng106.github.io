@@ -92,22 +92,22 @@ p {
 }
 
 main h1 {
-  font:26pt Georgia, Times New Roman, sans-serif;
+  font:26pt /* Georgia, Times New Roman, sans-serif*/;
   margin:5px 0 5px 0;
 }
 
 main h2 {
   margin:10px 0 10px 0;
-  font:23pt Georgia, Times New Roman, serif;
+  font:23pt /*Georgia, Times New Roman, serif*/;
 }
 
 main h3 {
   margin:5px 0 5px 0;
-  font: 18.5pt Georgia, Times New Roman, serif;
+  font: 18.5pt /*Georgia, Times New Roman, serif*/;
 }
 
 main h4 {
-  font:13pt Georgia, Times New Roman, serif;
+  font:13pt /*Georgia, Times New Roman, serif*/;
   font-style:italic;
   margin:5px 0 20px 0;
 }

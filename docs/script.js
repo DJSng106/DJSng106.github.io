@@ -56,8 +56,7 @@ let postsArray = [
 [ "posts/2024-08-26-The-Switch-From-Spotify.html", encodeURI( 'The Switch from Spotify: foobar2000 + the many players out there' ) ],
 [ "posts/2024-08-09-The-Games-Rant.html", encodeURI( 'The Games: A Bloody Downgrade' ) ],
 [ "posts/2024-05-24-The-Classic-Rant.html", encodeURI( 'The Classic: A Repeat of the Past' ) ],
-[ "posts/2023-03-16-Flash-Games-Long-Gone.html", encodeURI( 'Are Flash Games long gone?' ) ],
-[ "posts/2023-03-14-WACUP-is-Awesome.html", encodeURI( 'WACUP is awesome.' ) ]
+[ "posts/2023-03-16-Flash-Games-Long-Gone.html", encodeURI( 'Are Flash Games long gone?' ) ]
 ];
 
 //==[ 2b. FETCH RSS ]==

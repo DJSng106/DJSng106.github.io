@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJSng's Mini-Blog</title>
+    <meta name="author" content="DJSng">
+    <!-- ^^ this value seems to only be set when using the github pages mirror... -->
+    <meta name="description" content="A miniblog for everything DJS.">
+    <link rel="icon" href="https://files.catbox.moe/yzplfv.jpg">
+    <link href="./simplified-style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+
+    <div id="container">
+
+    <aside id="sidebar">
+        <div class="flex">
+            
+            <div id="icon">
+                <a href="./"> <!-- i'll have to remember this hack -->
+                    <img src="https://files.catbox.moe/yzplfv.jpg" alt="icon" width="120" height="120"> <!-- the image size has to be manually set this way. thank god i remember my experience with korephase.cf -->
+                </a>
+            </div>
+            
+            <section id="profile">
+                <h1>
+                    <a href="./">DJSng</a>
+                </h1>
+                <p>Genderqueer canadian writer, musician and yapper.</p>
+                
+                <div id="bio">
+                    <p>pronouns: they/she/he/any</p>
+                    <p>age: 19</p>
+                    <p><a href="../">go back</a></p>
+                </div>
+                <p>Hello, I'm Dj. I wanted a website to put some links, talk about myself and host a blog for myself.<br><br>
+                All posts are in my timezone and may be completely different from yours. Hover over tag filters to view descriptions!</p><br>
+            </section>
+        </div>
+        <nav>
+        <ul>
+            <li><a href="../">Home</a></li>
+            <li><a href="../blog/index.html">Long blog</a></li>
+            <li><a href="../resources">Resources</a></li>
+            <li><a href="../archive">Archives</a></li>
+            <li><a href="https://djsng.atabook.org">Guestbook</a></li>
+        </ul>
+        </nav>
+        
+        <!--i made it so the stamps section here only shows up on desktop
+        VV when we get a button i'll put one here
+        <section id="stamps" class="center pc-only">
+            <a target="_blank" href="https://neocities.org/">
+                <img src="images/site-button.gif" alt="site button">
+            </a>
+        </section>
+        -->
+    </aside>
+    <main class="tagged">
+        <section id="status" class="pinned">
+            <details open>
+                <summary>status <time>6/18/2025</time></summary>
+                <ul>
+                    <li>working on:</li>
+                    <li>getting a break. i fiddled with this css enough</li>
+                    
+                    <li>listening to:</li>
+                    <li><div class="header__inner"><span id="song"><small>Loading the last played song from last.fm! If this doesn't change, try refreshing the page!</small></span></div></li>
+                    
+                    <li>playing:</li>
+                    <li>Minecraft & Ultrakill</li>
+                </ul>
+            </details>
+        </section>
+        <section id="tag-filters" class="pinned">
+            <details open>
+                <summary>tag filters</summary>
+                 
+                <label title="disable any post filters and show all posts"><input type="radio" id="all" name="tag" checked>view all</label>
+                <label title="shows only updates for projects, new blog posts and my life. good if you want to know ONLY what was announced or updated that i made and/or a life issue that i'm currently going through"><input type="radio" id="updates" name="tag">#updates</label>
+                 <label title="shows only posts that feature a demo that i posted or a track that somebody i know allowed me to share."><input type="radio" id="demos" name="tag">#demos</label>
+                <label title="show only rants. ranges from long threads that complain about social issues to very small tweet sized rants about stuff that happens everyday. may contain sensitive content, you will be warned beforehand"><input type="radio" id="rant" name="tag">#rant</label>
+                <label title="shows post meant to vent. similar to rants but they have a more somber taste compared to rants"><input type="radio" id="vent" name="tag">#vent</label>
+                <label title="show artwork. this is exclusively about roblox rendering and NOTHING ELSE"><input type="radio" id="art" name="tag">#art</label>
+            </details>
+        </section>
+
+        <!-- all valid tags
+
+        <a href="#updates">#updates</a>
+        <a href="#yap">#yap</a>
+        <a href="#rant">#rant</a>
+        <a href="#vant">#vant</a>
+        <a href="#art">#art</a>
+        <a href="#demos">#demos</a>
+
+        --> 
+
+
+        <article class="post yap updates">
+            <div class="post-header">@djsng <time>6/19/2025, 9:00pm</time></div>
+            <p>i'm at a crossroads with my page rn</p>
+
+            <details class="readmore">
+                <summary>(18+) reveal sensitive content</summary>
+                <p>The following content includes mentions of sexual themes.</p>
+                    <details class="readmore">
+                <summary>read anyway</summary>
+                <p>the thing is, i wanted my site to be PG-13 from the start. i didn't want to mention stuff about roblox porn games and pedophiles roaming roblox and the porn developer being invited to roblox' events or anything</p>
+                <p>but with how bad these issues have gotten, plus my natural instinct being to rant about these things... where can i even put these rants? i hate twitter, i hate tumblr, i worry about being restricted. i don't want to make my site strictly 18+, but i don't want to leave out these rants either. like obviously i'd not do it often, but i still need to rant and make even just one blog post about roblox's clear sex problems.</p>
+                <p>so what can i do? i have a warning set up on my neocities page right now. i tried to explain as clearly as possible that i might talk about pedophiles and roblox's sexual content crisis, but i can't help but feel it's not good enough. like i need to clearly do more for this stuff.</p>
+                <p>and on top of that i worry so much about platform bans. spacehey has strict moderation -- will i get banned for mirroring that kind of discussion and content? neocities has a 18+ toggle if you show pornography -- what if the rules have changed since then and i get my site completely striken down for talking about roblox having porn games hidden in the surface? what if i have to strictly be an 18+ page, even though i also want to focus on PG-13 stuff that has zero mention of sexual themes at all?</p>
+                <p>fuuuck i don't know what to do. i'm so anxious, because handling this wrong is obviously very bad, but some people on the internet tend to have no remorse or no real think ahead. bad content is bad content, right? you have to get rid of it and stop it at all costs, but accidents happen. and i don't want to have to be handholded through ideas, but i don't want to fuck up royally either</p>
+            </details></details>
+            <section class="tags"><a href="#yap">#yap</a><a href="#updates">#updates</a></section>
+        </article>
+
+        <article class="post yap">
+            <div class="post-header">@djsng <time>6/19/2025, 5:48pm</time></div>
+            <p>still so paranoid about having an ssd cause i know it can die at any point if i write too much, but i'll never be able to predict that</p>
+            <section class="tags"><a href="#yap">#yap</a></section>
+        </article>
+
+        <article class="post yap">
+            <div class="post-header">@djsng <time>6/19/2025, 5:34pm</time></div>
+            <p>i helped somebody setup deploy to neocities with github's magic! so proud rn cause it went smooth</p>
+            <section class="tags"><a href="#yap">#yap</a></section>
+        </article>
+
+        <article class="post updates">
+            <div class="post-header">@djsng <time>6/19/2025, 4:30pm</time></div>
+            <p>i made a <a href="../sitemap.html">sitemap!</a></p>
+            <section class="tags"><a href="#updates">#updates</a></section>
+        </article>
+
+        <article class="post yap">
+            <div class="post-header">@djsng <time>6/19/2025, 4:15pm</time></div>
+            <p>there went spacehey again</p>
+            <section class="tags"><a href="#yap">#yap</a></section>
+        </article>
+
+        <article class="post yap">
+            <div class="post-header">@djsng <time>6/19/2025, 2:28pm</time></div>
+            <p>internet archive was generous enough to save my <a href="https://web.archive.org/web/20230421115716/https://rentry.co/silvermcsetup">original minecraft clients rant</a> from april 2023. that's very cool but i wish i had the june 2023 one still</p>
+            <section class="tags"><a href="#yap">#yap</a></section>
+        </article>
+
+        <article class="post yap">
+            <div class="post-header">@djsng <time>6/19/2025, 12:01am</time></div>
+            <p>god damnit i fat fingered the wrong emoji for status cafe</p>
+            <section class="tags"><a href="#yap">#yap</a></section>
+        </article>
+
+        <article class="post yap">
+            <div class="post-header">@djsng <time>6/18/2025, 11:56pm</time></div>
+            <p>i restored some stuff from my old github commit archive of my site <a href="https://djsng.neocities.org/archive/">and put it in my archives</a> tonight for all of neocities to see. i made some minor changes to make everything work with relative paths (in case i need to move stuff around again) and also to remove some dead stuff. i know 100% i didn't get it all.</p>
+            <p>i'm going to bed now. hopefully didn't fuck up on a masterful level doing this. i'm going to miss the fact i had some old builds i could have uploaded.</p>
+            <p>I think the feburary 2022 build might be the /kore/ one in archives, actually</p>
+            <section class="tags"><a href="#yap">#yap</a></section>
+        </article>
+
+        <article class="post yap">
+            <div class="post-header">@djsng <time>6/18/2025, 10:11pm</time></div>
+            <p>hosts a mirror of a friend's project out of boredom. enters advanced web design territory. <b>i am stupid as fuck and had to be handholded through it</b></p>
+            <p>this is not coping!</p>
+            <section class="tags"><a href="#yap">#yap</a></section>
+        </article>
+
+        <article class="post yap">
+            <div class="post-header">@djsng <time>6/18/2025, 10:00pm</time></div>
+            <p>congratulations bad end theatre for making it to consoles!</p>
+            <p><small><s>and thank you wintr for reverse adding me to your website, that was absolutely not necessary, even though i don't have a god damn fucking button yet</s> they put somebody else's page in place of mine by accident</small></p>
+            <section class="tags"><a href="#yap">#yap</a></section>
+        </article>
+
+        <article class="post updates">
+            <div class="post-header">@djsng <time>6/18/2025, 8:40pm</time></div>
+            <p>i forked <a href="https://github.com/DJS4gnx/mycord">oldcord</a> so i could back up my preferences with github and make server tags an opt-in. go check it out or something.</p>
+            <section class="tags"><a href="#updates">#updates</a></section>
+        </article>
+
+        <article class="post yap rant updates">
+            <div class="post-header">@djsng <time>6/18/2025, 6:07pm</time></div>
+            <p>i've been fussing with css for like an hour now. i had to ask chatgpt to help me create a tag filter button on this very page and i really did not want to rely on ai. i just couldn't think of any possible crackhead idea. i cannot make a button to hide sensitive content oh well i'll keep using the double read more solution for now! fuck css</p>
+            <p>it didn't work anyway</p>
+            <section class="tags"><a href="#yap">#yap</a><a href="#rant">#rant</a><a href="#updates">#updates</a></section>
+        </article>
+
+        <article class="post yap">
+            <div class="post-header">@djsng <time>6/18/2025, 2:38pm</time></div>
+            <p>github's been going down quite a bit</p>
+            <section class="tags"><a href="#yap">#yap</a></section>
+        </article>
+
+        <article class="post yap">
+            <div class="post-header">@djsng <time>6/18/2025, 12:18am</time></div>
+            <p>"what's so good about neoforge"<br>
+                over a year later: <b>native forge sodium.</b></p>
+                <p>only with neoforge(tm)</p>
+                <p>gn all</p>
+            <section class="tags"><a href="#yap">#yap</a></section>
+        </article>
+
+        <article class="post yap">
+            <div class="post-header">@djsng <time>6/17/2025, 11:40pm</time></div>
+            <p>nooooo you almost solved the gap between fabric and neoforge! you almost solved it! all you had to do is make a viafabricplus alternative for forge that includes plus's client fixes NOOOOOOOOOOOO</p>
+            <section class="tags"><a href="#yap">#yap</a></section>
+        </article>
+
+        <article class="post yap">
+            <div class="post-header">@djsng <time>6/17/2025, 5:12pm</time></div>
+            <p>roblox needs to get all those thumbs out of their ass</p>
+            <details class="readmore">
+                <summary>(18+) reveal sensitive content</summary>
+                <p>The following content includes mentions of sexual themes.</p>
+                    <details class="readmore">
+                <summary>read anyway</summary>
+                <p>you cannot be oblivious enough to ban then unban a porn game developer, allow them time to transfer their shit to another account, AND INVITE THEM TO YOUR EVENT. is the development team full of people with brain disorders?</p></details></details>
+                <p>like you cannot willingly tell me this event will be generational without lying to my fucking face??? like no, it's gonna be shit? roblox is day by day proving i don't want to stay on it's dysfunctional platform any longer???</p>
+            <section class="tags"><a href="#yap">#yap</a></section>
+        </article>
+
+        <article class="post yap">
+            <div class="post-header">@djsng <time>6/17/2025, 4:59pm</time></div>
+            <p>i cannot stop thinking about a startup roblox group tried to approach me to produce for their game in summer 2023, it was a roblox backrooms thing and i think they didnt even have game prototypes yet! i made some demos, they ghosted me, and i can only assume they went defunct because i cannot find any trace of their game anywhere</p>
+            <section class="tags"><a href="#yap">#yap</a></section>
+        </article>
+
+        <article class="post yap">
+            <div class="post-header">@djsng <time>6/17/2025, 2:07pm</time></div>
+            <p>following up on when i posted i was anxious about using other people's fursonas and furry art as an icon -- i'm noticing a pattern of "go ahead but only my characters! please do not use a comm that's kinda disrespectful" and i still want to be safe, but my gut is basically slowly getting confirmed, i guess? still worried to do it all willy nilly, i'm always going to check in and hunt an artist's twitter page to get answers on that</p>
+            <p>and still fuck pinterest. i can't tell what's commissions, what's okay art and what's outright a disallowed reupload</p>
+            <section class="tags"><a href="#yap">#yap</a></section>
+        </article>
+
+        <article class="post yap rant">
+            <div class="post-header">@djsng <time>6/17/2025 12:56pm</time></div>
+            <p>considering minecraft starting to release a bunch of updates around ~1.20 era was the 9/11 of Minecraft Optimizing Mods, and 1.21.5 didn't have all it's updated optimization yet... i have so many low hopes for 1.21.6. please stop mojang. stop i can't keep up YOU'RE WINNING TOO MUCH</p>
+            <section class="tags"><a href="#yap">#yap</a><a href="#rant">#rant</a></section>
+        </article>
+
+        <article class="post art">
+            <div class="post-header">@djsng <time>6/16/2025, 8:41pm</time></div>
+            <p><img src="./images/art/street_watermarked.png" alt="watermarked version of street.png. a figure with black messy hair is standing in a blue background with contrasting colors. the figure a frustrated expression with aviators, the right eye having the glass chipped off. the figure holds an m1911 in their left arm and a sledgehammer in their right, which is dug into the ground. they are also wearing a cap that reads 'scaredy cat'. behind them is a light post, in a semi-faithful old roblox style. on their chest, the image is watermarked, 'djsng, djsng.neocities.org, djs4gnx.github.io'" title="he's not waiting for the bus. there's electronic dust under that hammer"></p>
+            <p>the bus is taking a while.</p>
+            <p>i am so impressed by how much motivation i've had recently! so here's another one for the fire</p>
+            <section class="tags"><a href="#art">#art</a></section>
+        </article>
+
+        <article class="post yap">
+            <div class="post-header">@djsng <time>6/16/2025 4:11pm</time></div>
+            <p>i need a minecraft skin manager soooo much</p>
+            <section class="tags"><a href="#yap">#yap</a></section>
+        </article>
+
+        <article class="post art">
+            <div class="post-header">@djsng <time>6/15/2025, 11:35pm</time></div>
+            <p><img src="./images/art/ezred_watermarked.png" alt="watermarked version of ezred.png. a figure with black wavy hair is standing in a black background with a red shine offset to the left. the figure has no visible face features except for a black mask with a red glow on the front. on the bandana is watermarked, 'djsng, djsng.neocities.org, djs4gnx.github.io'" title="not all faces are the friendliest. this one was super cool but the one with the thinker is my personal favorite"></p>
+            <p>i think you picked a bad day to go outside</p>
+            <section class="tags"><a href="#art">#art</a></section>
+        </article>
+
+        <article class="post yap">
+            <div class="post-header">@djsng <time>6/15/2025 5:22pm</time></div>
+            <p>IT FUCKING WORKED</p>
+            <p>THERES NO BAD BLOOD I WENT AND APOLOGIZED</p>
+            <p>OH MY GOOOOOOD I NEED TO WORK ON MY TEMPER BUT MAAAAN. MAN, THAT WORKED</p>
+            <section class="tags"><a href="#yap">#yap</a></section>
+        </article>
+
+        <article class="post yap vent">
+            <div class="post-header">@djsng <time>6/15/2025 3:45pm</time></div>
+            <p>trying to repair old friendships i made shit mistakes on... i feel like such a fool. i've dropped people for the pettiest reasons, sometimes in the influence of others i was around. i dropped a dude because somebody was gen appalled on some guy's take and instead of kindly and very clearly explain why people feel a certain way, i blocked the dude. it was a sensitive topic too so i know quite a few people would have been on my friend's side, not his. fuuuck...</p>
+            <p>but i do also know that on the other side of the spectrum, i will probably try and make amends and somehow get frustrated by something else or something. i hate friendships so much they're so hard PLEASE PUT ME ON AUTOPILOT. i don't want to worry about offensive content anymore just let me yap about my music pleasee</p>
+            <p>i'm a victim of lonely desperation. ama!</p>
+            <section class="tags"><a href="#yap">#yap</a><a href="#vent">#vent</a></section>
+        </article>
+
+        <article class="post yap">
+            <div class="post-header">@djsng <time>6/14/2025, 10:48pm</time></div>
+            <p>so hesitant to use other people's furry art as my profile icon a lot of the times because i don't want to cross an artist's boundaries but i also have no idea if they would care about me using their fanart or anything as a profile picture. i blame pinterest for making it so unclear</p>
+            <p>i do know that some people who make games like nami are so cool abt it because it's a game character and even some fursona owners dont mind as long as u avoid commissions (which i get -- a commissioner would flip their shit if u dont ask) but i don't want to have to overstep the boundary in the first place because i might be hard to reach or sumn</p>
+            <p>and pinterest people start crediting art more often. y'all make these issues 10x worse</p>
+            <section class="tags"><a href="#yap">#yap</a></section>
+        </article>
+
+        <article class="post art">
+            <div class="post-header">@djsng <time>6/14/2025, 8:20pm</time></div>
+            <p><img src="./images/art/think_watermarked.png" alt="watermarked version of think.png. a figure with a black swoop haircut is standing in a black background with a white shine in the center. the figure has a cartoon smile with glasses. on the hairline the image is watermarked, 'djsng @ djsng.neocities.org'" title="he's actually cold!"></p>
+            <p>he's having a think</p>
+            <section class="tags"><a href="#art">#art</a></section>
+        </article>
+
+        <article class="post updates">
+            <div class="post-header">@djsng <time>6/14/2025, 1:10pm</time></div>
+            <p>HI I DID A <a href="https://rateyourmusic.com/list/kam106/awaken-i-am-ranking-the-the-only-way-out-is-through-singles/" title="please check me out">RANKING ON RATEYOURMUSIC</a> ON AWAKEN I AM'S 2023-2025 SINGLE LINEUP. PLEASE CHECK IT OUT</p>
+            <section class="tags"><a href="#updates">#updates</a></section>
+        </article>
+
+        <article class="post rant updates">
+            <div class="post-header">@djsng <time>6/14/2025, 12:33pm</time></div>
+            <p>Razer's terrible software opens ten instances and uses like, half of my CPU for no reason. I switch to a very cheap Steelseries mouse and the software uses almost nothing Idle. How do you get beaten by Steelseries?</p>
+            <section class="tags"><a href="#rant">#rant</a><a href="#updates">#updates</a></section>
+        </article>
+
+
+        <article class="post yap">
+            <div class="post-header">@djsng <time>6/14/2025, 11:23am</time></div>
+            <p>NOOO I DIDN'T SAVE MY ROBLOX EDIT CLIPS</p>
+            <section class="tags"><a href="#yap">#yap</a></section>
+        </article>
+
+        <article class="post yap">
+            <div class="post-header">@djsng <time>6/14/2025, 12:37am</time></div>
+            <p>I am always going to remember the song that hooked me on Three Days Grace: Time of Dying.<br>
+            I blame Kenny McCormick. That damn AMV...</p>
+            <section class="tags"><a href="#yap">#yap</a></section>
+        </article>
+        
+<article class="post rant">
+            <div class="post-header">@djsng <time>6/13/2025, 9:40pm</time></div>
+            <p>It impresses me how many Minecraft servers claim to be one thing, then end up having crate keys, quests and McMMO... The first and last especially are a recipe for hate.</p>
+            <section class="tags"><a href="#rant">#rant</a></section>
+        </article>
+
+<article class="post updates">
+            <div class="post-header">@djsng <time>6/13/2025, 6:59pm</time></div>
+            <p>oh, that's how you do more than one tag</p>
+            <section class="tags"><a href="#updates">#updates</a></section>
+        </article>
+
+<article class="post rant">
+            <div class="post-header">@djsng <time>6/13/2025, 6:59pm</time></div>
+            <p>I didn't know I had to send images of five Minecraft builds, give you reasons to invite me and commit to a VC every time I get on, SHARON.</p>
+            <section class="tags"><a href="#rant">#rant</a></section>
+        </article>
+
+<article class="post rant updates">
+            <div class="post-header">@djsng <time>6/13/2025, 6:28pm</time></div>
+            <p>ROBLOX strike begins again. This is getting ridiculous.</p>
+            <details class="readmore">
+                <summary>(18+) more details</summary>
+                <p>The following content includes mentions of sexual themes.</p>
+                    <details class="readmore">
+                <summary>read anyway</summary>
+                <p>I unfortunately cannot sugarcoat it anymore. ROBLOX is becoming a sex ring. "Moderated" is a very light term, because despite the fact I hear almost nothing about the worst of the worst, I still have to hear about how condos are still up, people are having "studio sessions", I have to see day by day avatars of people who very clearly have no pants on, people with display names that are very clearly sexual, and as I attempt to report these things, nothing happens.</p></details></details>
+                <p>This is all getting super ridiculous. So it seems that in the meantime, we have to... well... Quit again.</p>
+                <p>Yay...</p>
+            <section class="tags">
+                <a href="#rant">#rant</a><a href="#updates">#updates</a>
+            </section>
+        </article>
+
+<article class="post yap">
+            <div class="post-header">@djsng <time>6/13/2025, 2:42pm</time></div>
+            <p>i need to work on my blog post. oh no...</p>
+            <section class="tags">
+                <a href="#yap">#yap</a>
+            </section>
+        </article>
+
+<article class="post yap vent">
+            <div class="post-header">@djsng <time>6/12/2025, 11:05pm</time></div>
+            <p>i just remembered when i said at some point around december 2024 or early 2025 (probably janurary or feburary if i had to be real) that i wanted to make one of my new year goals to be to work on my friendships and make old remedies.</p>
+            <details class="readmore">
+                <summary>read more</summary>
+                <p>the first person i did that with, i dropped. and since then i've done some risky shit and tried to talk to people i shouldn't have, but i'm way better than i was when i knew some really bad people around 2022-2024!</p>
+            <p>i'm making progress, i think... this is such a silly goal, trying to make amends with people. even if all i can do is just say "hi my apologies for being unnecessarily rude to you". gosh...</p>
+            <p>oh yeah! if there's ever a tw, it'll be just before you click that read more button next time!</p>
+            </details>
+            <section class="tags">
+                <a href="#yap">#yap</a><a href="#vent">#vent</a>
+            </section>
+        </article>
+
+
+<article class="post demos">
+            <div class="post-header">@djsng <time>6/11/2025, 2:53pm</time></div><br>
+            <center><audio controls><source src="https://files.catbox.moe/vvigk7.mp3" type="audio/mpeg"><small>Either your browser does not support playing audio, or my host blocked embedding an MP3 here.</small>
+</audio></center>
+            <p>I used to do a whole bunch of demo posting stuff, but I got super lazy at one point because of how hard it was... But now, I'm ready to give it another shot!</p>
+            <p>As celebration for having this little tumblr thing up and running, here's a little demo I wanted to share!</p>
+            <p>All I need to do is find a snippet of code that makes a nice looking audio player, rather than just the browser's default...</p>
+            <p><small>By the way! If you want to see some more, older work, <a href="https://djsng.neocities.org/archive/neo/demos">click here</a> to view it on my old site draft!</small></p>
+            <section class="tags">
+                <a href="#demos">#demos</a>
+            </section>
+        </article>
+
+<article class="post yap">
+            <div class="post-header">@djsng <time>6/11/2025, 12:34pm</time></div>
+            <p>yesterday was such a crazy time to be... literally did two listening parties over a friend group vc. wish i found this template soon enough to post about it though</p>
+            <section class="tags">
+                <a href="#yap">#yap</a>
+            </section>
+        </article>
+
+        <article class="post updates">
+            <div class="post-header">@djsng <time>6/11/2025, 11:25am</time></div>
+            <p>Well, fuck... I finally got this new little bit set up. Glad to clean up my home page just a little bit! Plus, I get to have a mini Tumblr in my own lawn! :D</p>
+            <p>I'm so happy Nami set up her blog as a template!!! I wanted a cleaner implimentation for my status!</p>
+            <section class="tags">
+                <a href="#updates">#updates</a><span>#first post</span> 
+            </section>
+        </article>
+        
+        <!--each post should use the "article" element. set its class to "post", and add any tags that you use with spaces separating them. this is how it knows which posts to filter when you click the buttons above!-->
+        
+        <!--
+        i moved a bunch of stuff into comments for reference stuff. because i don't need the guide stuff until later!
+
+        see periwinkle template for making photo-set style posts
+        <article class="post guide">
+            <div class="post-header">@pastille <time>9/12/2021, 6:50pm</time></div>
+            <img src="images/photo1.png" alt="pastille at the end of starry flowers">
+            <section class="tags">
+                <a href="#guide">#guide</a> <span>#or is it a selfie?</span> 
+                ^^ spans seem to be for tags without filters. k. noted!
+            </section>
+        </article>
+        
+        <article class="post guide">
+            <div class="post-header">@pastille <time>7/22/2021, 6:02pm</time></div>
+            <p>i just learned that you can hide post content behind a read more, like this:</p>
+            <details class="readmore">
+                <summary>read more</summary>
+                <img src="images/photo3.png" alt="pastille sweeping" loading="lazy">
+                <p>nothing to see here!</p>
+            </details>
+            <section class="tags">
+                <a href="#guide">#guide</a>
+            </section>
+        </article>
+        
+        nami's comment: you don't have to add the tag links at the bottom of the post for it to show up in the tag filters! as long as you remember to put the tag id in the article class
+        dj: okay i think this shows how to do a lazy post. noted...
+
+
+        <article class="post guide">
+            <div class="post-header">@pastille <time>7/22/2021, 5:32pm</time></div>
+            <p>it's been so long since i posted here... um, i have a boyfriend now! <a href="/templates/periwinkle/index.html">his blog</a> is on neocities, too ^^</p>
+        </article>
+        
+        one last simple post. i always copypaste whatever i posted last when i write a new post, so i made a variety you can do that with too!
+        <article class="post guide">
+            <div class="post-header">@pastille <time>10/31/2015, 11:27am</time></div>
+            <p>first post! i don't know what to blog about, though... what do people usually post on here?</p>
+            <img src="images/photo2.png" alt="pastille, confused">
+            <section class="tags">
+                <a href="#guide">#guide</a>
+            </section>
+        </article>
+        -->
+        <!--this button brings you back to the top of the page, like it says-->
+        <section id="page-nav">
+            <p class="center"><a href="#">back to top</a></p>
+        </section>
+        
+    </main>
+
+    <footer>
+      © 2025 DJSng.
+    </footer>      
+    </div>
+  </body>
+
+  <script type="text/javascript"> /* this should handle last.fm */
+    let user = 'RainbowxChaser';
+    let url = 'https://lastfm-last-played.biancarosa.com.br/' + user + '/latest-song';
+    let song = document.querySelector('#song');
+    fetch(url)
+        .then(function (response) {
+            return response.json()
+        }).then(function (json) {
+            song.innerHTML = json['track']['name'] + ' - ' + json['track']['artist']['#text'];
+        });
+</script>
+
+</html>

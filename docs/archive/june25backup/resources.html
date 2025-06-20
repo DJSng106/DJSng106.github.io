@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html lang="en"><head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>DJSng! (Resources)</title>
+        <link rel="icon" type="image/x-icon" href="https://files.catbox.moe/yzplfv.jpg">
+        <meta property="og:title" content="DJSng">
+        <meta property="og:description" content="A disorganized mess of layers: Resources.">
+        <meta property="og:image" content="https://files.catbox.moe/yzplfv.jpg"> <!-- i'm too fucking LAZY to put it in the github repo so... -->
+<style>
+/* The following CSS applies on all screen sizes */
+
+/* Colors and fonts */
+:root {
+    /* Fonts */
+    --bodyfont: sans-serif;
+    --headerfont: monospace;
+
+    /* Main colors */
+    --background:#ffc070; /* Page background, OG: ffc070*/
+    --color:#4d0010;
+    --block:#fff0d1; /* Background color for the grid blocks in the content */
+    --lines:#ffc9b4; /* Color for the background lines */
+    --shadow:#57534b; /* Color for the drop shadow, OG: ff7460*/
+
+    --link:#b63700;
+    --linkhover:#d6083a;
+
+    --h1:#4d0010;
+    --h2:#4d0010;
+    --h3:#4d0010;
+    --h4:#4d0010;
+
+    /* Sidebar colors */
+    --sidebar:#fff0d1; /* OG: #fff0d1 */
+    --sidebarcolor:#240e0e;
+    --title: #4d0010;
+    --sidebarlink: #b63700;
+    --sidebarlinkhover:#d6083a;
+
+    /* Menu colors */
+    --menucolor:#b63700;
+    --menucolorhover:#d6083a;
+
+    /* Tape colors */
+    --tape: #ff9575;
+    --tape-edge: #ec714c;
+}
+
+* { margin:0; padding:0; }
+
+/* Main body styling */
+body {
+    background-color:var(--background);
+    background-attachment:fixed;
+    font:1rem sans-serif;
+    color:var(--color);
+}
+
+/* Rounded corners - feel free to get rid of this or change it */
+
+.article-content, #sidebar-content, #main-footer {
+    border-radius:2px;
+}
+
+/* Sidebar styling */
+
+#sidebar-content {
+    background: var(--sidebar);
+    color: var(--sidebarcolor);
+    padding:10px;
+    border:1px solid var(--linkhover);
+    box-shadow:5px 5px 0 var(--shadow);
+}
+
+.sidebar-columns {
+    display:flex;
+    gap:10px;
+}
+
+#sidebar-content header {
+    color:var(--title);
+    font:1.5em var(--headerfont);
+    margin:8px 0 8px 0;
+}
+
+#sidebar-content p a {
+    color:var(--sidebarlink);
+    transition:0.5s ease;
+}
+
+#sidebar-content p a:hover {
+    color:var(--sidebarlinkhover);
+    transition:0.5s ease;
+}
+
+.icon {
+    margin:auto;
+}
+
+.icon img {
+    border-radius:10px;
+    width:90px; /* This can be changed to make the icon smaller; you might have to mess with the border radius too */
+    height:auto; /* Preserves aspect ratio */
+}
+
+/* Styling for the menu */
+
+#main-menu {
+    font:1.1em var(--headerfont);
+    width:100%;
+    margin-top:20px;
+}
+
+#main-menu ul {
+    list-style:none;
+}
+
+#main-menu li {
+    display:inline-block;
+}
+
+#main-menu li a {
+    padding:3px;
+    color:var(--menucolor);
+    text-decoration:none;
+    transition:0.5s ease;
+    border-bottom:1px solid;
+
+}
+
+#main-menu li a:hover, #main-menu li a:focus {
+    color:var(--menucolorhover);
+    transition:0.5s ease;
+}
+
+/* Content styling */
+
+main {
+    margin-top:20px;
+}
+
+/* Styling for blocks */
+
+main .post {
+    margin-bottom:50px;
+    width:100%;
+}
+
+.article-content, #main-footer {
+    padding:22px;
+    width:calc(100% - 44px);
+    border:1px solid var(--linkhover);
+    box-shadow:5px 5px 0 var(--shadow);
+    background:linear-gradient(var(--block) 0px, var(--block) 30px, var(--lines) 31px);
+    background-size:100% 32px;
+}
+
+main img.postimage {
+    border-radius:5px;
+    border:1px solid var(--linkhover);
+    margin:0 auto 10px auto;
+}
+
+main h1 {
+    font:1.8em var(--headerfont);
+    color:var(--h1);
+}
+
+main h2 {
+    font:1.5em var(--headerfont);
+    color:var(--h2);
+}
+
+main h3 {
+    font:1.3em var(--headerfont);
+    color:var(--h3);
+}
+
+main h4 {
+    font:1em var(--headerfont);
+    font-style:italic;
+    color:var(--h4);
+}
+
+p {
+    line-height:1.5;
+    margin:10px 0 10px 0;
+}
+
+main a {
+    color:var(--link);
+    transition:0.5s ease;
+}
+
+main a:hover, main a:focus {
+    color:var(--linkhover);
+    transition:0.5s ease;
+}
+
+main ul {
+    list-style-position: outside;
+    margin-left: 25px;
+}
+
+main ul li {
+    line-height:1.5;
+}
+
+main img {
+    max-width:100%;
+}
+
+main pre {
+    background:var(--lines);
+    padding:10px;
+    margin:5px;
+    border-radius:5px;
+    max-width:600px;
+    max-height:300px;
+    overflow:auto;
+}
+
+main input, textarea, select, button { 
+    background: var(--block);  
+    color: var(--color);
+    font: 1rem var(--bodyfont); 
+    border: 1px solid; 
+    padding: 8px; 
+    margin: 2px;
+}
+
+main details {
+    background: var(--lines);
+    padding:10px;
+    margin:5px;
+    border-radius:5px;
+}
+
+main details summary {
+    cursor: pointer;
+}
+
+.article-footer {
+    margin-top:15px;
+}
+
+.tag, .date {
+    display:inline-block;
+    background: var(--block);
+    padding:5px;
+    border-radius:3px;
+    box-shadow:2px 2px 0 var(--shadow);
+    border:1px solid var(--linkhover);
+    margin:0.25em 0 0.25em 0;
+}
+
+#main-footer {
+    text-align:center;
+}
+
+.tape::before {
+    content:"";
+    display:block;
+    height: 30px;
+    margin:-28px auto 5px auto;
+    width: 50%;
+    max-width:150px;
+    background-color: var(--tape);
+    border-right: 1px dotted var(--tape-edge);
+    border-left: 1px dotted var(--tape-edge);
+    opacity: 0.5;
+    box-shadow:0.5px 0.5px 1px rgb(0,0,0,0.2);
+}
+
+
+/* The following CSS ONLY applies to mobile/small screens */
+
+/* Container styling */
+#container {
+    width: calc(100% - 40px);
+    padding:20px;
+    margin-top:10px;
+}
+
+#sidebar-content {
+    width: calc(100% - 20px);
+}
+
+#main-menu li {
+    margin-bottom:15px;
+    display:inline-block;
+}
+
+/* Skip to content button */
+
+#skip a {
+    position:absolute;
+    display:inline-block;
+    left:0px;
+    top:-1000px;
+    overflow:hidden;
+    transition:top 0.5s ease;
+    background:var(--block);
+    color:var(--link);
+    z-index:1000;
+    padding:5px;
+}
+ 
+#skip a:focus {
+    top: 0;
+    transition:top 0.5s ease;
+}
+
+/* The following CSS ONLY applies to desktop/big screens */
+
+@media screen and (min-width: 800px) {
+    #container {
+        max-width:1100px;
+        width:90%;
+        display:flex;
+        gap:20px;
+        margin:25px auto;
+    }
+
+    main {
+        margin-top:10px;
+    }
+
+    #sidebar {
+        flex: 1 1 calc(30% - 20px);
+        margin-top:10px;
+    }
+
+
+    .icon {
+        margin-top:-35px;
+        margin-left:-40px;
+    }
+    
+    /* Remove or comment out this block if you don't want a sticky sidebar */
+    #sidebar-content {
+        position:sticky;
+        top:40px;
+    }
+
+    .sidebar-columns {
+        display:block;
+    }
+
+    main {
+        flex: 1 1 calc(70% - 30px);
+    }
+    
+    .article-footer {
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+
+    .tag, .notes {
+        margin:0;
+    }
+}
+
+/* START OF DJ JANK CHANGES */
+/* status cafe requires these to format the box. */
+            #statuscafe {
+                padding: .5em;
+                /* background-color: black; */
+                /* border: 1px solid black;
+                width: 50%; */
+            }
+            #statuscafe-username {
+                margin-bottom: .5em;
+            }
+            #statuscafe-content {
+                margin: 0 1em 0.5em 1em;
+            }
+
+/* line */
+</style>
+</head>
+<body cz-shortcut-listen="true">
+<!-- Please don't remove the next 2 lines! -->
+<div id="top"></div>
+<div id="skip"><a href="#content">Skip to content</a></div>
+
+<div id="container">
+<div id="sidebar">
+<div id="sidebar-content" class="tape"> <!-- Remove the tape class if you don't want the tape -->
+<div class="sidebar-columns">
+<div class="icon"><!-- Icon, just remove this line if you don't want it --><img src="https://files.catbox.moe/yzplfv.jpg" width="90" height="90" alt="" /></div>
+<div>
+    <center><div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=djs" defer></script>
+<!-- Sidebar text -->
+<a href="https://www.imood.com/users/newgnx"><img src="https://moods.imood.com/display/uname-newgnx/trans-1/imood.gif" alt="The current mood of newgnx at www.imood.com" border="0"></a>
+<br><br><hr><br>
+<div class="header__inner">
+    <p><span id="song">Please wait. If this text does not change, refresh this page!</span></p>
+</div>
+<p><a href="https://punkto.org/zonerender?https://DJS4gnx.github.io/blog/archive">Add my blog to your RSS reader!</a><br>
+</p>
+<br><hr><br>
+<h3>Links</h3>
+<nav id="main-menu">
+<ul>
+    <li><a href="./homepage.html">Back</a></li>
+    <li><a href="./sitemap.html">Sitemap</a></li>
+    <li><a href="./blog">Blog</a></li>
+    <li><a href="./journal">Journal</a></li>
+    <li><a href="./archive">Archive</a></li>
+    <li><a href="https://djsng.atabook.org/">Guestbook</a></li>
+    <li><a href="https://spacehey.com/djsng">SpaceHey</a></li>
+</ul><br></center>
+</nav>
+</div>
+</div>
+</div>
+</div>
+    <main id="content">
+                <section class="post">
+                    <div class="article-content">
+                    <h1>About this page</h1>
+                    <p>Hi! I wrote this piace to link to a bunch of resources that I use. I had wanted to link these for a long while, but I always struggled to update it. Hopefully, this should be the last time.<br>
+                    Everything here, except for ones clearly labeled as "Paid" in brackets, are free to use in some way. If you struggle to find the free download option, feel free to come find me, but just be careful if you don't want to go through that kind of hastle.</p>
+                    <p>And please, for gods sake, use an adblocker. Firefox users can use uBlock Origin out of the box just fine, but for some chrome users, you may need to switch to a browswer like Supermium before you can install uBO.</p>
+                    </div>
+                    <footer class="article-footer"></footer>
+                </section id="post">
+
+                <section class="post">
+                    <div class="article-content">
+                    <article>
+                    <h1>Recommended Programs</h1>
+                    <p>For anybody who's looking for new things to try, I decided to make a list of software and websites I trust and recommend to anybody who's looking for something new. This list isn't very long and I need to add more, but feel free to ask for recommendations and I'll slam some here. I'm not exactly a tech support genius, so if I say to check in with other people and I point you to a support page or something, maybe it's best to ask there.</p>
+                <p>I promise, I've at least tried these softwares and double checked I wrote the right link!</p>
+                <h2>Web Browsers</h2><br>
+                <a href="https://floorp.app/en" target="_self">Floorp Browser</a> - You like Firefox? Used it before? Good, imagine it but faster. I cannot live without Firefox considering adblockers are going to die very fast, I don't completely like Brave and Chrome's extension store has nothing good for sidebar tabs, but Tree Style Tabs has done just as good as a job! Only thing is that Tree Style Tabs is a firefox exclusive, but many of the ROBLOX extensions I like are kind of buggy on Firefox (at least right now, but that'll change soon when RoPro v2.0 comes out), but it's a compromise I'm willing to make for now.<br><br>
+                <h2>Music</h2>
+                <a href="https://www.foobar2000.org/" target="_self">foobar2000</a> - If you were like me, you probably used those sketchy YouTube to MP3 downloaders and Windows Media Player. Foobar2000 is like the adult version of WMP, with way more features I find myself addicted to, as well as it's superior customization. You want something? Somebody's probably added it.
+                <br><br>
+                <a href="https://nicotine-plus.org/" target="_self">Nicotine+</a> - Wanted to get into the Soulseek scene but didn't know where to start? Or you just hate the default client? Nicotine+ has been recommended by many people, myself included, and it's a great place to start if you're looking to just learn to use Soulseek. You could also go to SoulseekQT for the retro style, but... Nicotine+ just functions better.<br><br>
+                <h2>Utility</h2><br>
+            <a href="https://rustdesk.com/" target="_self">RustDesk</a> - I started to despise TeamViewer when they made changes to how it handled connections. When I was initially looking for replacements and wanted something easy, this is what I found. It has a mobile app, a computer app, works on basically everything TeamViewer does, and while it's a little different, it did the job.<br><br>
+            <a href="https://aspia.org/">Aspia</a> -  When I needed something more than RustDesk, and wanted some more control over what I could do, I switched to Aspia. While it's computer only and most of it's features are only on Windows, it has features like using relays and routers to get around NAT issues, a console with address book functionality, the ability to just <i>watch</i> the screen (which Parsec is better for, but it is what it is), better file transferring than RustDesk, customizable stream settings, and a load bunch of other features that perfectly replaced TeamViewer. Plus, it worked out of the box on my LAN setup, so I was able to plug and play with my sibling, even without forwarding a bunch of random ports.<br><br>
+            <a href="https://www.voidtools.com/" target="_self">Voidtools Everything</a> - Get rid of the old Windows Search, you can settle for more. Voidtools Everything is a replacement for Windows Search that searches the whole drive a little more efficiently by caching what's on your drive, among other things. It made it much easier to find files rather than just click around blindly hoping you find it.<br><br>
+            <a href="https://www.gpsoft.com.au/" target="_self">Directory Opus</a> (paid) - Windows Explorer is kind of quirky, and that's why I have Directory Opus. It can work with Voidtools Everything for windows search, among other features, like custom colors for explorer windows, folder favorites, and a lot more I can't explain just in one blog post.<br><br>
+            <a href="https://explorerplusplus.com/" target="_self">Explorer++</a> - If you're too lazy to throw cash for Directory Opus or just can't afford it right now, Explorer++ is a good free alternative. It won't feel remotely the same but may be easier to get into.<br><br>
+                    </div>
+                    <footer class="article-footer"><div class="date">6/7/25</div></footer>
+                    </section>
+
+                <section class="post">
+                <div class="article-content">
+                    <h1>Non-Software</h1>
+                    <p>Some stuff I've used is not strictly computer software, and when I have something to put related to that, it'll be here.</p><br>
+                    <h2>Websites</h2><br>
+                    <a href="https://skins.webamp.org/" target="_self">Winamp Skin Museum</a> - Built off the project Webamp, the Winamp Skin Museum is an interactive Winamp Skin collection in your browser! It has a bunch of obscure and common Winamp skins alike and it's a little something for your Nostalgia toolkit. It really does whip the Llama's ass!<br><br>
+                    <h2>Other</h2><br>
+                    <a href="https://gist.github.com/hf02/1570e009bd337bc09db6f3e3c29938ca" target="_self" title="Very helpful!">Connecting a Neocities website to your Discord profile</a> - Very wonderful guide for adding Neocities domains to your Discord connections!
+                </div>
+                <footer class="article-footer"><div class="date">6/7/25</div></footer>
+                </section>
+        <footer id="main-footer">
+        <p><a href="#top">Back to top</a> <span aria-hidden="true">&bull;</span> <a href="#main-menu">Back to menu</a></p>
+        </footer>
+        </div>
+        </main>
+        </body>
+
+<script type="text/javascript"> /* this should handle last.fm */
+    let user = 'RainbowxChaser';
+    let url = 'https://lastfm-last-played.biancarosa.com.br/' + user + '/latest-song';
+    let song = document.querySelector('#song');
+    fetch(url)
+        .then(function (response) {
+            return response.json()
+        }).then(function (json) {
+            song.innerHTML = json['track']['name'] + ' - ' + json['track']['artist']['#text'];
+        });
+</script>
+</html>

@@ -3,7 +3,7 @@
 /* changelog css */
 .changelog {
 height: 200px;
-width: 300px;
+width: auto;
 overflow-x: hidden;
 overflow-y: scroll;
 }

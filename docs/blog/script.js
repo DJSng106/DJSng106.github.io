@@ -16,7 +16,7 @@
 
 let blogName = "Jericho Tavern";
 let authorName = "DJSng";
-let authorLink = "https://spacehey.com/djsng"; // Enter your website, social media, etc. Some way for people to tell you they like your blog! (Leaving it empty is okay too)
+let authorLink = "https://djsng.neocities.org"; // Enter your website, social media, etc. Some way for people to tell you they like your blog! (Leaving it empty is okay too)
 
 //-----------------------------
 
@@ -31,10 +31,7 @@ let authorLink = "https://spacehey.com/djsng"; // Enter your website, social med
   use a date it must still follow that format.*/
 let postsArray = [ 
 //[ "posts/2020-11-10-Special-Characters-Example.html", encodeURI( 'Spéci@l "Character\'s" Examp|e' ) ],
-//[ "posts/2020-11-10-My-Third-Post-Example.html" ], 2025-06-05-Leaving-ROBLOX.html
-
-
-
+//[ "posts/2020-11-10-My-Third-Post-Example.html" ],
 [ "posts/2025-06-17-Back-To-7.html", encodeURI( 'Running Back to 7: The Wonders of Revert8Plus' ) ],
 [ "posts/2025-06-13-Minecraft-Whitelisted-Server-Searching.html", encodeURI( 'The frustration of Minecraft server hunting: an interactive experience' ) ],
 [ "posts/2025-06-12-ROBLOX-Update.html", encodeURI( 'Leaving ROBLOX: Relapse - A 10 day strike' ) ],
@@ -71,13 +68,6 @@ let postsArray = [
 [ "posts/2023-03-08-Technology-is-Like-Magic.html" ],
 [ "posts/2023-03-06-Controller-Aim-Rant.html", encodeURI( 'A Rant about Stick Aim' ) ],
 [ "posts/2023-03-03-Spacehey-A-Ramble.html", encodeURI( 'SpaceHey: A Ramble' ) ] ];
-
-/* legacy format
-[ "posts/2023-03-03-Spacehey-A-Ramble.html", encodeURI( 'SpaceHey: A Ramble' ) ],
-[ "posts/2023-03-06-Controller-Aim-Rant.html", encodeURI( 'A Rant about Stick Aim' ) ],
-[ "posts/2023-03-08-Technology-is-Like-Magic.html" ],
-[ "posts/2020-11-10-Post-Template.html" ] ];
-*/
 
 //XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 

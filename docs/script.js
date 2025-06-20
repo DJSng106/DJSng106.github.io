@@ -177,9 +177,11 @@ if ( url.includes("posts/") ) {
 }
 
 //Generate the Header HTML, a series of list items containing links.
-let headerHTML = '<ul> <li><a href="' + relativePath + '/homepage.html">Home</a></li>' + 
-'<li><a href="' + relativePath + '/archive.html">Archive</a></li>' +
-'<li><a href="' + relativePath + '/about.html">About</a></li> </ul>';
+let headerHTML = '<ul> <li><a href="' + relativePath + './homepage.html">Home</a></li>' + 
+'<li><a href="' + relativePath + './archive.html">History</a></li>' +
+'<li><a href="' + relativePath + './journal">Journal</a></li>' +
+'<li><a href="' + relativePath + './archive/index.html">Archives</a></li>' +
+'<li><a href="' + relativePath + './about.html">About</a></li> </ul>';
 
 //Generate the Footer HTML, which uses the variables defined in the BASIC INFO section above to list info about the site.
 let footerHTML = "<hr><p>" + "Jericho's Tavern" + " by <a href='" + authorLink + "'>" + authorName + "</a>. Powered by <a href='https://zonelets.net/'>Zonelets</a>, with theme by <a href='https://kalechips.net/projects/layouts/'>kalechips</a> and RSS feed powered by <a href='" + rssLink "''>zoneRSS</a></p>";

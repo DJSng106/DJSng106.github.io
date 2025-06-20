@@ -21,8 +21,6 @@ let rssLink = "https://adamledoux.net/zoneRSS/"; // this makes life easier
 
 //-----------------------------
 
-//==[ 2. POSTS ARRAY ]==
-
 //==[ 2a. HISTORIC POSTS ARRAY ]==
 
 /* If you already have an existing pre-RSS posts array that you'd like to preserve

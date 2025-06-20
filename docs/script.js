@@ -58,8 +58,7 @@ let postsArray = [
 [ "posts/2024-05-24-The-Classic-Rant.html", encodeURI( 'The Classic: A Repeat of the Past' ) ],
 [ "posts/2023-03-16-Flash-Games-Long-Gone.html", encodeURI( 'Are Flash Games long gone?' ) ],
 [ "posts/2023-03-14-WACUP-is-Awesome.html", encodeURI( 'WACUP is awesome.' ) ],
-[ "posts/2023-03-08-Technology-is-Like-Magic.html" ],
-[ "posts/2023-03-06-Controller-Aim-Rant.html", encodeURI( 'A Rant about Stick Aim' ) ] 
+[ "posts/2023-03-08-Technology-is-Like-Magic.html" ]
 ];
 
 //==[ 2b. FETCH RSS ]==

@@ -2,16 +2,16 @@
 
 /* edited colors based on dark reader's preferences */
 
-body {
-	background:#31291A;
-	color:#DAD6D1;
-	font:14pt Georgia, Times New Roman, serif;
-}
-
 :root { font-family: Inter, sans-serif; }
   @supports (font-variation-settings: normal) {
     :root { font-family: InterVariable, sans-serif; }
   }
+
+body {
+	background:#31291A;
+	color:#DAD6D1;
+	font:14pt /* Georgia, Times New Roman, serif; */
+}
 
 a {
 	color:#DBAC76;

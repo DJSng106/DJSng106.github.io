@@ -16,8 +16,8 @@
 
 let blogName = "Jericho Tavern";
 let authorName = "DJSng";
-let authorLink = "https://djsng.neocities.org"; // this controls what happens when you click
-let rssLink = "https://adamledoux.net/zoneRSS"; // this makes life easier
+let authorLink = "https://djsng.neocities.org"; // Enter your website, social media, etc. Some way for people to tell you they like your blog! (Leaving it empty is okay too)
+let rssLink = "https://adamledoux.net/zoneRSS/"; // this makes life easier
 
 //-----------------------------
 
@@ -62,7 +62,8 @@ let postsArray = [
 [ "posts/2023-03-16-Flash-Games-Long-Gone.html", encodeURI( 'Are Flash Games long gone?' ) ],
 [ "posts/2023-03-14-WACUP-is-Awesome.html", encodeURI( 'WACUP is awesome.' ) ],
 [ "posts/2023-03-08-Technology-is-Like-Magic.html" ],
-[ "posts/2023-03-06-Controller-Aim-Rant.html", encodeURI( 'A Rant about Stick Aim' ) ] ];
+[ "posts/2023-03-06-Controller-Aim-Rant.html", encodeURI( 'A Rant about Stick Aim' ) ] 
+];
 
 //==[ 2b. FETCH RSS ]==
 
@@ -176,13 +177,9 @@ if ( url.includes("posts/") ) {
 }
 
 //Generate the Header HTML, a series of list items containing links.
-let headerHTML = '<ul> <li><a href="' + relativePath + './homepage.html">Home</a></li>' + 
-'<li><a href="' + relativePath + './archive.html">History</a></li>' +
-'<li><a href="' + relativePath + './journal">Journal</a></li>' +
-'<li><a href="' + relativePath + './archive/index.html">Archives</a></li>' +
-'<li><a href="' + relativePath + './resources.html">Resources</a></li>' +
-'<li><a href="' + relativePath + './sitemap.html">Sitemap</a></li>' +
-'<li><a href="' + relativePath + './about.html">About</a></li> </ul>';
+let headerHTML = '<ul> <li><a href="' + relativePath + '/index.html">Home</a></li>' + 
+'<li><a href="' + relativePath + '/archive.html">Archive</a></li>' +
+'<li><a href="' + relativePath + '/about.html">About</a></li> </ul>';
 
 //Generate the Footer HTML, which uses the variables defined in the BASIC INFO section above to list info about the site.
 let footerHTML = "<hr><p>" + "Jericho's Tavern" + " by <a href='" + authorLink + "'>" + authorName + "</a>. Powered by <a href='https://zonelets.net/'>Zonelets</a>, with theme by <a href='https://kalechips.net/projects/layouts/'>kalechips</a> and RSS feed powered by <a href='" + rssLink "''>zoneRSS</a></p>";
@@ -294,17 +291,17 @@ let prevlink = "";
  a "Next Post" link, right? And vice versa with the oldest 
  post! That's what the following code handles.*/
 if ( postsArray.length < 2 ) {
-  nextprevHTML = '<a href="' + relativePath + '/homepage.html">Home</a>';
+  nextprevHTML = '<a href="' + relativePath + '/index.html">Home</a>';
 } else if ( currentIndex === 0 ) {
   prevlink = postsArray[currentIndex + 1][0];
-  nextprevHTML = '<a href="' + relativePath + '/homepage.html">Home</a> | <a href="'+ relativePath + '/' + prevlink +'">Previous Post \u00BB</a>';
+  nextprevHTML = '<a href="' + relativePath + '/index.html">Home</a> | <a href="'+ relativePath + '/' + prevlink +'">Previous Post \u00BB</a>';
 } else if ( currentIndex === postsArray.length - 1 ) {
   nextlink = postsArray[currentIndex - 1][0];
-  nextprevHTML = '<a href="' + relativePath + '/' + nextlink +'">\u00AB Next Post</a> | <a href="' + relativePath + '/homepage.html">Home</a>';
+  nextprevHTML = '<a href="' + relativePath + '/' + nextlink +'">\u00AB Next Post</a> | <a href="' + relativePath + '/index.html">Home</a>';
 } else if ( 0 < currentIndex && currentIndex < postsArray.length - 1 ) {
   nextlink = postsArray[currentIndex - 1][0];
   prevlink = postsArray[currentIndex + 1][0];
-  nextprevHTML = '<a href="' + relativePath + '/'+ nextlink +'">\u00AB Next Post</a> | <a href="' + relativePath + '/homepage.html">Home</a> | <a href="' + relativePath + '/'+ prevlink +'">Previous Post \u00BB</a>';
+  nextprevHTML = '<a href="' + relativePath + '/'+ nextlink +'">\u00AB Next Post</a> | <a href="' + relativePath + '/index.html">Home</a> | <a href="' + relativePath + '/'+ prevlink +'">Previous Post \u00BB</a>';
 }
 
 //-----------------------------

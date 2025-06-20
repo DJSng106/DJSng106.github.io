@@ -5,10 +5,25 @@
   <description>A personal blog about tech, the web, rants and other yap.</description>
   <link>https://djsng.neocities.org/</link>
   <atom:link href="https://djsng.neocities.org/feed.xml" rel="self" type="application/rss+xml" />
-  <lastBuildDate>Thu, 19 Jun 2025 21:42:28 -0300</lastBuildDate>
+  <lastBuildDate>Thu, 19 Jun 2025 23:40:07 -0300</lastBuildDate>
   <ttl>60</ttl>
 
 <!-- ADD NEW POST HERE -->
+
+  <item>
+    <title>A Rant about Stick Aim</title>
+    <description>
+<![CDATA[<p><small>Backported from March 2023 Blog Archive</small></p>
+      <p>Last I checked, I don't think my controller has gyro aim or anything, so this post is exclusively ranting about Stick Aim. Just clarifying.</p>
+      <p>Stick aim makes me feel like I'm a god damn caveman. You ever just miss shots for no reason trying to find that enemy? You move too fast or too slow to catch up? It sucks. Yet I prefer movement and crouching on controller compared to keyboard and mouse. So it's like a complete priority shift... Kinda.</p>
+      <p>It's like... Good god, isn't there a good in-between? Keyboard and Mouse works, yeah, but theoretically, is there at LEAST a good solution? Something cooler?</p>
+      <p>Not really. I get the limitations, and most of the time it's fine, but Stick aim is just so unpolished, because of the lack of precision and it's just... ughhhh.</p>
+      <p>Controller gaming just really sucks for shooters.</p>]]>
+    </description>
+    <pubDate>Thu, 19 Jun 2025 23:40:07 -0300</pubDate>
+    <link>https://djsng.neocities.org/posts/2023-03-06-Controller-Aim-Rant</link>
+    <guid isPermaLink="false">https://djsng.neocities.org/feed.xml#1</guid>
+  </item>
 
   <item>
     <title>SpaceHey: A Ramble</title>

@@ -53,8 +53,7 @@ let postsArray = [
 [ "posts/2024-09-04-Things-To-Do-When-Bored-Explained.html", encodeURI( 'Breakdown of "Things to Do When Bored"' ) ],
 [ "posts/2024-09-04-Things-To-Do-When-Bored.html" ],
 [ "posts/2024-09-02-The-Server-Hunting-Problem.html", encodeURI( 'The Server Hunting Problem: Reddit\'s Inconsistency' ) ],
-[ "posts/2024-08-26-The-Switch-From-Spotify.html", encodeURI( 'The Switch from Spotify: foobar2000 + the many players out there' ) ],
-[ "posts/2024-08-09-The-Games-Rant.html", encodeURI( 'The Games: A Bloody Downgrade' ) ]
+[ "posts/2024-08-26-The-Switch-From-Spotify.html", encodeURI( 'The Switch from Spotify: foobar2000 + the many players out there' ) ]
 ];
 
 //==[ 2b. FETCH RSS ]==

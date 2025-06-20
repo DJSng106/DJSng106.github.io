@@ -1,15 +1,15 @@
 * { margin:0; padding:0; }
 
-/* Change colors etc here */
+/* edited colors based on dark reader's preferences */
 
 body {
-	background:#ebe6dd;
+	background:##31291A;
 	color:#321807;
 	font:14pt Georgia, Times New Roman, serif;
 }
 
 a {
-	color:#8c5e29;
+	color:#DBAC76;
 	text-decoration:none;
 }
 

@@ -172,7 +172,7 @@ if ( url.includes("posts/") ) {
 
 //Generate the Header HTML, a series of list items containing links.
 let headerHTML = '<ul> <li><a href="' + relativePath + '/homepage.html">Home</a></li>' + 
-'<li><a href="' + relativePath + '/archive.html">History</a></li>' +
+'<li><a href="' + relativePath + '/feed.html">History</a></li>' +
 '<li><a href="' + relativePath + '/archive/index.html">Archives</a></li>' +
 '<li><a href="' + relativePath + '/resources.html">Resources</a></li>' +
 '<li><a href="' + relativePath + '/journal">Journal</a></li>' +
@@ -275,7 +275,7 @@ for ( let i = 0; i < numberOfRecentPosts; i++ ) {
   then we'll add a link to the archive so readers can find the rest of
   your wonderful posts and be filled with knowledge.*/
 if ( postsArray.length > recentPostsCutoff ) {
-  recentPostListHTML += '<li class="moreposts"><a href=' + relativePath + '/archive.html>\u00BB more posts</a></li></ul>';
+  recentPostListHTML += '<li class="moreposts"><a href=' + relativePath + '/feed.html>\u00BB more posts</a></li></ul>';
 } else {
   recentPostListHTML += "</ul>";
 }

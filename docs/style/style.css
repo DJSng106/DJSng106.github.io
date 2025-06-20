@@ -8,6 +8,11 @@ body {
 	font:14pt Georgia, Times New Roman, serif;
 }
 
+:root { font-family: Inter, sans-serif; }
+  @supports (font-variation-settings: normal) {
+    :root { font-family: InterVariable, sans-serif; }
+  }
+
 a {
 	color:#DBAC76;
 	text-decoration:none;

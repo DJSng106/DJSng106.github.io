@@ -25,35 +25,6 @@ let authorLink = "https://djsng.neocities.org"; // Enter your website, social me
 /* If you already have an existing pre-RSS posts array that you'd like to preserve
    in your blog's archive, copy that array below. The RSS posts will be added to it later. */
 let postsArray = [
-[ "posts/2025-06-17-Back-To-7.html", encodeURI( 'Running Back to 7: The Wonders of Revert8Plus' ) ],
-[ "posts/2025-06-13-Minecraft-Whitelisted-Server-Searching.html", encodeURI( 'The frustration of Minecraft server hunting: an interactive experience' ) ],
-[ "posts/2025-06-12-ROBLOX-Update.html", encodeURI( 'Leaving ROBLOX: Relapse - A 10 day strike' ) ],
-[ "posts/2025-06-09-Life-Update.html", encodeURI( 'Life Update (6/9/25)' ) ],
-[ "posts/2025-06-05-ROBLOX-Update.html", encodeURI( 'Leaving ROBLOX: 5 Days Later' ) ],
-[ "posts/2025-06-05-Leaving-ROBLOX.html", encodeURI( 'Leaving ROBLOX: Reasons, Problems, What Now?' ) ],
-[ "posts/2025-05-28-Recognizing-Programs-in-Joel-Streams.html", encodeURI( 'Recognizing software in Vinesauce Streams' ) ],
-[ "posts/2025-05-21-To-Music-Presence.html", encodeURI( 'The Move to Music Presence: Fighting with Discord Rich Presence' ) ],
-[ "posts/2025-04-26-Fuck-Companies-1.html", encodeURI( 'Dear Corporations - A taste of a Rant On Competitors' ) ],
-[ "posts/2025-04-06-Tech-World-Mess.html", encodeURI( 'the tech world is a mess' ) ],
-[ "posts/2025-03-01-Where-My-Pixel-Warfare-Kids.html", encodeURI( 'Any Pixel Warfare gamers out there??' ) ],
-[ "posts/2025-01-01-Spacehey-Music-People-Yall-Not-Slick.html", encodeURI( 'producers, bands, etc PLEASE take notes' ) ],
-[ "posts/2024-12-31-Last-Blog-Of-2024.html", encodeURI( 'Last blog of 2024?' ) ],
-[ "posts/2024-12-20-Mashups-Harder-Than-the-Originals.html", encodeURI( 'When the Mashup hits harder than the original [SilvaGunner]' ) ],
-[ "posts/2024-11-20-Searching-For-NewGen-2.html", encodeURI( 'Missing the friends you used to have (the search pt.2)' ) ],
-[ "posts/2024-11-20-Searching-For-NewGen.html", encodeURI( '[RP] The search for my OG roblox account' ) ],
-[ "posts/2024-11-12-They-were-not-joking-around-about-who-you-see-in-your-dreams.html" ],
-[ "posts/2024-11-10-Liking-Obscure-Bands.html", encodeURI( 'Ever like a band but find it hard to find fans who like that band?' ) ],
-[ "posts/2024-11-07-The-Mysterious-Song-on-the-Internet-being-solved.html" ],
-[ "posts/2024-10-25-The-Haunt-Rant.html", encodeURI( 'The Haunt: More Tired Than Scared' ) ],
-[ "posts/2024-10-10-foobar2000-update.html", encodeURI( 'An Update On My foobar2000 UI!' ) ],
-[ "posts/2024-10-06-A-Windows-Rant.html", encodeURI( 'Incompetence in Compensation: A Windows Rant' ) ],
-[ "posts/2024-09-12-Browsers-and-Other-Floorp.html", encodeURI( 'Browsers & Other Floorp: My History with Browsing' ) ],
-[ "posts/2024-09-08-Switching-to-Neocities.html", encodeURI( 'Switching to Neocities: The New Life' ) ],
-[ "posts/2024-09-04-Last-Online.html", encodeURI( 'Last Online: The Ghosts of the Internet' ) ],
-[ "posts/2024-09-04-Things-To-Do-When-Bored-Explained.html", encodeURI( 'Breakdown of "Things to Do When Bored"' ) ],
-[ "posts/2024-09-04-Things-To-Do-When-Bored.html" ],
-[ "posts/2024-09-02-The-Server-Hunting-Problem.html", encodeURI( 'The Server Hunting Problem: Reddit\'s Inconsistency' ) ],
-[ "posts/2024-08-26-The-Switch-From-Spotify.html", encodeURI( 'The Switch from Spotify: foobar2000 + the many players out there' ) ]
 ];
 
 //==[ 2b. FETCH RSS ]==

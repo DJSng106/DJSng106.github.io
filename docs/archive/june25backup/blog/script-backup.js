@@ -30,8 +30,6 @@ let authorLink = "https://djsng.neocities.org"; // Enter your website, social me
 /*UPDATE: as of version 1.3, you may omit the date if you would like. But if you
   use a date it must still follow that format.*/
 let postsArray = [ 
-//[ "posts/2020-11-10-Special-Characters-Example.html", encodeURI( 'Spéci@l "Character\'s" Examp|e' ) ],
-//[ "posts/2020-11-10-My-Third-Post-Example.html" ],
 [ "posts/2025-06-17-Back-To-7.html", encodeURI( 'Running Back to 7: The Wonders of Revert8Plus' ) ],
 [ "posts/2025-06-13-Minecraft-Whitelisted-Server-Searching.html", encodeURI( 'The frustration of Minecraft server hunting: an interactive experience' ) ],
 [ "posts/2025-06-12-ROBLOX-Update.html", encodeURI( 'Leaving ROBLOX: Relapse - A 10 day strike' ) ],

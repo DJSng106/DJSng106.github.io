@@ -16,8 +16,8 @@
 
 let blogName = "Jericho Tavern";
 let authorName = "DJSng";
-let authorLink = "https://djsng.neocities.org"; // Enter your website, social media, etc. Some way for people to tell you they like your blog! (Leaving it empty is okay too)
-let rssLink = "https://adamledoux.net/zoneRSS/"; // this makes life easier
+let authorLink = "https://djsng.neocities.org"; // this controls what happens when you click
+let rssLink = "https://adamledoux.net/zoneRSS"; // this makes life easier
 
 //-----------------------------
 
@@ -62,8 +62,7 @@ let postsArray = [
 [ "posts/2023-03-16-Flash-Games-Long-Gone.html", encodeURI( 'Are Flash Games long gone?' ) ],
 [ "posts/2023-03-14-WACUP-is-Awesome.html", encodeURI( 'WACUP is awesome.' ) ],
 [ "posts/2023-03-08-Technology-is-Like-Magic.html" ],
-[ "posts/2023-03-06-Controller-Aim-Rant.html", encodeURI( 'A Rant about Stick Aim' ) ] 
-];
+[ "posts/2023-03-06-Controller-Aim-Rant.html", encodeURI( 'A Rant about Stick Aim' ) ] ];
 
 //==[ 2b. FETCH RSS ]==
 

@@ -10,6 +10,6 @@ NeoCities - https://djsng.neocities.org
 # Credits
 [kalechips](https://kalechips.net) - Zonelets theme, index.html layout template  
 [Nami](https://nomnomnami.com) - Journal page template, old character-themed templates from some old archived drafts (specifically "Searina" and "Drop")  
-[sadgurl at goblin-heart.net](https://goblin-heart.net) - Original [template](https://goblin-heart.net/sadgrl/projects/layout-builder/) that was used on both the April 2024 "Grey" version and the September 2024 "Vido" version
+[sadgurl at goblin-heart.net](https://goblin-heart.net) - Original [template](https://goblin-heart.net/sadgrl/projects/layout-builder/) that was used on both the April 2024 "Grey" version and the September 2024 "Vido" version  
 biancarosa - [Last.fm Last Played widget](https://github.com/biancarosa/lastfm-last-played) used on the sidebar on *almost* every current page  
 [dogspit](https://dogspit.nekoweb.org/home.html) - Original Last Played last.fm widget used on old versions of the site

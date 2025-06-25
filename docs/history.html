@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html lang="en"><head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>DJSng! - Homepage</title>
+        <link rel="icon" type="image/x-icon" href="https://files.catbox.moe/yzplfv.jpg">
+        <meta property="og:title" content="DJSng">
+        <meta property="og:description" content="A disorganized mess of layers. Replacing rentry.org/DJSng & the original plaintext index.html.">
+        <link rel="stylesheet" href="style.css"> <!-- this is where we moved the css -->
+        <meta property="og:image" content="https://files.catbox.moe/yzplfv.jpg"> <!-- i'm too fucking LAZY to put it in the github repo so... -->
+</head>
+<body cz-shortcut-listen="true">
+<!-- Please don't remove the next 2 lines! -->
+<div id="top"></div>
+<div id="skip"><a href="#content">Skip to content</a></div>
+
+<div id="container">
+<div id="sidebar">
+<div id="sidebar-content" class="tape"> <!-- Remove the tape class if you don't want the tape -->
+<div class="sidebar-columns">
+<div class="icon"><!-- Icon, just remove this line if you don't want it --><img src="https://files.catbox.moe/yzplfv.jpg" width="90" height="90" alt="" /></div>
+<div>
+    <center><div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=djs" defer></script>
+<!-- Sidebar text -->
+<a href="https://www.imood.com/users/newgnx"><img src="https://moods.imood.com/display/uname-newgnx/trans-1/imood.gif" alt="The current mood of newgnx at www.imood.com" border="0"></a>
+<br><br><hr><br>
+<div class="header__inner">
+    <p><span id="song">Please wait. If this text does not change, refresh this page!</span></p>
+</div>
+<p><a href="https://punkto.org/zonerender?https://DJS4gnx.github.io/blog/archive">Add my blog to your RSS reader!</a><br>
+</p>
+<br><hr><br>
+<h3>Links</h3>
+<nav id="main-menu">
+<ul>
+    <li><a href="./sitemap.html">Sitemap</a></li>
+    <li><a href="./blog">Blog</a></li>
+    <li><a href="./journal">Journal</a></li>
+    <li><a href="./resources.html">Resources</a></li>
+    <li><a href="./archive">Archive</a></li>
+    <li><a href="https://djsng.atabook.org/">Guestbook</a></li>
+    <li><a href="https://spacehey.com/djsng">SpaceHey</a></li>
+</ul><br></center>
+</nav>
+</div>
+</div>
+</div>
+</div>
+    <main id="content">
+                <section class="post">
+                    <div class="article-content">
+                    <p>Hi! This small page serves the purpose of documenting my history, kind of like a portfolio to show the kind of stuff I've done overtime. It's a near full documentation of the many phases I had on the internet, as well as my various projects. This page is heavily inspired by <a href-"https://wintr.neocities.org/creations">Wintr's "my creations" page</a>, so do please check that out too!</p>
+                    </div>
+                    <footer class="article-footer"><div class="date">June 24th 2025</div></footer>
+                </section id="post">
+                <section class="post">
+                    <div class="article-content">
+                    <details>
+                        <summary style="font-size: 20px;">This Website</summary>
+                        <p>So, this website... It has a very interesting history. In November 2020, I was doing test stuff with HTML that was entirely unstyled, basically some junk. Starting from about April 2021 through late 2022, I picked up a copy of the abandoned 2010 site MetalMIDIs and modified it to my own needs, like a fellow friend's site. For a while, it was an inside joke with a bunch of my friends that my website was a crappier, inferior competitor to his site. I'm not sure if I can provide any names, but basically, it was a harmless minibeef.</p>
+                        <p>When I came around to Neocities around 2023, I picked back up by using some free site templates. Goblin Heart, Nami's templates... All that. (WIP)</p>
+                        <p>And after picking up a Kalechips layout, we're here. Woo, back on the grind!</p>
+                    </details>
+                    </div>
+                    <footer class="article-footer"><div class="date">November 2020 - Ongoing</div></footer>
+                </section id="post">
+        <footer id="main-footer">
+            <p><a href="#top">Back to top</a> <span aria-hidden="true">&bull;</span> <a href="#main-menu">Back to menu</a></p>
+        </footer>
+        </div>
+        </main>
+        </body>
+
+<script type="text/javascript"> /* this should handle last.fm */
+    let user = 'RainbowxChaser';
+    let url = 'https://lastfm-last-played.biancarosa.com.br/' + user + '/latest-song';
+    let song = document.querySelector('#song');
+    fetch(url)
+        .then(function (response) {
+            return response.json()
+        }).then(function (json) {
+            song.innerHTML = json['track']['name'] + ' - ' + json['track']['artist']['#text'];
+        });
+</script>
+</html>

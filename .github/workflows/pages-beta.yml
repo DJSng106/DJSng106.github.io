@@ -9,8 +9,6 @@ jobs:
     runs-on: ubuntu-22.04
     permissions:
       contents: write
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
     steps:
       - name: Send it out
         uses: peaceiris/actions-gh-pages@v4

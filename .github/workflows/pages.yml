@@ -30,13 +30,13 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs # when we pr this let's keep this
+          publish_dir: ./docs
           publish_branch: main # force the branch to this one
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
-          commit_message: 'Pushed beta: ${{ github.event.head_commit.message }}'
-          tag_name: ${{ steps.prepare_tag.outputs.DEPLOY_TAG_NAME }}
-          tag_message: 'Deployment ${{ github.ref_name }}'
+          #user_name: 'github-actions[bot]'
+          #user_email: 'github-actions[bot]@users.noreply.github.com'
+          #commit_message: 'Pushed beta: ${{ github.event.head_commit.message }}'
+          #tag_name: ${{ steps.prepare_tag.outputs.DEPLOY_TAG_NAME }}
+          #tag_message: 'Deployment ${{ github.ref_name }}'
       - name: Publish a preview
         uses: peaceiris/actions-gh-pages@v4
         with:
@@ -44,8 +44,8 @@ jobs:
           publish_dir: ./docs # when we pr this let's keep this
           publish_branch: total-overhaul # force the branch to this one
           destination_dir: preview # deploy to *.github.io/preview so it doesn't override root
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
-          commit_message: 'Pushed beta: ${{ github.event.head_commit.message }}'
-          tag_name: ${{ steps.prepare_tag.outputs.DEPLOY_TAG_NAME }}
-          tag_message: 'Deployment ${{ github.ref_name }}'
+          #user_name: 'github-actions[bot]'
+          #user_email: 'github-actions[bot]@users.noreply.github.com'
+          #commit_message: 'Pushed beta: ${{ github.event.head_commit.message }}'
+          #tag_name: ${{ steps.prepare_tag.outputs.DEPLOY_TAG_NAME }}
+          #tag_message: 'Deployment ${{ github.ref_name }}'

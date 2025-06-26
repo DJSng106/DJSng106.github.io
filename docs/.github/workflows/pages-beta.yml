@@ -1,0 +1,7 @@
+- name: Deploy preview with GitHub Pages
+  uses: peaceiris/actions-gh-pages@v4
+  with:
+    github_token: ${{ secrets.GITHUB_TOKEN }}
+    publish_dir: ./docs # when we pr this let's keep this
+    publish_branch: total-overhaul # force the branch to this one
+    destination_dir: preview # deploy to *.github.io/preview so it doesn't override root

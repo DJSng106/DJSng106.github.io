@@ -3,7 +3,7 @@ name: Host with NeoCities
 on:
   push:
     branches:
-      - main
+      - main # do not publish preview changes to neocities
 
 concurrency:
   group: deploy-to-neocities

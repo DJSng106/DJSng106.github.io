@@ -3,8 +3,8 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - total-overhaul # a preview should be pushed too
-      - main
+      - main # obviously we need to publish changes from main
+      - total-overhaul # a preview should be pushed too but only with github
 
 # set permissions for github token
 permissions:

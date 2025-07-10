@@ -46,7 +46,7 @@ img {
 }
 
 body {
-  background-image: url("./asssets/mushroombow.gif");
+  background-image: url("./asssets/mushroombow.gif"); /* change the custom image */
   font-family: "glamourgirl";
   color: #fceac5;
 }

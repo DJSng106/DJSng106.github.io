@@ -4,7 +4,7 @@ A replacement for my original markdown-based rentry.org about me page, with prov
 # Official domains
 These are the only official places to visit the site.
 
-GitHub Pages - https://DJS4gnx.github.io  
+GitHub Pages - https://djsng106.github.io/
 NeoCities - https://djsng.neocities.org
 
 # Credits

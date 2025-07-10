@@ -12,7 +12,7 @@ class NavBoxSide extends HTMLElement {
           <li><a href="./journal.html"><img src="./assets/icons/mono-book.png" class="icon"> journal</a></li>
           <li><a href="./creations.html"><img src="./assets/icons/mono-mail.png" class="icon"> my creations</a></li>
           <li><a href="./links.html"><img src="./assets/icons/mono-star.png" class="icon"> links</a></li>
-          <li><a href="./about.html"><img src="./assets/icons/mono-pen.png" class="icon"> abot</a></li>
+          <li><a href="./about.html"><img src="./assets/icons/mono-pen.png" class="icon"> about</a></li>
         </ul>
       </nav>
       <br>

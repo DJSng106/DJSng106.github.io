@@ -60,14 +60,7 @@ class Footer extends HTMLElement {
     this.innerHTML = ` 
     <footer>
       <div class="footer-row">
-        <img src="./assets/buttons/eevee.png" alt="eevee" />
-        <img src="./assets/buttons/tyg.gif" alt="tyg" />
-        <p>est. 11*06*'24 | made by wintrmoon</p>
-        <img src="./assets/buttons/hiro88.gif" alt="hiro88" />
-        <img src="./assets/buttons/neocities_hosted.gif" alt="hosted" />
-      </div>
-      <div>
-        <img src="./assets/zipcat.gif" style="margin-bottom: -10px" />
+        <p>est. ??? | DJSng, based on wintrmoon's page</p>
       </div>
     </footer>
         `;

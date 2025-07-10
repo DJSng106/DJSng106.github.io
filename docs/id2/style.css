@@ -46,7 +46,7 @@ img {
 }
 
 body {
-  background-image: url("./asssets/mushroombow.gif"); /* change the custom image */
+  background-image: url("./assets/troll.png"); /* change the custom image, we use weird creepy placeholder graphic because i hate making backgrounds */
   font-family: "glamourgirl";
   color: #fceac5;
 }

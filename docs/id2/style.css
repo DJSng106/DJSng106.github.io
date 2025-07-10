@@ -32,13 +32,13 @@ ul {
 
 a {
   text-decoration: none;
-  color: #90f1ef;
+  color: #1e66f5;
 }
 
 hr {
   /* not used any more with the custom divider */
-  color: #fceac5;
-  background-color: #fceac5;
+  color: #cdd6f4;
+  background-color: #cdd6f4;
 }
 
 img {
@@ -48,7 +48,7 @@ img {
 body {
   background-image: url("./assets/troll.png"); /* change the custom image, we use weird creepy placeholder graphic because i hate making backgrounds */
   font-family: "glamourgirl";
-  color: #fceac5;
+  color: #cdd6f4;
 }
 
 /* Used for the two columns */
@@ -60,8 +60,8 @@ body {
 
 .flex-child-element {
   flex: 1;
-  border: 3px dotted plum;
-  background-color: #dd7396;
+  border: 3px dotted #6c7086;
+  background-color: #1e1e2e;
   margin: 5px;
 }
 
@@ -82,13 +82,13 @@ nav {
 
 mark {
   background-color: plum;
-  color: #fceac5;
+  color: #cdd6f4;
   padding: 2px 4px;
   border-radius: 4px;
 }
 
 i {
-  color: #90f1ef;
+  color: #1e66f5;
   font-style: normal;
 }
 
@@ -134,9 +134,9 @@ ul {
 
 footer {
   margin: auto;
-  border: #fceac5 outset 4px;
+  border: #6c7086 outset 4px;
   max-width: 990px;
-  background-color: plum;
+  background-color: #1e1e2e;
   padding: 5px;
 
   display: flex;
@@ -194,11 +194,21 @@ details {
   margin-top: 1em;
 }
 
-/* NOTE list of colours
-text #FCEAC5
-link #90F1EF
+/*
+wintr's colors:
+text #cdd6f4
+link #1e66f5
 active link: #C1FBA4
-background: #dd7396
+background: #1e1e2e
 accent: plum
 background-color: plum (header) */
 /* ^^ fuck your colors */
+
+/* and i'm going to change them to (based on catppuccin mocca)
+text - #cdd6f4
+link - #1e66f5
+active - link: #179299?
+background: - #1e1e2e
+accent: plum
+background-color: #1e1e2e
+*/

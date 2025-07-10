@@ -1,20 +1,9 @@
 @font-face {
   font-family: "glamourgirl";
-  src: url(/GLAMOURGIRL.TTF);
+  src: url(./GLAMOURGIRL.TTF);
 }
 
-/* custom cursor for everything except hovers */
-html {
-  cursor: url("./asssets/cursor/cursor1.png"), auto;
-}
-
-/* custom cursor for hovers (on a and button elements) */
-a:hover,
-button:hover {
-  cursor: url("./asssets/cursor/cursor2.png"), auto;
-  color: #4f83f3;
-}
-
+/* i think this manages the font for these elements */
 p,
 ul,
 i {
@@ -36,6 +25,7 @@ i {
   margin: 5px;
 }
 
+/* custom image for bullet point */
 ul {
   list-style-image: url(./asssets/heart.png);
 }
@@ -211,3 +201,4 @@ active link: #C1FBA4
 background: #dd7396
 accent: plum
 background-color: plum (header) */
+/* ^^ fuck your colors */

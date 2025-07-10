@@ -1,0 +1,213 @@
+@font-face {
+  font-family: "glamourgirl";
+  src: url(/GLAMOURGIRL.TTF);
+}
+
+/* custom cursor for everything except hovers */
+html {
+  cursor: url("./asssets/cursor/cursor1.png"), auto;
+}
+
+/* custom cursor for hovers (on a and button elements) */
+a:hover,
+button:hover {
+  cursor: url("./asssets/cursor/cursor2.png"), auto;
+  color: #4f83f3;
+}
+
+p,
+ul,
+i {
+  font-family: "Courier New";
+  font-weight: bold;
+}
+
+/* for the side bar! */
+.nav-list {
+  list-style-image: none;
+  padding-left: 0;
+  margin: 0;
+  font-family: "glamourgirl";
+  font-weight: normal;
+}
+
+.nav-list li {
+  list-style-type: none;
+  margin: 5px;
+}
+
+ul {
+  list-style-image: url(./asssets/heart.png);
+}
+
+a {
+  text-decoration: none;
+  color: #90f1ef;
+}
+
+hr {
+  /* not used any more with the custom divider */
+  color: #fceac5;
+  background-color: #fceac5;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-image: url("./asssets/mushroombow.gif");
+  font-family: "glamourgirl";
+  color: #fceac5;
+}
+
+/* Used for the two columns */
+.flex-parent-element {
+  display: flex;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.flex-child-element {
+  flex: 1;
+  border: 3px dotted plum;
+  background-color: #dd7396;
+  margin: 5px;
+}
+
+.flex-child-element:first-child {
+  flex: 0.22;
+  max-height: 430px;
+}
+
+/* sidebar */
+nav {
+  list-style-type: none;
+  padding-left: 15px;
+}
+
+.activetab {
+  color: #c1fba4;
+}
+
+mark {
+  background-color: plum;
+  color: #fceac5;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+i {
+  color: #90f1ef;
+  font-style: normal;
+}
+
+em {
+  color: #c1fba4;
+  font-style: normal;
+}
+
+.icon {
+  width: 15px;
+  height: 15px;
+  margin-bottom: -2px;
+}
+
+.divider {
+  text-align: center;
+}
+
+.imgborder {
+  border: 3px dotted plum;
+}
+
+.albumrow {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.changelog {
+  height: 200px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  border: 3px dotted plum;
+}
+
+.changelog p,
+ul {
+  margin: 2px;
+}
+
+.changelog div {
+  margin: 8px;
+}
+
+footer {
+  margin: auto;
+  border: #fceac5 outset 4px;
+  max-width: 990px;
+  background-color: plum;
+  padding: 5px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* horizontal center */
+  justify-content: center; /* vertical center */
+  text-align: center;
+}
+
+.footer-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-row p {
+  font-size: smaller;
+  margin: 0;
+  padding: 0;
+}
+
+/* for the headers in the my creations page */
+summary {
+  cursor: url("./asssets/cursor/cursor2.png"), auto;
+  list-style: none;
+  position: relative;
+  padding-left: 30px; /* leave space for heart */
+}
+
+summary::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.2em;
+  width: 20px;
+  height: 20px;
+  background: url("./asssets/heart-big.png") no-repeat center center;
+  background-size: contain;
+  transform: rotate(-90deg);
+  transition: transform 0.3s ease;
+}
+
+details[open] summary::before {
+  transform: rotate(0deg);
+}
+
+summary h2 {
+  display: inline;
+  margin: 0;
+}
+
+details {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+/* NOTE list of colours
+text #FCEAC5
+link #90F1EF
+active link: #C1FBA4
+background: #dd7396
+accent: plum
+background-color: plum (header) */

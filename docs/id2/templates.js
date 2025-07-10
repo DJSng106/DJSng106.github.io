@@ -20,13 +20,10 @@ class NavBoxSide extends HTMLElement {
       <div style="text-align: center;">
         <p>my button!</p>
         <img src="./wintr button ani.gif" alt="website button">
-        <!-- <p>webrings</p>
         <p>mood</p>
-        <a href="https://www.imood.com/users/wintrmoon"><img src="https://moods.imood.com/display/uname-wintrmoon/fg-fceac5/bg-dda0dd/imood.gif" alt="The current mood of wintrmoon at www.imood.com" border="0"></a>
-        -->
+        <a href="https://www.imood.com/users/newgnx"><img src="https://moods.imood.com/display/uname-newgnx/fg-cdd6f4/bg-1e1e2e/imood.gif" alt="The current mood of newgnx at www.imood.com" border="0"></a>
         <div>
-            <!--NOTE - the last fm thingy... Hi dj, thanks for the help! I was pulling my hair out-->
-          <p>listening to:<br> <iframe src="https://petrapixel.neocities.org/widgets/lastfm?center=1&marquee=0&font=Courier New&fontSize=16px&color=FCEAC5&username=Oatax&swapPositions=0&delimiter=by&underline=0" width="170" frameborder="0" title="Last.Fm Status"></iframe></p>
+          <p>listening to:<br> <iframe src="https://petrapixel.neocities.org/widgets/lastfm?center=1&marquee=0&font=Courier New&fontSize=16px&color=FCEAC5&username=RainbowxChaser&swapPositions=0&delimiter=by&underline=0" width="170" frameborder="0" title="Last.Fm Status"></iframe></p>
         </div>
       </div>
     `;

@@ -5,7 +5,7 @@ class NavBoxSide extends HTMLElement {
     this.innerHTML = `
       <nav>
         <h2 style="margin-top: 10px;margin-left:-15px; margin-bottom: 0px;text-align:center; padding:5px">
-          navigation
+          nav
         </h2>
         <ul class="nav-list">
           <li><a href="./index.html"><img src="./assets/icons/mono-house.png" class="icon"> home</a></li>
@@ -18,14 +18,24 @@ class NavBoxSide extends HTMLElement {
       <br>
       <div class="divider"><img src="./assets/divider_half.gif"></div>
       <div style="text-align: center;">
-        <p>my button!</p>
-        <img src="./wintr button ani.gif" alt="website button">
-        <p>mood</p>
+        <p>site button</p>
+        <img src="./assets/buttons/button.png" alt="website button">
+        <h2 style="margin-top: 10px;margin-left:-15px; margin-bottom: 0px;text-align:center; padding:5px">
+          status
+        </h2>
         <a href="https://www.imood.com/users/newgnx"><img src="https://moods.imood.com/display/uname-newgnx/fg-cdd6f4/bg-1e1e2e/imood.gif" alt="The current mood of newgnx at www.imood.com" border="0"></a>
         <div>
           <p>listening to:<br> <iframe src="https://petrapixel.neocities.org/widgets/lastfm?center=1&marquee=0&font=Courier New&fontSize=16px&color=FCEAC5&username=RainbowxChaser&swapPositions=0&delimiter=by&underline=0" width="170" frameborder="0" title="Last.Fm Status"></iframe></p>
         </div>
       </div>
+      <h2 style="margin-top: 10px;margin-left:-15px; margin-bottom: 0px;text-align:center; padding:5px">
+          changelog
+        </h2>
+      <div class="changelog">
+    <h3>7/2/2025</h3>
+    <ul>
+        <li>backport changelog idk</a></li>
+    </ul>
     `;
 
     //NOTE - For the active tab highlighting

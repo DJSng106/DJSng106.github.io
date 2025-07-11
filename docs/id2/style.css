@@ -67,7 +67,7 @@ body {
 
 .flex-child-element:first-child {
   flex: 0.22;
-  max-height: 430px;
+  max-height: 99999930px; /* allow it to get very long for testing reasons */
 }
 
 /* sidebar */

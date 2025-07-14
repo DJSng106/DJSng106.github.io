@@ -1,0 +1,31 @@
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^domain\.com$
+RewriteRule ^(.*)$ http://www.wwwdotwebsite.onthewifi.com:81/$1 [R=301,L]
+
+ErrorDocument 404 /404.php
+
+php_value upload_max_filesize 9999999999999999999999999999999M
+php_value post_max_size 9999999999999999999M
+php_value max_input_time 99999999999999999999999999999999
+php_value max_execution_time 999999999999999999999999999999999
+
+
+ErrorDocument 500 /RobloniumDefaultErrorPage.aspx?code=500
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME}.php -f
+
+<FilesMatch Friends>
+	RewriteEngine Off
+	SetHandler application/x-httpd-php
+</FilesMatch>
+
+RewriteRule (.*) $1.php [L]
+
+RewriteRule ^(.*?(\b-place\b)[^$]*) PlaceItem.aspx
+RewriteRule ^(.*?(\b-item\b)[^$]*) Item.aspx
+
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f

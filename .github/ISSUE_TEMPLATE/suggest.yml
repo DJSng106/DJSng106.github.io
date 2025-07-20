@@ -3,28 +3,18 @@ description: Suggest an idea for the website
 labels: ["type: enhancement", "stage: uninspected"]
 body:
   - type: checkboxes
-    id: has-searched-issues
+    id: basic-checks
     attributes:
-      label: Did you search existing issues yet?
-      description: Have you searched the existing issues for something that is similar to your issue?
+      label: Confirmations
+      description: Read very *carefully*.
+      multiple: true
       options:
         - label: I have searched existing issues and did not find a duplicate of my issue
-          required: true
-  - type: checkboxes
-    id: beginner-check
-    attributes:
-      label: Your issue might not be added
-      description: By checking this box, you accept that your suggestion being added may be limited by my skill.
-      options:
-        - label: I accept that my issue may not be added if it is too complex
-          required: true
-  - type: checkboxes
-    id: troll-check
-    attributes:
-      label: I have not been truthful to the above boxes
-      options:
-        - label: I have not been truthful to the above boxes
           required: false
+        - label: I accept that my issue may not be added if it is too complex
+        required: false
+        - label: I have not been truthful to the above boxes
+        required: false
   - type: textarea
     id: idea
     attributes:

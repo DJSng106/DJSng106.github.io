@@ -1,5 +1,6 @@
 # DJSng!
-A replacement for my original markdown-based rentry.org about me page, with provided hosting by Neocities and GitHub. Powered by Deploy2Neocities and GitHub Pages  
+A replacement for my original markdown-based rentry.org about me page, with provided hosting by Neocities and GitHub.  
+Powered by Deploy2Neocities and GitHub Pages   
 
 # Official domains
 These are the only official places to visit the site.

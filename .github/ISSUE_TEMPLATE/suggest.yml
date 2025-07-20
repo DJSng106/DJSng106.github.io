@@ -12,9 +12,9 @@ body:
         - label: I have searched existing issues and did not find a duplicate of my issue
           required: false
         - label: I accept that my issue may not be added if it is too complex
-        required: false
+          required: false
         - label: I have not been truthful to the above boxes
-        required: false
+          required: false
   - type: textarea
     id: idea
     attributes:

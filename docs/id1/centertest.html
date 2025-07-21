@@ -1,0 +1,52 @@
+<head>
+<!-- load the fonts -->
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+<!-- this is the homepage code. ahh. -->
+
+<div class="center default" id="home">
+	<p>Something wicked this way comes.
+	<center>
+	<a href="./posts"><img src="./img/home/post.png" class="nav"></a> <!-- posts -->
+	<a href="https://djsng.bearblog.dev/"><img src="./img/home/blog.png" class="nav"></a> <!-- blog -->
+	<a href="#about"><img src="./img/home/about.png" class="nav"></a> <!-- about -->
+	<a href="#projects"><img src="./img/home/projects.png" class="nav"></a> <!-- projects -->
+	</center>
+	</p>
+	<center><a href="https://www.imood.com/users/newgnx"><img src="https://moods.imood.com/display/uname-newgnx/fg-FFFFFF/trans-1/imood.gif" alt="The current mood of newgnx at www.imood.com" border="0" class="imood"></a></center>
+</div>
+
+<!-- status cafe -->
+<div class="center" id="about">
+<div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=djs" defer></script>
+<br><br>
+<p><center><a href="#realabout" style="color:white;">But you came to learn a real thing, didn't you?</a></center></p>
+</div>
+
+<!-- biography! -->
+<div class="center" id="realabout">
+<p>blabla shit about me</p>
+</div>
+
+<!-- social links and stuff i did! and stuff. overflow test this please, maybe if it scrolls nice, i'll add a link here that also adds a resource page -->
+
+<div class="center" id="projects">
+<p>blabla shit about what i do</p>
+</div>
+
+<!-- more pages i want to implement:
+- journal (from main branch)
+- history (from main branch)
+- archive (from main branch)
+
+also add last played to about?
+-->
+
+</body>
+<!-- this is a horrible hack. i don't care. it loads #home. if i could figure out how to load #home but hide it when i clicked ANYTHING else, i would. -->
+<script type="text/javascript">
+location=location.hash||"#home"
+</script>

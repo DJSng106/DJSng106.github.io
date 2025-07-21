@@ -1,0 +1,71 @@
+/* center my shit */
+.center {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* set the font */
+body {
+    font-family: 'Roboto';font-size: 21px;
+}
+
+
+
+/* set the page colors */
+body {
+color: #FFFFFF;
+background-color: #0F0F0F;
+}
+
+/* force a specific image size for nav only */
+.nav {
+height: 35px;
+width: 35px;
+}
+
+/* im gonna kill myself. this is the cursed code that made it work. */
+
+
+/* don't display home on ANY other page. this is a horrible, nightmareish hack. i don't care. somebody please make it better, i dare you. */
+#home {
+  display: none;
+}
+
+/* display about but ONLY when brought up */
+#about {
+  display: none;
+}
+#about:target {
+  display: block;
+}
+
+/* another page */
+#realabout {
+  display: none;
+}
+#realabout:target {
+  display: block;
+}
+
+/* another page */
+#projects {
+  display: none;
+}
+#projects:target {
+  display: block;
+}
+
+/* this cursed puppy? it hides home when another page is open. */
+#home:target {
+  display: block;
+}
+
+.default {
+  &:not(:has(#home:target)) {
+    & #home:first-of-type {
+      display: block;
+    }
+  }
+}

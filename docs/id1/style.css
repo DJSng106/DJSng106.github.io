@@ -1,31 +1,47 @@
-/* center my shit */
+/* update 7/21/25: let's be more clear */
+
+/* this makes the magic happen: true center aligned magic! */
 .center {
-    position: fixed;
+    overflow: auto; /* make content scrollable */
+    position: fixed; /* this is required by the below */
+    /* next three lines makes the content center */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    /* i don't know if these 3 lines even help */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* set the font */
+/* make projects scrollable. */
+#projects.center {
+  width: 50%; /* i don't remember why i needed to specify width */
+  height: 100%; /* for it to scroll the height needs to be set */
+  line-height: 100%; /* "You need to add the line-height attribute and that attribute must match the height of the div." */
+}
+
+/* match project styling for #realabout */
+#realabout.center {
+  width: 50%; /* i don't remember why i needed to specify width */
+  height: 100%; /* for it to scroll the height needs to be set */
+  line-height: 100%; /* "You need to add the line-height attribute and that attribute must match the height of the div." */
+}
+
+
+/* this is our main magic */
 body {
-    font-family: 'Roboto';font-size: 21px;
+    font-family: 'Roboto'; /* set the font */
+    font-size: 21px; /* font size for the ENTIRE website. */
+    color: #FFFFFF; /* make text white */
+    background-color: #0F0F0F; /* make background black, but not pitch black. */
 }
 
-
-
-/* set the page colors */
-body {
-color: #FFFFFF;
-background-color: #0F0F0F;
-}
-
-/* force a specific image size for nav only */
+/* force a specific image size for nav only. the class is "nav" :) */
 .nav {
 height: 35px;
 width: 35px;
 }
-
-/* im gonna kill myself. this is the cursed code that made it work. */
 
 
 /* don't display home on ANY other page. this is a horrible, nightmareish hack. i don't care. somebody please make it better, i dare you. */

@@ -1,175 +1,291 @@
-<!DOCTYPE html>
-<html lang="en">
-    <html lang="en"><head>
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>DJSng! - Homepage</title>
-        <link rel="icon" type="image/x-icon" href="https://files.catbox.moe/yzplfv.jpg">
-        <meta property="og:title" content="DJSng">
-        <meta property="og:description" content="A disorganized mess of layers. Replacing rentry.org/DJSng & the original plaintext index.html.">
-        <link rel="stylesheet" href="style.css"> <!-- this is where we moved the css -->
-        <meta property="og:image" content="https://files.catbox.moe/yzplfv.jpg"> <!-- i'm too fucking LAZY to put it in the github repo so... -->
+<!DOCTYPE html> <!-- shut console up -->
+<head>
+<title>DJSng is presenting.</title>
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'> <!-- load the fonts -->
+<link rel="stylesheet" href="style.css"> <!-- load our style.css which does a bunch of shit we need -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- mobile support, or something -->
+<script src="fuck.js"></script> <!-- fucking fontawesome. i had to load a local script for this. -->
+<meta property="og:title" content="DJSng">
+<meta property="og:description" content="DJSng is presenting.">
+<meta property="og:image" content="https://files.catbox.moe/yzplfv.jpg"> <!-- i'm too fucking LAZY to put it in the github repo so... -->
 </head>
-<body cz-shortcut-listen="true">
-<!-- Please don't remove the next 2 lines! -->
-<div id="top"></div>
-<div id="skip"><a href="#content">Skip to content</a></div>
+<body>
 
-<div id="container">
-<div id="sidebar">
-<div id="sidebar-content" class="tape"> <!-- Remove the tape class if you don't want the tape -->
-<div class="sidebar-columns">
-<div class="icon"><!-- Icon, just remove this line if you don't want it --><img src="https://files.catbox.moe/yzplfv.jpg" width="90" height="90" alt="" /></div>
-<div>
-    <center><div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=djs" defer></script>
-<!-- Sidebar text -->
-<a href="https://www.imood.com/users/newgnx"><img src="https://moods.imood.com/display/uname-newgnx/trans-1/imood.gif" alt="The current mood of newgnx at www.imood.com" border="0"></a>
-<br>
-<div class="header__inner">
-    <p><span id="song">Please wait. If this text does not change, refresh this page!</span></p>
-</div>
-<br><hr><br>
-<div class="changelog">
-    <h2>Website Updates</h2>
-    <p><small>This scrollbox will display updates to this website! All posts are in MM/DD/YYYY format.</small></p>
-    <h3>7/2/2025</h3>
-    <ul>
-        <li>* Archived and uploaded a site draft from <a href="./archive/testfiles">November 2020</a></li>
-        <li>* I added a new button! I'm not exactly the happiest with it, but it'll do.</li>
-    </ul><br>
-    <h3>7/2/2025</h3>
-    <ul>
-        <li>* Archived and uploaded a site draft from <a href="./archive/kore21">May 2021</a></li>
-    </ul><br>
-    <h3>7/1/2025</h3>
-    <p><small>Happy Canada Day! Wish I wasn't spending it at home though.</small></p>
-    <ul>
-        <li>* Hotfixed the blog page on the June 2025 archive</li>
-    </ul><br>
-    <h3>6/25/2025</h3>
-    <ul>
-        <li>* Added a History page (WIP)</li>
-    </ul><br>
 
-    <h3>6/23/2025</h3>
-    <ul>
-    <li>* Removed some unnecessary files for a certain archives entry. Sorry</li>
-    <li>* Did some internal cleaning</li>
-    <li>* Uploaded old SpaceHey profile files I have laying around</li>
-    <li>* Spacehey profile finds are available on the <a href="./archive">archives</a>!</li>
-    <li>* A new demo has been shared on my <a href="./journal">journal</a>!</li>
-    </ul><br>
-    <h3>6/20/2025</h3>
-    <ul>
-    <li>* Due to issues with setting up RSS on my blog, I took my blog down for a while. Sorry, all.</li>
-    </ul><br>
-    <h4>6/19/2025</h4>
-    <p><small>Happy Juneteenth!</small></p>
-    <ul>
-        <li>* Refreshed the blog descrition</li>
-        <li>* Added a site warning. Moved 18+ content notice to the site warning. This should clean stuff up a little</li>
-        <li>* Made a <a href="./sitemap.html">Sitemap</a> at last!</li>
-        <li>* Ported some buttons from the old archive to this homepage</li>
-        <li>* Localized some of the site so it'll work if it ever becomes an offline archive</li>
-        <li>* Fixed some issues with the archives</li>
-        <li>* New <a href="./archive">archived webpages</a>! I also added the source of some of the stuff I found.</li>
-    </ul><br>
-    <h4>6/18/2025</h4>
-    <ul>
-        <li>* <a href="https://github.com/DJS4gnx/mycord">Forked OldCord</a> for personal purposes</li>
-        <li>* Added hover-over descriptions to tag filters on Journal page</li>
-        <li>* Added option to hide tweet-style posts on Journal (not recommended, but leaving the option open)</li>
-        <li>* Compacted some homepage text</li>
-        <li>* Added this box!</li>
-        <li>* Added buttons list. Only one of my friends made it so far. There's no other non-friend buttons yet.</li>
-        <li>* Added webring section.</li>
-        <li>* Interally made an images folder in root</li>
-    </ul>
+<!-- this is the homepage code. ahh. -->
+
+<!--
+
+hi, fellow nerd! as a reward, some credits!
+
+wintrmoon - hover code (genuinely, thank you so much!!!)
+music presence members - some feedback during creation
+
+bear blog - hosting for the blog
+jcn - imood creation
+m13o - status cafe creation
+stack overflow - a lot of css help (because i'm super stupid)
+various resources - the icons
+
+
+-->
+
+<div id="tooltip" class="tooltip"></div> <!-- this is required to make tooltips work. for some reason. -->
+<!-- i had to load the above div outside of the main divs otherwise it causes chaos -->
+
+<div class="center default" id="home">
+	<p><center>
+
+<!-- nav bar -->
+<a href="./posts" data-tooltip="journal (/posts/)" style="color:white;"><i class="fa-solid fa-inbox fa-xl" class="nav"></i></a>&nbsp;
+<a href="https://djsng.bearblog.dev/" data-tooltip="blog (goes off-site)" style="color:white;"><i class="fa-solid fa-blog fa-xl" class="nav"></i></a>&nbsp;
+<a href="#about" data-tooltip="about me" style="color:white;"><i class="fa-solid fa-user fa-xl" class="nav"></i></a>&nbsp;
+<a href="#projects" data-tooltip="projects" style="color:white;"><i class="fa-solid fa-floppy-disk fa-xl" class="nav"></i></a>&nbsp;
+<a href="#music" data-tooltip="music" style="color:white;"><i class="fa-solid fa-music fa-xl" class="nav"></i></a>&nbsp;
+<a href="#history" data-tooltip="my history" style="color:white;"><i class="fa-solid fa-user-clock fa-xl" class="nav"></i></a>&nbsp;
+<a href="./archive" data-tooltip="the archives (/archive/)" style="color:white;"><i class="fa-solid fa-calendar-week fa-xl" class="nav"></i></a>&nbsp;
+<a href="#resources" data-tooltip="resources" style="color:white;"><i class="fa-solid fa-toolbox fa-xl" class="nav"></i></a>&nbsp;
+	</center></p>
+
+    <!-- imood indicator -->
+	<center><a href="https://www.imood.com/users/newgnx"><img src="https://moods.imood.com/display/uname-newgnx/fg-FFFFFF/trans-1/imood.gif" alt="The current mood of newgnx at www.imood.com" border="0" class="imood" data-tooltip="current mood"></a></center>
 </div>
-<br><hr><br>
-<h3>Links</h3>
-<nav id="main-menu">
+
+<!-- status cafe -->
+<div class="center" id="about">
+<div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=djs" defer></script>
+<center>
+	<div class="header__inner">
+    <p>Last played:<br><span id="song">Loading...</span></p>
+</div></center>
+<p><center><a href="#realabout" style="color:white;">But you came to learn a real thing, didn't you?</a></center></p>
+</div>
+
+<!-- biography! -->
+<div class="center" id="realabout">
+<p>Right... I've kept my secrets <i>way</i> too long. Let me introduce myself</p>
+<p>Hello, I'm DJSng, a canadian based self-taught musician, ROBLOX rendering artist, passionate modder, blogger and writer. I was also the original director and owner of Enraged Novetus Game Destroyer, a 2020-2021 Old ROBLOX based game ranting skit about a kid playing ROBLOX as if it was really the 2010s.<br><br>
+I have gone by many names over the years, including Zandy, Luma, and Kameron. However, I would prefer you just simply call me Dj.</p>
+<p>I started this website back around April 2024 with Sadgurl's template generator, though only briefly. I picked the idea of a site back up around September and slowly built my way back to a cool site! I'm still not quite sure what I want out of it, originally having started it to replace the many Rentry.org and Carrd.co pages I made throughout 2020 - 2024.</p>
+<p>Since 2025, I've been trying to outdo myself, by listing a lot of resources I like to rely on, as well as some more stuff focused on what I do. Since then, the site evolved into this. A very slim page that gets right to the point. Just how I like my stuff!</p>
+<p>
+</div>
+
+<!-- social links and stuff i did! and stuff. overflow test this please, maybe if it scrolls nice, i'll add a link here that also adds a resource page -->
+
+<div class="center" id="projects">
+<p><b>djsng.neocities.org</b> (~2024 - Present)<br>
+<a href="https://github.com/DJSng106/DJSng106.github.io">(link)</a></p>
+<p>Full source code for my Neocities page.</p>
 <ul>
-    <li><a href="https://djsng.bearblog.dev/">Blog</a></li>
-    <li><a href="./history">History</a></li>
-    <li><a href="./journal">Journal</a></li>
-    <li><a href="./resources.html">Resources</a></li>
-    <li><a href="./archive">Archive</a></li>
-    <li><a href="https://djsng.atabook.org/">Guestbook</a></li>
-    <li><a href="https://spacehey.com/djsng">SpaceHey</a></li>
-</ul>
-<small>here's my site button! please add it if you liked my site!</small><br><br>
-<img src="./img/button.png"></center>
-</nav>
+	<li>Management of the codebase, including the full archives</li>
+	<li>Design concepts and branch testing, owner of the GitHub repo</li>
+	<li>Literally everything</li>
+</ul><br>
+<p><b>Music Presence</b> (October 2024 - Present)<br>
+<a href="https://github.com/ungive/discord-music-presence">(link)</a></p>
+<p>A discord rich presence utility for media players</p>
+<ul>
+	<li>Active community member on the Discord support and community server</li>
+	<li>Contributed bot macro write-ups & provided some concepts</li>
+	<li>Beta testing (under the "Crash Pilot" special role)</li>
+	<li>Former server moderator (March 2025 - June 2025)</li>
+</ul><br>
+<p><b>Toolkit</b> (July 21st 2025 - Ongoing)<br>
+<a href="https://github.com/DJSng106/toolkit">(link)</a></p>
+<p>Game modding documentation, resources and performance optimizations for various games. Inspired by TheUsefulLists and PC Gaming Wiki.</p>
+<ul>
+	<li>Active community member on the Discord support and community server</li>
+	<li>Contributed bot macro write-ups & provided some concepts</li>
+	<li>Beta testing (under the "Crash Pilot" special role)</li>
+	<li>Former server moderator (March 2025 - June 2025)</li>
+</ul><br>
 </div>
+
+<!-- music page (placeholder) -->
+<div class="center" id="music">
+<p>Sorry, nothing to be found here for now. :(</p>
+<p>You should go to <a href="./posts">my journal</a> for demos!</p>
 </div>
-</div>
-</div>
-    <main id="content">
-                <section class="post">
-                    <div class="article-content">
-                    <p>Hi, welcome to my website. I'm DJSng (Dj for short). This website is meant in mind for 1920x1080 as that's my device resolution, so mobile devices may run into issues, <i>specifically on this page</i>. Be warned! <small>And please change your device screen to Landscape, if you can.</small></p>
-                    <p>Please see the buttons on the sidebar for some places to go! I write a lot, so give me a chance to interest you with some yap! Remember to check out my <a href="/resources">resources page</a> for some software recommendations and other resources that helped me.<br><br>
 
-                        Follow my <a href="https://neocities.org/site/djsng">site</a> on Neocities!</p>
-                        
-                    <p>All site source is available on <a href="https://github.com/DJS4gnx/DJS4gnx.github.io">GitHub</a> to comply with open source licenses and requests from template authors. You should check the <a href="https://github.com/DJS4gnx/DJS4gnx.github.io/issues">Issues</a> for things that are TO-DO or need help.<small>sincere apologies for any warcrimes, i'm rusty!</small></p>
+<!-- history.html -->
+<div class="center" id="history">
+	<h1>My History</h1>
+	<p>Hi! This small page serves the purpose of documenting my history, kind of like a portfolio to show the kind of stuff I've done overtime. It's a near full documentation of the many phases I had on the internet, as well as my various projects. This page is heavily inspired by <a href="https://wintr.neocities.org/creations">Wintr's "my creations" page</a>, so do please check that out too</p><br>
+	<h2>This website & other websiting<br>(November 2020 - Ongoing)</h2>
+
+<details>
+                        <summary style="font-size: 20px;">Reveal text</summary>
+                        <p>So, this website... It has a very interesting history. When it comes to before Neocities, I actually kind of already experimented with a personal website, though mostly to shitpost with friends. I used to experiment with XAMPP and the idea of self-hosting, which would be knowledge that would help me a lot later on in life. I may have only been 13 and blindly forwarding ports, but at the least, I didn't put myself in too much risk. I hope...<br> In November 2020, I was doing test stuff with HTML that was entirely unstyled, which was mostly a junk thing. It was my first ever attempt at a website, where I knew nothing about styles, nothing about more than the paragraph HTML tag, etc. It was as barebones as you can imagine.</p>
+                        <p>In 2021 I copied the code of the abandoned 2010 website MetalMIDIs, a 2010s site that hosted MIDIs of songs by Metalica, Slayer, and a bunch of other "your dad" metal bands. This isn't really a blog post, so I won't explain what a MIDI is, you should look on your own time. But basically, it kind of sounds like the song, but it's also really small.<br>Basically, the culture of my 2021-2023 site revolved around code I stole from a 2010s site, and it started because my friend did it and I wanted to do the same thing.
+                        </p>
+                        <p>I created the first version of my website around April 2021, where this version of the site would last until Summer 2023. It was a very crappy modification of Metal MIDIs, with a "EmoMIDIs" joke even spawning from it, a response to my friend adding more MIDIs to their site...</p>
+                        <p>Ah right, I should tell you about that. At the time, there were two rivaling sites (both domains dead! please do not visit them) -- Mine, woodacadweb.cf (later korephase.cf); and my friend's, wwwdotwebsite.onthewifi.com. We once had a minibeef that was completely unserious, which involved reuploading and showing publically on wwwdotwebsite's homepage, some old Doki Doki Literature Club gameplay. I'm completely serious, this <i>was</i> a shitpost project. So that was a harmless minibeef. </p>
+                        <p>The whole site served the purpose of just being a shitpost. It was kind of serious at times, occasionally executing a good idea outside of the lowercase chaos and horribly unserious tone, but most of the time I didn't really care about how I came off. We weren't taking ourselves seriously at all.</p>
+                        <p>My first discovery of Neocities was about 2022, when I discovered it through some friends and wanted to have an alternative for when envitably I'd lose korephase.cf. After trying to upload my site, I had a bad time and just... quit. I had also tried in 2023 to use it, using the Goblin Heart layout generator, but giving up coloring it after my puke forest green theme didn't work out.</p>
+                        <p>Fast for ward to 2024, after also having picked up the Goblin Heart layout generator and giving up on it once already, I gave it a second chance following an incident in my friend group. My first design that stuck was the <a href="./archive/xamp24">grey version</a> of the three Goblin heart sites I made. The third of course is the <a href="./archives/vido">Vido blue one</a> and the first one is lost, because I don't know anything about it. I rocked the grey site a while before losing disinterest again for a while.</p>
+                        <p>Around September 2024, I picked back up the idea of making a site and made a temporary plaintext domain not long before I picked up the Goblin Heart template... again. After some tweaks, <a href="./archives/vido">I turned it blue</a> and after some button collecting, I went on my <i>proper</i> personal website journey with Neocities. I lead myself through many other templates, practically digging around other people's sites and borrowing some snippets of codes to play around. Eventually, when nomnomnami created her site templates, I jumped that train and went through two of her templates, before...</p>
+                        <p>The great fire. I nuked my website on November 20th 2024 following a crash out over a former friend, who I had dropped after growing uncomfortable and being tired of their shenanigans. Luckily, all of the GitHub history was saved, so I recovered it all and put it here for everybody to see, but it was still a temporary loss.</p>
+                        <p>But I came back around, as around about March 2025, I returned. Starting lazily with just plaintext for the first while of 2025, just an ugly plaintext site on GitHub Pages for my own amusement. Though, I kind of begun to miss having a site. So, after browsing around for some layouts and asking the Spacehey community for site help in May 2025, I picked up a Kalechips layout, skimmed through some resources for more help and dusted off my abandoned Neocities account. I cleaned up some archives, added a journal page based on Nami's wonderful Pastille template, and... Well, here we are, you're blessed with this yap. The fairy tale is over.</p>
+                    </details>
+                    <p>More information, such as a browsable version of korephase.cf, as well as older versions of this page, can be browsed on the dedicated <a href="./archive">archives page</a>. A link is also available on the sidebar.</p><br>
+                    <h2>ROBLOX Rendering (~Mid 2023 - Ongoing)</h2>
+                    <details>
+                        <summary style="font-size: 20px;">Reveal text</summary>
+                        <p>It is very little surprise that I am a ROBLOX Rendering artist. Well, for some, that was probably a surprise, but for people who see me share my creations on the regular, they know well that I am one. I don't mention it often, but I do post my work every once and a while. It might just be a small sizable hobby, but it earns its spot here for being relatively new, as well as being one of those things I make either to assist my other hobbies, or well... To make a point.</p>
+                        <p>It mainly started to just give it a shot. I was surrounded by people who did similar things, such as some beginner animators, some Roblox GFX artists, even a fellow rendering artist, who was the sole reason I wanted to also learn rendering. Among all the other people around me, I decided to give it a chance too. My first few works were junk, but of course, I learnt and adapted. And I just started making more and more to experiment.
+                            <br>
+                            Though, their influence on me ended up being very negative and predatory. But hey, I didn't drop this hobby!</p>
+                        <p>Over time, I slowly taught myself the ropes kind of like I did with Music producing. With the help of a friend I knew, I worked with Studio, slowly teaching myself the ideal positions, and slowly became comfortable with doing it on my own, trying not to rely too much on community feedback. I worked best I could to work with and master lighting and posing, often topping my renders up with my own photo edits, and currently, I have a somewhat sizable experience. I'm no genius, but I got a little bit of knowledge. And that keeps it interesting.</p>
+                    </details>
+                    <p>All of my work in this category can be viewed by opening my <a href="./journal">miniblog</a> and sorting by #art!</p><br>
+
+                    <h2>Music Production (with Beepbox)<br>June 2022 - Ongoing</h2>
+                    <details>
+                    <summary style="font-size: 20px;">Reveal Text</summary>
+                        <p>Creating music was always an interesting thing to me. When I was 8, I recorded myself trying to sing to "The Monster" by Eminem, a recording I somehow still have thanks to it surviving on a USB that was owned by my stepfather. That said USB is permanently stuck in read-only for unknown reasons, and its casing is long gone.</p>
+                        <p>I kind of knew off the bat that I was probably not meant to be a singer. I'm awkward, fucked up my lines, and I personally think I'm an awful sounding singer. But what if I just made the beat instead of the vocals?</p>
+                        <p>My production journey was a long and self-taught one. I went in knowing basically nothing, only barely teaching myself by just making whatever sounded good. I had discovered the Chiptune engine <a href="https://beepbox.co">Beepbox</a> while looking for piano tools online, which begun to attract me. It was super easy to make music just by spamming mouse. But when I started thinking a little more about my tunes instead of just spamming... I knew that perhaps, I could consider making more genuine, cleverly thought out tracks. After hearing the work of fellow beeper <a href="https://smaz9.bandcamp.com/" title="Genuine shoutout. I LOVE YOUR WORK SO MUCH">Smaz</a> at some point in 2022, I knew I had to at least try and keep this hobby up.</p>
+                        <p>I spent 2023 trying to improve, and I really tried. I might have been rusty, creating tracks that were repetitive and almost structureless, I still made good melodies. With the assistance of two former friends, the artwork was handled, the production was handled, I'd taught myself very rough mixing... So all I had to do was grind to improve for a few years.</p>
+                        <p>By 2024, there was definitely improvement! 2022 was mostly goofing off and thinking about if I wanted to do this forever, and trying to figure out what I doing. 2023 was mostly an extension of 2022, but rather than shotty melodies, some good stuff came to light. 2024 basically took that and threw it out the window, and while early 2024 was just 2023 with a bit of more flavor, by summer 2024, my quality began to go up. Getting ambitious with ideas like remixing a Beethoven song among other things, I began to just try more and more and became obessed with new ideas.</p>
+                        <p>In the modern day, I'm currently experimenting with samples and some other ambitious ideas. I have yet to leave the Beepbox space of things. While I mainly work alone when it comes to my artwork, I produce in a duo with a family member, trying to make more good things. I'm not the smartest producer around, but I'm still producing just for fun, after all.</p>
+                    </details>
+                    <p>They say if you try to look hard enough, you might be able to <a href="./journal">imagine</a> what my music sounds like! And if you can't find it, here is <a href="https://ultraabox.github.io/player/#song=u5N0afm%2003.27n310s2k21l00e0nt1ma7g0nj07r3O_U00000000i0o321T3v0pu03f0210e0v000q0B020r31300110x60Oa4d040S09ajsrqOiO99000h0E1c009T7v0lue8f010p900q060Oa7d190H-SstrsrBzjAqihh6IcE0c0T5v0lu05f152qg610Wa7d040H_o5JGh0qrArhg6h0E0c0T2v0nu02f180q040Oad090w0h0E0c0b4h4h414h000h4h40000x414h0P80cj4h00000h4h4h4h4h40014h414h8x4h4h40p21UFAu4icxhEQW52zhFkql6zh0kPnNcAqd7h7yZcLOaxgEka52w2ChW8zE4t0zE4t0zE4t0zE4o2Chy0zj542CwkQ2D84ugaq1jgauk4t0zE4t0zE4t0zE4t0z0" title="March 2024... Juicy demo.">a 2024 demo</a>, on me. Just click the link and press Space!</p><br>
+
+                    <h2>Lore Writing<br>
+                    ~2021 - Ongoing</h2>
+                    <details>
+                        <summary>Reveal Text</summary>
+                        <p>I tend to keep this one to myself since I'm not the most proudest of my work. I like to keep some of my writing pieces to myself, but every once and a while, if I feel I can trust the other person, I might just drop a bombshell of a worldbuilding piece. But really, I almost never share my writing pieces, I usually save it for fellow roleplayers and writers, otherwise I don't share at all. Some of my work tends to either be edgy, weird, or just otherwise confusing without the context of what characters I have. But either way... This should be mentioned.</p>
+                        <p>Around 2021, during the peak of my Roleplay experience (which is talked more about later down this page), I begun experimenting with writing in between roleplay sessions. Prior to this point, most of the lore I wrote was mostly for reference. It had no use outside of adding context to Roleplay scenes, and it was mostly built off of existing roleplays that have all already happened. I still do that now -- I really like blending past and present. A little bit of real events in between the stuff I pre-decided, kind of like a game of recognizing what's a reference to a real event and what was made up to advance the story.</p>
+                        <p>Anyway, one of those things were experimenting with how my OC expressed himself. At the time, I decided on a cassette series, which was basically pre-written lore that explains some of the cassette audio tapes fellow roleplayers could find. It was a transcription style, very basic with the header just being the record date, the label on the tape physically, and the contents of the tape. I used to keep close track of what tape was what, and I cared a lot about consistency. Sometimes I'd have to make the tape concents up on the fly, but there's a few good tapes I made up in advance. One of those tapes was about my OC facing his alter ego, I think. Having a conversation about protection, while they were barricaded together in a bedroom. I don't quite remember.</p>
+                        <p>Since then, I tried to expand my oppertunities. Nowadays, I nicknamed my new era, "The Red Sun Experiment". My writing serves as a filler until I find more Roleplay partners who are super active, I just write in between when I'm bored. I also sometimes use it to creatively write and vent frustrations. Effective, surprisingly.</p>
+                    </details><br>
 
 
-                    <h2>Mirrors</h2>
-                    <p>There are two official mirrors for this website. Please make sure you are only on one of these:<br>
-                    <ul>
-                        <li><a href="https://djs4gnx.github.io/">djs4gnx.github.io</a> (with GitHub Pages, the original domain!)</li>
-                        <li><a href="https://djsng.neocities.org">djsng.neocities.org</a> (with NeoCities)</li>
-                    </ul><br>
-            You might get redirected to the GH Pages site every once and a while, that is my bad. The archives especially are very old and made very hacky!</p>
-
-            <h2>Credits</h2>
-                    <p>Thanks to the following people:<br>
-                        <a href="https://kalechips.net/projects/layouts/">kalechips</a> - website template!<br>
-                        <a href="https://m15o.ichi.city/site/home.html">m15o</a> - <a href="https://journal.miso.town/">HTML Journal</a> implimentation<br>
-                    <a href="https://biancarosa.com.br/">Biancarose</a> - <a href="https://github.com/biancarosa/lastfm-last-played">Last Played last.fm widget</a> (it replaces the old one!)<br>
-                <a href="https://nomnomnami.com" title="I had to move your credit here... Sorry.">Nomnomnami</a> - Blog-like journal page template ("Pastille" Template)</p>
+                    <h2>Minecraft Phase<br>2014-2017, ~2020 - Ongoing
+                    </h2><details>
+                        <summary style="font-size: 20px;">Reveal Text</summary>
+                        <p>When it comes to Minecraft, I've been an... interesting specimen. Since 2014, I've always been wanting to play Minecraft, even as a super young child. Of course, that meant turning to questionable methods, and that fuelled my knowledge and fondness for piracy. But we'll be focusing on 2020 onwards, since the only thing special about 2014 through 2017 is downloading outdated Java versions to use the 'Medium' security options to play on a MinecraftForFree clone and using TLauncher Legacy to play with a furniture mod for 1.7.10. Mod Showcase stuff.</p>
+                        <p>I was gifted a copy of Minecraft: Java Edition in 2020 by a friend, who would rather have me on a real account to play Hypixel than deal with me only being able to go on our friend group's private server while not having a copy of the game, which is what we did prior. Some stuff shuffled around, but long story short, I got to keep a completely fresh account after using my friend's for a while. It came with an OptiFine cape and the MVP+ role, courtesy of my friend who didn't mind. The account was originally theirs, hence the first username hidden on NameMC, but the fresh account became mine in the end, at least. A legacy to begin.</p>
+                        <p>Anyway, I mostly just played Hypixel for the first while, with the exception of the private survival server I mentioned earlier. Nothing too special. I was still into modding the game but didn't dip my toes in just yet, because I had to wait for MultiMC to get Mojang Account support. That was a long few months without it.</p>
+                        <p>But it did eventually come out! That started a little modding journey, my journey mostly being ATLauncher (they did it first iirc. very cool launcher) -> MultiMC -> ATLauncher -> PolyMC (Before it's downfall) -> ATLauncher -> Prism Launcher -> ATLauncher -> ...Prism. <br>
+                            Though, it was worth nothing there were many, <i>many</i> hoops. Lots of indecision, but we got somewhere eventually. And that was my foot in the door of the new modding world. Seeing that Fabric had come on the scene and Forge still existed, but on newer versions seemed slower than dogweed, I gravitated towards Fabric, which would eventually keep me on the hook for its ease of use, but it's ever increasing grip on the mod space. Of course, this would be suepr ironic, but whatever.</p>
+                        <p>I would also try to pick up Minecraft Clients to little enjoyment. I had first tried out the famous client Badlion after hearing good things about it, before also trying Lunar Client following some controversies. <a href="https://web.archive.org/web/20230421115716/https://rentry.co/silvermcsetup">That resulted in a portable rant being made</a> where I jokingly pointed fun at these clients for having no modding capabilities, false promises, among other things. Take that as you will.</p>
+                        <p>There's not much left notable to note from my experience from this point onwards, asides from two private Minecraft Survival experiences I tried my best to bring people. The first of which being a private SMP called Cloverfield, where I made a load of selections for my friends. Many experiences and servers came of this, including a Survival world, a Creative world, a classic survival world, a modded survival world, an anarchy survival world... Lots of crazy shit. The second was to compliment an Old ROBLOX hosting community I had set up, which was mostly vanilla but with a death counter on the right of the screen, and Discord integration. Yeah, not much else to say, they were private and mostly just have stuff I can't share here. But it was fun while it lasted!</p>
+                        <p>After dropping the game for a while around 2023-2024, I came back in the middle of 2025, and here we are! A nice entry on my website, while I still find time to keep playing.</p>
+                    </details>
                     <br>
-                    <h2>Buttons</h2>
-                    <p>This is all of my friends' buttons! Click the dropdown below all the friendly buttons to show more buttons, regardless of source.</p><br>
-                        <a href="https://wintr.neocities.org" title="AHHH I FORGOT TO ADD YOUR BUTTON I'M SO SORRY I GOT TOO LAZY TO READD ALL MY BUTTONS"><img src="./img/wintr.gif"></a>
-                    <a href="https://ivyswell-tavern.neocities.org/"><img src="https://ivyswell-tavern.neocities.org/Assets/button.png" alt="Ivyswell Tavern"></a></p>
-                        <details>
-                <summary>More buttons</summary>
-                <p>
-                    <a href="https://catbyte.site/" target="_blank"><img src="https://catbyte.site/buttons/catbytebutton.png"/></a>
-                    <a href="https://nomnomnami.com"><img src="https://nomnomnami.com/images/site_button.gif"></a>
-                    <img src="https://cyber.dabamos.de/88x31/xp.gif"/>
-                    <a href="http://toastytech.com/index.html"><img src="./archive/me/neo1/drop/button/fuckie.gif"/></a>
-                    <a href="https://daniele63.com"><img src="https://daniele63.com/images/danieles_button_alt_2.jpg"/></a>
-                    <img src="https://daniele63.com/images/buttons/minecraft.gif"/>
-                    <a href="https://midnightsolarium.neocities.org"><img src="https://midnightsolarium.neocities.org/img/misobuttons/misobutton.gif"/></a>
-                    <a href="https://frutigeraeroarchive.org/"><img src="https://frutigeraeroarchive.org/images/buttons/frutigeraeroarchive_button.png"/></a>
-                    <a href="https://dshifter.neocities.org/"><img src="./archive/me/neo1/drop/button/DShiftersPlaceOmega88x31.png"></a>
-                    <a href="https://auberylis.moe/"><img src="./archive/me/neo1/drop/button/auberylismoe.png"></a>
-                    <a href="https://squidbeak.neocities.org" target="_blank"><img src="https://squidbeak.neocities.org/squidbeak.png"></a>
-                    <a href="https://skewbug.neocities.org/"><img src="https://skewbug.neocities.org/images/siteButton.gif"></a>
-                    <a href="https://tapeykatt.neocities.org" style="text-decoration:none;"> <img src="https://tapeykatt.neocities.org/button.gif" alt="Tapeykatt's website" title="Tapeykatt's website"></a>
-                    <a href="https://pinkfiremage.neocities.org/"><img src="./archive/me/neo1/drop/button/pinkfiremage.png"></a>
-                    <a href= "https://hatefulglitch.neocities.org/" target="_blank"> <img alt="SoulBound!" src="https://hatefulglitch.neocities.org/Button.gif"></a>
-                </p>
-            </details>
-            <h2>Webrings</h2>
-            <p><abbr title="the weird games webring seemed to only have two members who were actually considered and roring randomly went down. sad">none :(</abbr></p>
-            <!-- please somebody find a better hack for above ^^ i'm tired -->
-                    </div>
-                    <footer class="article-footer"></footer>
-                </section id="post">
-        <footer id="main-footer">
-        <p><a href="./journal">Looking for my life updates and status? It moved here!</a></p>
-        </footer>
-        </div>
-        </main>
-        </body>
+                    <details>
+                        <summary>View screenshots</summary>
+                        <p>Hover over images to see the date they were taken, as well as other information!</p>
+                        <!-- TO:DO; replace all hover overs with wintr's script -->
+                        <img src="https://files.catbox.moe/kb3dyk.png" title="Cloverfield Classic (1.8.9), Janurary 2022. This was the main attraction for that server, my funny house!"><br>
+                        <img src="https://files.catbox.moe/2mgils.png" title="Cloverfield Classic (1.8.9), Janurary 2022. I held a sheep hostage to try and get people on. It didn't work..."><br>
+                        <img src="https://files.catbox.moe/t8skbp.png" title="Cloverfield Origins (1.18.2), Janurary 2022. I wanted to make the joke of 'Fuck team seas' and decied to litter kelp in the ocean. That aged like a fine wine now that MrBeast has been the center of controversy for the past year."><br>
+                        <img src="https://files.catbox.moe/o2wb5l.png" title="My OptiFine cape (1.8.9), April 2022. I want to bring this one back."><br>
+                        <img src="https://files.catbox.moe/xz7rrj.png" title="Cloverfield's 'BurntClovers' Anarchy Server (1.12.2), Janurary 2022. I was super into Anarchy around this time. I used exploits only on Anarchy -- There is no cause for alarm!"><br>
+                    </details><br>
 
-<script type="text/javascript"> /* this should handle last.fm */
+                    <h2>Obession with Music<br>
+                    ~July 2018 - Ongoing</h2>
+                    <details>
+                        <summary>Reveal Text</summary>
+                        <p>This might <i>seem, really normal</i>, especially considering when it comes to Music, people tend to be obsessive about their favorite artists, but I promise, this is going somewhere.</p>
+                        <p>Music has always been a big part of my personal preferences. Listening to stuff on YouTube was my way of listening to music for a while as I was super young and it's all I had. I started out listening to pop songs on the radio with my mom before browsing a lot of YouTube as a kid and eventually stumbling my way through my own taste, which would start me off around during the beginning of my teen years. I loved listening to music and started out downloading my favorite songs through YouTube, but I eventually picked up Spotify around Summer 2018. It was new to me and I wanted to give it a try. I tried it and I put up with the ads for a while, long before I knew Spotify had adblockers. Of course, by 2021, this was too much and I chickened out, to trek along the piracy scene in 2020, then later 2022, and later... Well, 2024 and we're still mostly here, aside from Apple Music throwing me back a few years progress.</p>
+                        <p>So that's one thing I obsess about, working with my music player! I find that the normal streaming service doesn't do it for me, so I switched to foobar2000. I used it a bit in 2020, tried to main it in 2022 to no luck, tried it some more in 2023, then got set in stone by 2024. :)</p>
+                        <p>I also care a LOT about scrobbling. I've signed up for last.fm in 2022 while wanting to explore what that was like, but I also really like Listenbrainz! Unlike last.fm (which I seemed too late to contribute my spotify history to...), I was able to import my Spotify history smooth sailing, and now I can break down my 2018-2025 listening history more effectively! It's a great tool, I'd be pretty lost on learning more about myself without it.</p>
+                    </details>
+                    <p>I have a <a href="https://last.fm/user/RainbowxChaser">Last.fm account!</a> Though if you want to see my 2018 stats, please check out <a href="https://listenbrainz.org/user/halostun">Listenbrainz page</a> instead!</p><br>
+
+
+                    <h2>CapCut Editing<br>
+                    ~September 2022 - June 2025</h2>
+                    <details>
+                        <summary>Reveal Text</summary>
+                        <p>Similar to the reasons I had decided I wanted to do ROBLOX renders because a friend was doing it, I also wanted to do OC edits in CapCut. The way that worked is you would gather footage from many ROBLOX games, play a bunch of animations, and splice it all together. I started making some pretty shitty stuff in 2022, then from 2023-2025, it was a slow rise in quality.</p>
+                        <p>This hobby died when my drive died June 9th, which basically marked the end of editing. I currently don't have plans to go back due to ROBLOX's increasing issues with moderation, as well as lack of reliable storage space to store it on.</p>
+                    </details><br>
+
+
+                    <h2>Roleplaying on ROBLOX<br>
+                    ~Early 2019 - October 2023</h2>
+                    <details>
+                        <summary>Reveal Text</summary>
+                        <p>placeholder</p>
+                    </details><br>
+
+
+                    <h2>YouTube Channel (non-ENGD/non-Music uploads)<br>
+                    ~December 2019 - 2023</h2>
+                    <details>
+                        <summary>Reveal Text</summary>
+                        <p>placeholder</p>
+                    </details><br>
+
+
+                    <h2>Project Phoenix / DjStuff's Novetus Addon<br>
+                    ~April 2020 - June 2022</h2>
+                    <details>
+                        <summary>Reveal Text</summary>
+                        <p>placeholder</p>
+                    </details><br>
+
+
+                    <h2>Enraged Novetus Game Destroyer / Novetus "Nexttime" Nuker<br>
+                    ~Feburary 2020 - Late 2022</h2>
+                    <details>
+                        <summary>Reveal Text</summary>
+                        <p>Anybody who might have been in the Novetus discord or had any sort of involvement with Novetus in 2020 might have heard of Novetus Nexttime Nuker (a poor acronym, looking back...), my window into YouTube. Before I was really "solidifed" into the Old ROBLOX Community around Feburary or March, I was also a ROBLOX Troller for BarneyHunter12, where I had a lot of active Discord involvement before the server shut down and combusted into flames around April. Lots of stuff happened there, maybe I could make it a section here some time.</p>
+                        <p>Anyway, I entered the ORC. I had did some YouTube before (which lasted slightly longer than this webseries), which was mostly just trolling stuff and some arguments I had over ROBLOX with people before. Though, when it came time to do something about ORC, after watching some of XiaoXiaoMan's Raging Roblox Reviewer, I wanted to do what any fanboy would do: Remake the entire thing unfaithfully, messily, like an Amateur, with Novetus. It welt about as well as you expect, but some older videos (before I took them down for no reason in ~2020-2021) got up to a couple thousand views. Impressive. Unfortunately, season 1 is now lost...</p>
+                        <p>It was a novelty thing at the time, definitely. And it ended up evolving into having a bit of bite sized lore, mainly involving the protagonist being some random, uninspired kid named Jordan, who's allegedly actually in the 2010s... but the continuation doesn't add up. It was mostly just a fun time waster while I was an early teenager. Might be time to do it again!</p>
+                    </details>
+
+</div>
+
+
+<!-- resources -->
+<div class="center" id="resources">
+	<!-- todo: re-write all of this -->
+<h1>About this page</h1>
+                    <p>Hi! I wrote this piace to link to a bunch of resources that I use. I had wanted to link these for a long while, but I always struggled to update it. Hopefully, this should be the last time.<br>
+                    Everything here, except for ones clearly labeled as "Paid" in brackets, are free to use in some way. If you struggle to find the free download option, feel free to come find me, but just be careful if you don't want to go through that kind of hastle.</p>
+                    <p>And please, for gods sake, use an adblocker. Firefox users can use uBlock Origin out of the box just fine, but users that have anything Chromium based (i.e: Chrome, Opera, Brave) should switch to Firefox if they can. Some browsers may have an adblock that kinda works (Brave, Vivaldi), but using the best adblocker out there (uBlock Origin) will not properly block ads. I've seen some friends use uBO on Opera and still see ads because the adblockercouldn't block the ads by the time the page loaded, which caused confusion and ads to be clickable anyway. Beware!</p>
+                    <h1>Recommended Programs</h1>
+                    <p>For anybody who's looking for new things to try, I decided to make a list of software and websites I trust and recommend to anybody who's looking for something new. This list isn't very long and I need to add more, but feel free to ask for recommendations and I'll slam some here. I'm not exactly a tech support genius, so if I say to check in with other people and I point you to a support page or something, maybe it's best to ask there.</p>
+                <p>I promise, I've at least tried these softwares and double checked I wrote the right link!</p>
+                <h2>Web Browsers</h2><br>
+                <a href="https://floorp.app/en" target="_self">Floorp Browser</a> - You like Firefox? Used it before? Good, imagine it but faster. I cannot live without Firefox considering adblockers are going to die very fast, I don't completely like Brave and Chrome's extension store has nothing good for sidebar tabs, but Tree Style Tabs has done just as good as a job! Only thing is that Tree Style Tabs is a firefox exclusive, but many of the ROBLOX extensions I like are kind of buggy on Firefox (at least right now, but that'll change soon when RoPro v2.0 comes out), but it's a compromise I'm willing to make for now.<br><br>
+                <h2>Music</h2>
+                <a href="https://www.foobar2000.org/" target="_self">foobar2000</a> - If you were like me, you probably used those sketchy YouTube to MP3 downloaders and Windows Media Player. Foobar2000 is like the adult version of WMP, with way more features I find myself addicted to, as well as it's superior customization. You want something? Somebody's probably added it.
+                <br><br>
+                <a href="https://nicotine-plus.org/" target="_self">Nicotine+</a> - Wanted to get into the Soulseek scene but didn't know where to start? Or you just hate the default client? Nicotine+ has been recommended by many people, myself included, and it's a great place to start if you're looking to just learn to use Soulseek. You could also go to SoulseekQT for the retro style, but... Nicotine+ just functions better.<br><br>
+                <h2>Utility</h2><br>
+            <a href="https://rustdesk.com/" target="_self">RustDesk</a> - I started to despise TeamViewer when they made changes to how it handled connections. When I was initially looking for replacements and wanted something easy, this is what I found. It has a mobile app, a computer app, works on basically everything TeamViewer does, and while it's a little different, it did the job.<br><br>
+            <a href="https://aspia.org/">Aspia</a> -  When I needed something more than RustDesk, and wanted some more control over what I could do, I switched to Aspia. While it's computer only and most of it's features are only on Windows, it has features like using relays and routers to get around NAT issues, a console with address book functionality, the ability to just <i>watch</i> the screen (which Parsec is better for, but it is what it is), better file transferring than RustDesk, customizable stream settings, and a load bunch of other features that perfectly replaced TeamViewer. Plus, it worked out of the box on my LAN setup, so I was able to plug and play with my sibling, even without forwarding a bunch of random ports.<br><br>
+            <a href="https://www.voidtools.com/" target="_self">Voidtools Everything</a> - Get rid of the old Windows Search, you can settle for more. Voidtools Everything is a replacement for Windows Search that searches the whole drive a little more efficiently by caching what's on your drive, among other things. It made it much easier to find files rather than just click around blindly hoping you find it.<br><br>
+            <a href="https://www.gpsoft.com.au/" target="_self">Directory Opus</a> (paid) - Windows Explorer is kind of quirky, and that's why I have Directory Opus. It can work with Voidtools Everything for windows search, among other features, like custom colors for explorer windows, folder favorites, and a lot more I can't explain just in one blog post.<br><br>
+            <a href="https://explorerplusplus.com/" target="_self">Explorer++</a> - If you're too lazy to throw cash for Directory Opus or just can't afford it right now, Explorer++ is a good free alternative. It won't feel remotely the same but may be easier to get into.<br><br>
+
+                       <h1>Non-Software</h1>
+                    <p>Some stuff I've used is not strictly computer software, and when I have something to put related to that, it'll be here.</p><br>
+                    <h2>Websites</h2><br>
+                    <a href="https://skins.webamp.org/" target="_self">Winamp Skin Museum</a> - Built off the project Webamp, the Winamp Skin Museum is an interactive Winamp Skin collection in your browser! It has a bunch of obscure and common Winamp skins alike and it's a little something for your Nostalgia toolkit. It really does whip the Llama's ass!<br><br>
+                    <h2>Other</h2><br>
+                    <a href="https://gist.github.com/hf02/1570e009bd337bc09db6f3e3c29938ca" target="_self" title="Very helpful!">Connecting a Neocities website to your Discord profile</a> - Very wonderful guide for adding Neocities domains to your Discord connections!
+</div>
+
+
+
+</body>
+<!-- this is a horrible hack. i don't care. it loads #home. if i could figure out how to load #home but hide it when i clicked ANYTHING else, i would. -->
+<script type="text/javascript">
+location=location.hash||"#home"
+</script>
+
+
+<!-- last.fm code -->
+<script type="text/javascript">
     let user = 'RainbowxChaser';
     let url = 'https://lastfm-last-played.biancarosa.com.br/' + user + '/latest-song';
     let song = document.querySelector('#song');
@@ -180,4 +296,28 @@
             song.innerHTML = json['track']['name'] + ' - ' + json['track']['artist']['#text'];
         });
 </script>
-</html>
+
+<!-- image hover script by wintrmoon -->
+<script>
+      //NOTE - this is why it works
+      const tooltip = document.getElementById("tooltip");
+      const images = document.querySelectorAll("[data-tooltip]");
+
+      images.forEach((image) => {
+        image.addEventListener("mouseenter", () => {
+          tooltip.textContent = image.getAttribute("data-tooltip");
+          tooltip.classList.add("visible");
+        });
+
+        image.addEventListener("mouseleave", () => {
+          tooltip.classList.remove("visible");
+        });
+
+        //NOTE - you can remove this part if you do not want it to move with the cursor but then you'll have to do some styling to get it right
+        image.addEventListener("mousemove", (e) => {
+          tooltip.style.left = e.clientX + 15 + "px";
+          tooltip.style.top = e.clientY + 15 + "px";
+        });
+      });
+    </script>
+

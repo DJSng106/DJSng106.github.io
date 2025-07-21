@@ -1,0 +1,39 @@
+name: Enhancement
+description: Suggest an idea for the website
+labels: ["type: enhancement", "stage: uninspected"]
+body:
+  - type: checkboxes
+    id: basic-checks
+    attributes:
+      label: Confirmations
+      description: Read very *carefully*.
+      options:
+        - label: I have searched existing issues and did not find a duplicate of my issue
+          required: false
+        - label: I accept that my issue may not be added if it is too complex
+          required: false
+        - label: I have not been truthful to the above boxes
+          required: false
+  - type: textarea
+    id: idea
+    attributes:
+      label: Suggest your idea
+      description: How might this suggestion impact the site?
+      placeholder: Write your idea here
+    validations:
+      required: true
+  - type: textarea
+    id: implementation
+    attributes:
+      label: Implementation ideas
+      description: Describe ways this could be implemented.
+      placeholder: A description of how this could be added
+    validations:
+      required: false
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add any other context or screenshots about the feature request here.
+    validations:
+      required: false

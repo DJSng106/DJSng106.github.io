@@ -73,6 +73,23 @@ width: 35px;
   display: block;
 }
 
+/* another page */
+#music {
+  display: none;
+}
+#music:target {
+  display: block;
+}
+
+/* another page */
+#history {
+  display: none;
+}
+#history:target {
+  display: block;
+}
+
+
 /* this cursed puppy? it hides home when another page is open. */
 #home:target {
   display: block;
@@ -85,3 +102,23 @@ width: 35px;
     }
   }
 }
+
+/* style wintr tooltips */
+.tooltip {
+        background: #2d2d2e; /* use different stylizing because this isn't wintr's site */
+        color: #fcfcff; /* use different stylizing because this isn't wintr's site */
+        /* rest is specified as per wintr's documentation and should NOT be changed */
+        position: fixed;
+        padding: 6px 10px;
+        border-radius: 6px;
+        font-size: 14px;
+        white-space: nowrap;
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.15s ease;
+        z-index: 10;
+      }
+
+      .tooltip.visible {
+        opacity: 1; /* uhhh? i'll ask later i cba */
+      }

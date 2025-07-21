@@ -7,23 +7,41 @@
 
 <!-- this is the homepage code. ahh. -->
 
+<!--
+
+hi, fellow nerd! as a reward, some credits!
+
+wintrmoon - hover code (genuinely, thank you so much!!!)
+bear blog - hosting for the site
+jcn - imood creation
+
+
+-->
+
+<div id="tooltip" class="tooltip"></div> <!-- this is required to make tooltips work. for some reason. -->
+<!-- i had to load the above div outside of the main divs otherwise it causes chaos -->
+
 <div class="center default" id="home">
 	<p>Something wicked this way comes.
 	<center>
-	<a href="./posts"><img src="./img/home/post.png" class="nav"></a> <!-- posts -->
-	<a href="https://djsng.bearblog.dev/"><img src="./img/home/blog.png" class="nav"></a> <!-- blog -->
-	<a href="#about"><img src="./img/home/about.png" class="nav"></a> <!-- about -->
-	<a href="#projects"><img src="./img/home/projects.png" class="nav"></a> <!-- projects -->
+	<a href="./posts"><img src="./img/home/post.png" class="nav" data-tooltip="journal (/posts/)"></a> <!-- posts -->
+	<a href="https://djsng.bearblog.dev/"><img src="./img/home/blog.png" class="nav" data-tooltip="blog (goes off-site)"></a> <!-- blog -->
+	<a href="#about"><img src="./img/home/about.png" class="nav" data-tooltip="about me"></a> <!-- about -->
+	<a href="#projects"><img src="./img/home/projects.png" class="nav" data-tooltip="projects"></a> <!-- projects -->
+	<a href="#music"><img src="./img/home/music.png" class="nav" data-tooltip="music productions"></a> <!-- music -->
+	<a href="#history"><img src="./img/home/history.png" class="nav" data-tooltip="my history"></a> <!-- history -->
 	</center>
 	</p>
-	<center><a href="https://www.imood.com/users/newgnx"><img src="https://moods.imood.com/display/uname-newgnx/fg-FFFFFF/trans-1/imood.gif" alt="The current mood of newgnx at www.imood.com" border="0" class="imood"></a></center>
+	<center><a href="https://www.imood.com/users/newgnx"><img src="https://moods.imood.com/display/uname-newgnx/fg-FFFFFF/trans-1/imood.gif" alt="The current mood of newgnx at www.imood.com" border="0" class="imood" data-tooltip="current mood"></a></center>
 </div>
 
 <!-- status cafe -->
 <div class="center" id="about">
 <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=djs" defer></script><br>
-<center><div class="header__inner">
-    <p><span id="song">Loading last played song</span></p>
+<center>
+	Last played:<br>
+	<div class="header__inner">
+    <p><span id="song">Loading...</span></p>
 </div></center>
 <br><br>
 <p><center><a href="#realabout" style="color:white;">But you came to learn a real thing, didn't you?</a></center></p>
@@ -46,6 +64,18 @@
 <p>overflow test</p>
 <p>overflow test</p>
 <p>overflow test</p>
+</div>
+
+<!-- music page (placeholder) -->
+<div class="center" id="music">
+<p>Sorry, nothing to be found here for now. :(</p>
+<p>You should go to <a href="./posts">my journal</a> for demos!</p>
+</div>
+
+<!-- history.html -->
+<div class="center" id="history">
+<p>Sorry, nothing to be found here for now. :(</p>
+<p>You should go to <a href="./posts">my journal</a> for demos!</p>
 </div>
 
 <!-- more pages i want to implement:
@@ -75,3 +105,27 @@ location=location.hash||"#home"
             song.innerHTML = json['track']['name'] + ' - ' + json['track']['artist']['#text'];
         });
 </script>
+
+<!-- image hover script by wintrmoon -->
+<script>
+      //NOTE - this is why it works
+      const tooltip = document.getElementById("tooltip");
+      const images = document.querySelectorAll("[data-tooltip]");
+
+      images.forEach((image) => {
+        image.addEventListener("mouseenter", () => {
+          tooltip.textContent = image.getAttribute("data-tooltip");
+          tooltip.classList.add("visible");
+        });
+
+        image.addEventListener("mouseleave", () => {
+          tooltip.classList.remove("visible");
+        });
+
+        //NOTE - you can remove this part if you do not want it to move with the cursor but then you'll have to do some styling to get it right
+        image.addEventListener("mousemove", (e) => {
+          tooltip.style.left = e.clientX + 15 + "px";
+          tooltip.style.top = e.clientY + 15 + "px";
+        });
+      });
+    </script>

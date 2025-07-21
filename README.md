@@ -5,8 +5,8 @@ Powered by Deploy2Neocities and GitHub Pages
 # Official domains
 These are the only official places to visit the site.
 
-GitHub Pages - https://djsng106.github.io/
-NeoCities - https://djsng.neocities.org
+GitHub Pages - https://djsng106.github.io/  
+NeoCities - https://djsng.neocities.org  
 
 # Credits
 [Wintrmoon](https://wintr.neocities.org) - Hover tooltop code used on NG / Minimalist site  

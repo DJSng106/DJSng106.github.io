@@ -26,6 +26,12 @@
   height: 100%; /* for it to scroll the height needs to be set */
 }
 
+/* fix images being too big for the div */
+#history.center img {
+  width: 100%; /* i don't remember why i needed to specify width */
+}
+
+
 
 /* match project styling for #resources */
 #resources.center {
@@ -156,3 +162,7 @@ a:hover {
 a:active {
   color: blue;
 } 
+
+i > a:visited {
+  color:white ;
+}

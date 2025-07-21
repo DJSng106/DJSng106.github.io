@@ -12,9 +12,6 @@
 </head>
 <body>
 
-
-<!-- this is the homepage code. ahh. -->
-
 <!--
 
 hi, fellow nerd! 
@@ -38,12 +35,12 @@ fontawesome - the icons
 -->
 
 <div id="tooltip" class="tooltip"></div> <!-- this is required to make tooltips work. for some reason. -->
-<!-- i had to load the above div outside of the main divs otherwise it causes chaos -->
+<!-- NOTE i had to load the above div outside of the main divs otherwise it causes chaos -->
 
 <div class="center default" id="home">
 	<p><center>
 
-<!-- nav bar -->
+<!-- NOTE this is the nav bar and all of the images in it -->
 <a href="./posts" data-tooltip="journal (/posts/)" style="color:white;"><i class="fa-solid fa-inbox fa-xl" class="nav"></i></a>&nbsp;
 <a href="https://djsng.bearblog.dev/" data-tooltip="blog (goes off-site)" style="color:white;"><i class="fa-solid fa-blog fa-xl" class="nav"></i></a>&nbsp;
 <a href="#about" data-tooltip="about me" style="color:white;"><i class="fa-solid fa-user fa-xl" class="nav"></i></a>&nbsp;
@@ -54,11 +51,11 @@ fontawesome - the icons
 <a href="#resources" data-tooltip="resources" style="color:white;"><i class="fa-solid fa-toolbox fa-xl" class="nav"></i></a>&nbsp;
 	</center></p>
 
-    <!-- imood indicator -->
+    <!-- ANCHOR imood indicator -->
 	<center><a href="https://www.imood.com/users/newgnx"><img src="https://moods.imood.com/display/uname-newgnx/fg-FFFFFF/trans-1/imood.gif" alt="The current mood of newgnx at www.imood.com" border="0" class="imood" data-tooltip="current mood"></a></center>
 </div>
 
-<!-- status cafe -->
+<!-- ANCHOR status cafe -->
 <div class="center" id="about">
 <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=djs" defer></script>
 <center>
@@ -68,7 +65,7 @@ fontawesome - the icons
 <p><center><a href="#realabout" style="color:white;">But you came to learn a real thing, didn't you?</a></center></p>
 </div>
 
-<!-- biography! -->
+<!-- ANCHOR biography! -->
 <div class="center" id="realabout">
 <p>Right... I've kept my secrets <i>way</i> too long. Let me introduce myself</p>
 <p>Hello, I'm DJSng, a canadian based self-taught musician, ROBLOX rendering artist, passionate modder, blogger and writer. I was also the original director and owner of Enraged Novetus Game Destroyer, a 2020-2021 Old ROBLOX based game ranting skit about a kid playing ROBLOX as if it was really the 2010s.<br><br>
@@ -78,7 +75,7 @@ I have gone by many names over the years, including Zandy, Luma, and Kameron. Ho
 <p>
 </div>
 
-<!-- social links and stuff i did! and stuff. overflow test this please, maybe if it scrolls nice, i'll add a link here that also adds a resource page -->
+<!-- ANCHOR social links and stuff i did! and stuff.  -->
 
 <div class="center" id="projects">
 <p><b>djsng.neocities.org</b> (~2024 - Present)<br>
@@ -109,18 +106,18 @@ I have gone by many names over the years, including Zandy, Luma, and Kameron. Ho
 </ul><br>
 </div>
 
-<!-- music page (placeholder) -->
+<!-- ANCHOR music page (placeholder) -->
 <div class="center" id="music">
 <p>Sorry, nothing to be found here for now. :(</p>
 <p>You should go to <a href="./posts">my journal</a> for demos!</p>
 </div>
 
-<!-- history.html -->
+<!-- ANCHOR history.html -->
 <div class="center" id="history">
 	<h1>My History</h1>
 	<p>Hi! This small page serves the purpose of documenting my history, kind of like a portfolio to show the kind of stuff I've done overtime. It's a near full documentation of the many phases I had on the internet, as well as my various projects. This page is heavily inspired by <a href="https://wintr.neocities.org/creations">Wintr's "my creations" page</a>, so do please check that out too</p><br>
 	<h2>This website & other websiting<br>(November 2020 - Ongoing)</h2>
-
+    <!-- TODO this should be waaaay nicer. -->
 <details>
                         <summary style="font-size: 20px;">Reveal text</summary>
                         <p>So, this website... It has a very interesting history. When it comes to before Neocities, I actually kind of already experimented with a personal website, though mostly to shitpost with friends. I used to experiment with XAMPP and the idea of self-hosting, which would be knowledge that would help me a lot later on in life. I may have only been 13 and blindly forwarding ports, but at the least, I didn't put myself in too much risk. I hope...<br> In November 2020, I was doing test stuff with HTML that was entirely unstyled, which was mostly a junk thing. It was my first ever attempt at a website, where I knew nothing about styles, nothing about more than the paragraph HTML tag, etc. It was as barebones as you can imagine.</p>
@@ -253,8 +250,13 @@ I have gone by many names over the years, including Zandy, Luma, and Kameron. Ho
 
 <!-- resources -->
 <div class="center" id="resources">
-	<!-- todo: re-write all of this -->
-<p>Oh boy, I'm
+	<!-- TODO: re-write all of this -->
+<p>A rework a day, keeps the mess away...<br>
+Welcome to my resource page. I mainly keep resources I want to go back to right here.</p>
+<!-- FIXME write more -->
+
+<h1>Meta resources</h1>
+<p>Great for when you need</p>
 
 <details>
     <summary>Old resources page</summary>
@@ -290,7 +292,7 @@ I have gone by many names over the years, including Zandy, Luma, and Kameron. Ho
 
 
 </body>
-<!-- this is a horrible hack. i don't care. it loads #home. if i could figure out how to load #home but hide it when i clicked ANYTHING else, i would. -->
+<!-- NOTE this is a horrible hack. i don't care. it loads #home. if i could figure out how to load #home but hide it when i clicked ANYTHING else, i would. -->
 <script type="text/javascript">
 location=location.hash||"#home"
 </script>
@@ -311,7 +313,7 @@ location=location.hash||"#home"
 
 <!-- image hover script by wintrmoon -->
 <script>
-      //NOTE - this is why it works
+      // NOTE - this is why it works
       const tooltip = document.getElementById("tooltip");
       const images = document.querySelectorAll("[data-tooltip]");
 
@@ -325,7 +327,6 @@ location=location.hash||"#home"
           tooltip.classList.remove("visible");
         });
 
-        //NOTE - you can remove this part if you do not want it to move with the cursor but then you'll have to do some styling to get it right
         image.addEventListener("mousemove", (e) => {
           tooltip.style.left = e.clientX + 15 + "px";
           tooltip.style.top = e.clientY + 15 + "px";

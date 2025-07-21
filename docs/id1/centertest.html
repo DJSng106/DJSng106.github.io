@@ -21,7 +21,10 @@
 
 <!-- status cafe -->
 <div class="center" id="about">
-<div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=djs" defer></script>
+<div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=djs" defer></script><br>
+<center><div class="header__inner">
+    <p><span id="song">Loading last played song</span></p>
+</div></center>
 <br><br>
 <p><center><a href="#realabout" style="color:white;">But you came to learn a real thing, didn't you?</a></center></p>
 </div>
@@ -57,4 +60,18 @@ also add last played to about?
 <!-- this is a horrible hack. i don't care. it loads #home. if i could figure out how to load #home but hide it when i clicked ANYTHING else, i would. -->
 <script type="text/javascript">
 location=location.hash||"#home"
+</script>
+
+
+<!-- last.fm code -->
+<script type="text/javascript">
+    let user = 'RainbowxChaser';
+    let url = 'https://lastfm-last-played.biancarosa.com.br/' + user + '/latest-song';
+    let song = document.querySelector('#song');
+    fetch(url)
+        .then(function (response) {
+            return response.json()
+        }).then(function (json) {
+            song.innerHTML = json['track']['name'] + ' - ' + json['track']['artist']['#text'];
+        });
 </script>

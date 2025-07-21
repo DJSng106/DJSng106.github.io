@@ -29,22 +29,6 @@
   } 
 
 
-/* inter github readme - import font */
-/* official inter page - https://github.com/rsms/inter */
-
-:root { font-family: 'Inter', sans-serif; }
-@supports (font-variation-settings: normal) {
-  :root { font-family: 'Inter var', sans-serif; }
-}
-
-
-body {
-  max-width: 64em; /* this forces the text to a certain width. basically all the magic */
-  margin: 0 auto; /* centers the stuff */
-  padding: 15px; /* pad the text so it's not taking everything up */
-} 
-
-
 /* spoiler text hack */
 .spoiler{
   background-color: gray;

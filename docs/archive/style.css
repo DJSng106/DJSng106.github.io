@@ -1,13 +1,25 @@
 /* DJS JANK TWEAKS */
 
   
-  /* inter github readme - import font */
-  /* official inter page - https://github.com/rsms/inter */
+  /* this is the code we used when using inter
   
   :root { font-family: 'Inter', sans-serif; }
   @supports (font-variation-settings: normal) {
     :root { font-family: 'Inter var', sans-serif; }
   }
+*/
+
+/* src: Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+
+/*
+  @font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/inter-v19-latin-regular.ttf') format('truetype'); 
+}
+*/
   
   
   body {
@@ -15,13 +27,7 @@
     margin: 0 auto; /* centers the stuff */
     padding: 15px; /* pad the text so it's not taking everything up */
   } 
-@font-face {
-  font-display: swap;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/inter-v19-latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-}
+
 
 /* inter github readme - import font */
 /* official inter page - https://github.com/rsms/inter */

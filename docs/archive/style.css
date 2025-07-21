@@ -1,6 +1,18 @@
 /* DJS JANK TWEAKS */
 
   
+
+/* attempt to load roboto p2 */
+
+.roboto-1 {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
   body {
     max-width: 64em; /* this forces the text to a certain width. basically all the magic */
     margin: 0 auto; /* centers the stuff */

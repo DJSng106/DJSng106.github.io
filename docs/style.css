@@ -162,7 +162,3 @@ a:hover {
 a:active {
   color: blue;
 } 
-
-i > a:visited {
-  color:white ;
-}

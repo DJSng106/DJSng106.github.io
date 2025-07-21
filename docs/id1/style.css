@@ -18,14 +18,18 @@
 #projects.center {
   width: 50%; /* i don't remember why i needed to specify width */
   height: 100%; /* for it to scroll the height needs to be set */
-  line-height: 100%; /* "You need to add the line-height attribute and that attribute must match the height of the div." */
 }
 
 /* match project styling for #realabout */
 #realabout.center {
   width: 50%; /* i don't remember why i needed to specify width */
   height: 100%; /* for it to scroll the height needs to be set */
-  line-height: 100%; /* "You need to add the line-height attribute and that attribute must match the height of the div." */
+}
+
+/* match project styling for #history */
+#history.center {
+  width: 50%; /* i don't remember why i needed to specify width */
+  height: 100%; /* for it to scroll the height needs to be set */
 }
 
 
@@ -122,3 +126,25 @@ width: 35px;
       .tooltip.visible {
         opacity: 1; /* uhhh? i'll ask later i cba */
       }
+
+/* default link colors look bad... let's fix that by making it all rainbow puke! */
+
+ /* unvisited link */
+a:link {
+  color: hotpink;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: red;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+} 

@@ -35,7 +35,7 @@
 
 /* match project styling for #resources */
 #resources.center {
-  width: 50%; /* i don't remember why i needed to specify width */
+  width: 90%; /* make the width higher so you can scroll from more of the screen */
   height: 100%; /* for it to scroll the height needs to be set */
 }
 

@@ -1,0 +1,14 @@
+# ignore some junk that should only exist locally
+# and not be uploaded to the repo
+.vscode/
+
+
+
+# filter some total junk
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

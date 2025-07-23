@@ -1,5 +1,7 @@
-/* stand up and read to the class timmy */
-#buttons:not(#home:target) { display: none; }
+/* stand up and read to the class timmy 
+#buttons:not(#home:target) { display: none; }*/
+
+#buttons:not(.center:has(#buttons)) {display: none; }
 
 /* style tooltips */
 .tooltip {

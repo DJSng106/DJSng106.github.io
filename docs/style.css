@@ -28,11 +28,9 @@
     align-items: center;
 }
 
-/* undo weird black magic done by .center div */
-.outer#buttons:not(#home:target) {
-    top: auto !important; /* do not change fixation of buttons */
-    left: auto !important; /* do not change fixation of buttons */
-    transform: translate(0%, 0%) !important; /* do not change fixation of buttons */
+.buttons {
+    top: 100%;
+    left: 100%
 }
 
 /* a bunch of rules and edge cases that go along with the site */
@@ -40,12 +38,9 @@
 #projects.center, #history.center { width: 50%; } /* make a few problematic pages scrollable by manually setting height */
 #resources.center { width: 65%; } /* resources needs a custom width so you can scroll from more of the screen */
 #history.center img { width: 100%; } /* fix images being too big for the div */
-#home, #about, #realabout, #projects, #music, #history, #resources, #home:target .buttons & #button { display: none; } /* don't display home on ANY other page */
-#home:target, #about:target, #realabout:target, #projects:target, #music:target, #history:target, #resources:target, #home:target .buttons { display: block; } /* show the content only when open */
+#home, #about, #realabout, #projects, #music, #history, #resources { display: none; } /* don't display home on ANY other page */
+#home:target, #about:target, #realabout:target, #projects:target, #music:target, #history:target, #resources:target { display: block; } /* show the content only when open */
 .tooltip.visible { opacity: 1; } /* make tooltips appear only when hovered, i think */
-
-#home:target img { display: block !important; }
-#button img { display: none !important; }
 
 /* color links */
 a:link { color: hotpink; }

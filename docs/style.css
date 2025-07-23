@@ -14,36 +14,27 @@
     align-items: center;
 }
 
-/* make buttons normal sized */
-.buttons {
+/* undo weird black magic done by .center div */
+.outer#buttons:not(#home:target) {
     top: auto !important; /* do not change fixation of buttons */
     left: auto !important; /* do not change fixation of buttons */
     transform: translate(0%, 0%) !important; /* do not change fixation of buttons */
 }
 
 /* make projects scrollable. */
-#projects.center {
+#projects.center, #history.center {
   width: 50%; /* i don't remember why i needed to specify width */
   height: 100%; /* for it to scroll the height needs to be set */
 }
 
-/* match project styling for #history */
-#history.center {
-  width: 50%; /* i don't remember why i needed to specify width */
-  height: 100%; /* for it to scroll the height needs to be set */
+/* match project styling for #resources */
+#resources.center {
+  width: 65%; /* make the width higher so you can scroll from more of the screen */
 }
 
 /* fix images being too big for the div */
 #history.center img {
   width: 100%; /* i don't remember why i needed to specify width */
-}
-
-
-
-/* match project styling for #resources */
-#resources.center {
-  width: 65%; /* make the width higher so you can scroll from more of the screen */
-  height: 100%; /* for it to scroll the height needs to be set */
 }
 
 /* this is our main magic */
@@ -61,65 +52,17 @@ width: 35px;
 }
 
 
-/* don't display home on ANY other page. this is a horrible, nightmareish hack. somebody please make it better*/
-#home {
+/* don't display home on ANY other page. they are now chained together to save space :) */
+#home, #about, #realabout, #projects, #music, #history, #resources {
   display: none;
 }
 
-/* display about but ONLY when brought up */
-#about {
-  display: none;
-}
-#about:target {
+/* show the content only when open */
+#home:target, #about:target, #realabout:target, #projects:target, #music:target, #history:target, #resources:target {
   display: block;
 }
 
-/* another page */
-#realabout {
-  display: none;
-}
-#realabout:target {
-  display: block;
-}
-
-/* another page */
-#projects {
-  display: none;
-}
-#projects:target {
-  display: block;
-}
-
-/* another page */
-#music {
-  display: none;
-}
-#music:target {
-  display: block;
-}
-
-/* another page */
-#history {
-  display: none;
-}
-#history:target {
-  display: block;
-}
-
-/* another page */
-#resources {
-  display: none;
-}
-#resources:target {
-  display: block;
-}
-
-
-/* this cursed puppy? it hides home when another page is open. */
-#home:target {
-  display: block;
-}
-
+/* this cursed puppy forces the two rules above to work. */
 .outer {
   &:not(:has(#home:target)) {
     & #home:first-of-type {
@@ -142,11 +85,11 @@ width: 35px;
         opacity: 0;
         transition: opacity 0.15s ease;
         z-index: 10;
-      }
+}
 
-      .tooltip.visible {
-        opacity: 1; /* uhhh? i'll ask later i cba */
-      }
+.tooltip.visible {
+        opacity: 1;
+}
 
 /* default link colors look bad... let's fix that by making it all rainbow puke! */
 

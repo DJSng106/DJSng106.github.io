@@ -1,7 +1,7 @@
-/* stand up and read to the class timmy 
-#buttons:not(#home:target) { display: none; }*/
+/* stand up and read to the class timmy */
+/* #buttons:not(#home:target) { display: none; } /*
 
-#buttons:not(.center:has(#buttons)) {display: none; }
+/* #buttons:not(.center:has(#buttons)) {display: none; } */ 
 
 /* style tooltips */
 .tooltip {
@@ -45,9 +45,12 @@
 #projects.center, #history.center { width: 50%; } /* make a few problematic pages scrollable by manually setting height */
 #resources.center { width: 65%; } /* resources needs a custom width so you can scroll from more of the screen */
 #history.center img { width: 100%; } /* fix images being too big for the div */
-#home, #about, #realabout, #projects, #music, #history, #resources, #home:target.buttons { display: none; } /* don't display home on ANY other page */
-#home:target, #about:target, #realabout:target, #projects:target, #music:target, #history:target, #resources:target, #home:target.buttons { display: block; } /* show the content only when open */
+#home, #about, #realabout, #projects, #music, #history, #resources, #home:target .buttons { display: none; } /* don't display home on ANY other page */
+#home:target, #about:target, #realabout:target, #projects:target, #music:target, #history:target, #resources:target, #home:target .buttons { display: block; } /* show the content only when open */
 .tooltip.visible { opacity: 1; } /* make tooltips appear only when hovered, i think */
+
+#home:target .buttons { display: block !important; }
+#home .buttons { display: none; }
 
 /* color links */
 a:link { color: hotpink; }

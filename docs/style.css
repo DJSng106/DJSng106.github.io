@@ -14,12 +14,11 @@
     align-items: center;
 }
 
-/* try fixing the buttons by loading them higher than the main content page. */
-.buttons {
-    position: fixed; /* i think this makes it show on screen properly */
-    top: 0%;
-    left: 50%;
-    /* next three lines makes the content center */
+
+/* do not disaply buttons by default */
+
+.buttons:is(#home:target) {
+  display: none;
 }
 
 /* make projects scrollable. */
@@ -62,7 +61,7 @@ width: 35px;
 }
 
 
-/* don't display home on ANY other page. this is a horrible, nightmareish hack. i don't care. somebody please make it better, i dare you. */
+/* don't display home on ANY other page. this is a horrible, nightmareish hack. somebody please make it better*/
 #home {
   display: none;
 }

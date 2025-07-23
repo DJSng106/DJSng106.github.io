@@ -44,6 +44,9 @@
 #home:target, #about:target, #realabout:target, #projects:target, #music:target, #history:target, #resources:target, #home:target .buttons { display: block; } /* show the content only when open */
 .tooltip.visible { opacity: 1; } /* make tooltips appear only when hovered, i think */
 
+#home:target .buttons { display: block !important; }
+#home .buttons { display: none; }
+
 /* color links */
 a:link { color: hotpink; }
 a:visited { color: green; }

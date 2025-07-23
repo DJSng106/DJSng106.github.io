@@ -40,12 +40,12 @@
 #projects.center, #history.center { width: 50%; } /* make a few problematic pages scrollable by manually setting height */
 #resources.center { width: 65%; } /* resources needs a custom width so you can scroll from more of the screen */
 #history.center img { width: 100%; } /* fix images being too big for the div */
-#home, #about, #realabout, #projects, #music, #history, #resources, #home:target .buttons { display: none; } /* don't display home on ANY other page */
+#home, #about, #realabout, #projects, #music, #history, #resources, #home:target .buttons & #button { display: none; } /* don't display home on ANY other page */
 #home:target, #about:target, #realabout:target, #projects:target, #music:target, #history:target, #resources:target, #home:target .buttons { display: block; } /* show the content only when open */
 .tooltip.visible { opacity: 1; } /* make tooltips appear only when hovered, i think */
 
 #home:target img { display: block !important; }
-#home img { display: none; }
+#button img { display: none !important; }
 
 /* color links */
 a:link { color: hotpink; }

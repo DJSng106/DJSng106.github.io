@@ -24,11 +24,6 @@
     transform: translate(-50%, -50%);
 }
 
-.buttons {
-    top: 100%;
-    left: 100%
-}
-
 /* a bunch of rules and edge cases that go along with the site */
 #projects.center, #history.center, #resources.center  { height: 100%; } /* make a few problematic pages scrollable by manually setting height */
 #projects.center, #history.center { width: 50%; } /* make a few problematic pages scrollable by manually setting height */

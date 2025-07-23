@@ -37,7 +37,9 @@ fontawesome - the icons
 <div id="tooltip" class="tooltip"></div> <!-- this is required to make tooltips work. for some reason. -->
 <!-- NOTE: i had to load the above div outside of the main divs otherwise it causes chaos -->
 
-<!-- SECTION buttons (these load above everything else) -->
+
+<div class="outer" id="outer"> <!-- NOTE: create an outer div because otherwise the buttons can't be hidden properly. also the buttons will scroll with the main div, that's bad for my vision -->
+            <!-- SECTION buttons (these load above everything else) -->
 <div class="buttons" id="buttons">
 <p><marquee>
 <a href="https://wintr.neocities.org"  data-tooltip="wintrmoon"><img src="./img/wintr.gif"></a>
@@ -48,10 +50,9 @@ fontawesome - the icons
 <a href="http://toastytech.com/index.html" data-tooltip="toastytech (Fuck IE)"><img src="./archive/me/neo1/drop/button/fuckie.gif"/></a>
 </marquee></p>
 </div>
-
 <div class="center default" id="home">
 	<p>
-    <center>
+<center>
 <!-- SECTION this is the nav bar and all of the images in it -->
 <a href="./posts" data-tooltip="journal (/posts/)" style="color:white;"><i class="fa-solid fa-inbox fa-xl" class="nav"></i></a>&nbsp;
 <a href="https://djsng.bearblog.dev/" data-tooltip="blog (goes off-site)" style="color:white;"><i class="fa-solid fa-blog fa-xl" class="nav"></i></a>&nbsp;
@@ -66,7 +67,7 @@ fontawesome - the icons
 	<center><a href="https://www.imood.com/users/newgnx"><img src="https://moods.imood.com/display/uname-newgnx/fg-FFFFFF/trans-1/imood.gif" alt="The current mood of newgnx at www.imood.com" border="0" class="imood" data-tooltip="current mood"></a></center></p>
 
 
-</div>
+</div></div>
 
 <!-- ANCHOR status cafe -->
 <div class="center" id="about">
@@ -374,4 +375,3 @@ location=location.hash||"#home"
         });
       });
     </script>
-

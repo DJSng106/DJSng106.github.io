@@ -14,11 +14,11 @@
     align-items: center;
 }
 
-
-/* do not disaply buttons by default */
-
-.buttons:is(#home:target) {
-  display: none;
+/* make buttons normal sized */
+.buttons {
+    top: auto !important; /* do not change fixation of buttons */
+    left: auto !important; /* do not change fixation of buttons */
+    transform: translate(0%, 0%) !important; /* do not change fixation of buttons */
 }
 
 /* make projects scrollable. */
@@ -120,7 +120,7 @@ width: 35px;
   display: block;
 }
 
-.default {
+.outer {
   &:not(:has(#home:target)) {
     & #home:first-of-type {
       display: block;

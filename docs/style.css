@@ -33,15 +33,6 @@
     align-items: center;
 }
 
-/* this cursed puppy forces the two rules above to work. */
-.outer {
-  &:not(:has(#home:target)) {
-    & #home:first-of-type {
-      display: block;
-    }
-  }
-}
-
 /* undo weird black magic done by .center div */
 .outer#buttons:not(#home:target) {
     top: auto !important; /* do not change fixation of buttons */

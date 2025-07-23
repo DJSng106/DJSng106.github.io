@@ -1,7 +1,7 @@
-/* hall of shame for the hardest to add feature right now */
-.buttons:not(#home:target) { display: none; }
+/* stand up and read to the class timmy */
+#buttons:not(#home:target) { display: none; }
 
-/* style wintr tooltips */
+/* style tooltips */
 .tooltip {
         background: #2d2d2e; /* use different stylizing because this isn't wintr's site */
         color: #fcfcff; /* use different stylizing because this isn't wintr's site */

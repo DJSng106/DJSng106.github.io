@@ -14,6 +14,14 @@
     align-items: center;
 }
 
+/* try fixing the buttons by loading them higher than the main content page. */
+.buttons {
+    position: fixed; /* i think this makes it show on screen properly */
+    top: 0%;
+    left: 50%;
+    /* next three lines makes the content center */
+}
+
 /* make projects scrollable. */
 #projects.center {
   width: 50%; /* i don't remember why i needed to specify width */

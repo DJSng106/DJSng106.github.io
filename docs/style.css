@@ -1,5 +1,5 @@
 /* hall of shame for the hardest to add feature right now */
-.buttons { display: none; }
+.buttons:not(#home:target) { display: none; }
 
 /* style wintr tooltips */
 .tooltip {

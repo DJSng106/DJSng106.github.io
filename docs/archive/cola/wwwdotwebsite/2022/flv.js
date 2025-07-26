@@ -6099,7 +6099,6 @@ var IOController = /** @class */ (function () {
             throw new _utils_exception_js__WEBPACK_IMPORTED_MODULE_9__.InvalidArgumentException('Url must be a non-empty string!');
         }
         this._dataSource.url = url;
-        // TODO: replace with new url
     };
     IOController.prototype._expandBuffer = function (expectedBytes) {
         var bufferNewSize = this._stashSize;

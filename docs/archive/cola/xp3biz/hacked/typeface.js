@@ -887,14 +887,6 @@ try { console.log('initializing typeface.js') } catch(e) {};
 
 }
 /*
-     FILE ARCHIVED ON 03:50:53 Dec 19, 2014 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 07:13:35 Feb 18, 2023.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
-
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
-*/
-/*
 playback timings (ms):
   captures_list: 153.72
   exclusion.robots: 0.075

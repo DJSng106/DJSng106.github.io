@@ -69,7 +69,7 @@ let postsArray = [
 
 //XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-/*CAUTION!! BEGINNING OF MORE ADVANCED SECTION!
+/*CAUTION!! BEGINNING OF MORE ADVANCED 
   For default functionality, you DO NOT have to touch anything beyond this point.
   Things get more complicated here, so if you are unfamiliar with Javascript,
   your site may break. That's okay though, you can always paste back in the code
@@ -77,7 +77,7 @@ let postsArray = [
 
 //XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-//==[ 3. GENERATING THE HTML SECTIONS TO BE INSERTED ]==
+//==[ 3. GENERATING THE HTML TO BE INSERTED ]==
 
 let url = window.location.pathname;
 
@@ -221,7 +221,7 @@ if ( postsArray.length < 2 ) {
 
 //-----------------------------
 
-//==[ 4. INSERTING THE SECTIONS INTO OUR ACTUAL HTML PAGES ]==
+//==[ 4. INSERTING THEINTO OUR ACTUAL HTML PAGES ]==
 
 /*Here we check if each relevant div exists. If so, we inject the correct HTML!
   NOTE: All of these sections are optional to use on any given page. For example, if there's 

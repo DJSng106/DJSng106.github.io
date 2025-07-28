@@ -338,14 +338,6 @@ if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; re
 
 }
 /*
-     FILE ARCHIVED ON 00:32:03 Jun 09, 2009 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 04:07:38 Aug 29, 2020.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
-
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
-*/
-/*
 playback timings (ms):
   load_resource: 174.078
   captures_list: 102.824

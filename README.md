@@ -5,7 +5,7 @@ Powered by Deploy2Neocities and GitHub Pages
 # Official domains
 These are the only official places to visit the site.
 
-GitHub Pages - https://djsng106.github.io/  
+GitHub Pages - https://djsng4.github.io/  
 NeoCities - https://djsng.neocities.org  
 
 # Credits

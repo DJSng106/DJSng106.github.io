@@ -82,14 +82,6 @@ Advertisement
 </body>
 </html>
 <!--
-     FILE ARCHIVED ON 18:48:33 Jun 09, 2012 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 13:50:30 Jan 21, 2021.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
-
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
--->
-<!--
 playback timings (ms):
   captures_list: 3478.604
   exclusion.robots: 0.364

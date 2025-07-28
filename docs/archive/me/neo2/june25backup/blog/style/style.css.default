@@ -124,7 +124,7 @@ h1, h2, h3, h4, h5 {
   margin-top: 0.2em;
 }
 
-/*NEXT AND PREVIOUS LINKS STYLE*/
+/*NEXT AND PREVIOUS links STYLE*/
 #nextprev {
   text-align: center;
   margin-top: 1.4em;
